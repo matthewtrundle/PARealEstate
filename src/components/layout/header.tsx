@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { motion } from "framer-motion"
 import { usePathname } from "next/navigation"
 import { Container } from "./container"
@@ -50,17 +51,19 @@ export function Header() {
       >
         <Container>
           <nav className="flex items-center justify-between h-20">
-            {/* Logo - Editorial wordmark */}
-            <Link
-              href="/"
-              className={cn(
-                "font-display text-lg tracking-tight font-medium transition-colors duration-300",
-                isScrolled
-                  ? "text-neutral-900 hover:text-primary-700"
-                  : "text-white hover:text-accent-400"
-              )}
-            >
-              {SITE_CONFIG.shortName}
+            {/* Logo */}
+            <Link href="/" className="relative flex items-center">
+              <Image
+                src="/logo.png"
+                alt="Port Aransas Estates"
+                width={160}
+                height={50}
+                className="h-12 w-auto transition-all duration-300"
+                style={{
+                  filter: isScrolled ? "none" : "brightness(0) invert(1)",
+                }}
+                priority
+              />
             </Link>
 
             {/* Desktop Navigation - Minimal */}

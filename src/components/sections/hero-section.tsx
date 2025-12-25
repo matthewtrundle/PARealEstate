@@ -49,7 +49,7 @@ export function HeroSection() {
 
   return (
     <HeroParallax
-      backgroundUrl="/images/hero/beach-aerial.jpg"
+      videoUrl="/Animate_this_soft_1080p_202512251006.mp4"
       className="flex items-center justify-center bg-primary-950"
     >
       <section ref={sectionRef} className="relative min-h-screen flex items-center justify-center w-full">

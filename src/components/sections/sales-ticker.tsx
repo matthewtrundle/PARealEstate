@@ -62,7 +62,7 @@ export function SalesTicker({ className, variant = "banner" }: SalesTickerProps)
     const sale = recentSales[currentIndex]
 
     return (
-      <div className={cn("bg-neutral-900 text-white py-2.5 overflow-hidden", className)}>
+      <div className={cn("fixed top-20 left-0 right-0 z-40 bg-neutral-900 text-white py-2.5 overflow-hidden", className)}>
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center gap-6 text-sm">
             {/* Live indicator */}

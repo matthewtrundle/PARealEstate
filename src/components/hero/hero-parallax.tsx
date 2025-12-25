@@ -15,7 +15,8 @@ import { useReducedMotion } from "@/hooks/use-reduced-motion"
  */
 
 interface HeroParallaxProps {
-  backgroundUrl: string
+  videoUrl?: string
+  backgroundUrl?: string
   children: React.ReactNode
   className?: string
 }
@@ -23,7 +24,7 @@ interface HeroParallaxProps {
 // SVG noise for grain texture (inline data URI)
 const GRAIN_SVG = `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.5'/%3E%3C/svg%3E")`
 
-export function HeroParallax({ backgroundUrl, children, className = "" }: HeroParallaxProps) {
+export function HeroParallax({ videoUrl, backgroundUrl, children, className = "" }: HeroParallaxProps) {
   const rootRef = useRef<HTMLDivElement>(null)
   const bgRef = useRef<HTMLDivElement>(null)
   const mistRef = useRef<HTMLDivElement>(null)
@@ -106,15 +107,33 @@ export function HeroParallax({ backgroundUrl, children, className = "" }: HeroPa
       ref={rootRef}
       className={`relative min-h-screen overflow-hidden ${className}`}
     >
-      {/* Layer 1: Background Image */}
-      <div
-        ref={bgRef}
-        className="absolute inset-[-4%] will-change-transform bg-cover bg-center"
-        style={{
-          backgroundImage: `url(${backgroundUrl})`,
-          transform: "translate3d(0, 0, 0) scale(1.06)", // Initial state
-        }}
-      />
+      {/* Layer 1: Background Video or Image */}
+      {videoUrl ? (
+        <div
+          ref={bgRef}
+          className="absolute inset-[-4%] will-change-transform"
+          style={{ transform: "translate3d(0, 0, 0) scale(1.06)" }}
+        >
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          >
+            <source src={videoUrl} type="video/mp4" />
+          </video>
+        </div>
+      ) : (
+        <div
+          ref={bgRef}
+          className="absolute inset-[-4%] will-change-transform bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${backgroundUrl})`,
+            transform: "translate3d(0, 0, 0) scale(1.06)",
+          }}
+        />
+      )}
 
       {/* Layer 1.5a: Gradient overlay for depth */}
       <div

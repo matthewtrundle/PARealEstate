@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, lazy, Suspense, Component, type ReactNode, useRef } from "react"
+import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import { Container, Section } from "@/components/layout"
 import { CounterUp } from "@/components/motion"
@@ -9,100 +9,10 @@ import { useReducedMotion } from "@/hooks/use-reduced-motion"
 // Premium easing
 const easeOutExpo = [0.16, 1, 0.3, 1] as const
 
-// Lazy load the Fish Scene components
-const CanvasWrapper = lazy(() =>
-  import("@/components/three/canvas-wrapper").then((mod) => ({ default: mod.CanvasWrapper }))
-)
-const FishScene = lazy(() =>
-  import("@/components/three/fish-scene").then((mod) => ({ default: mod.FishScene }))
-)
-const OceanAtmosphere = lazy(() =>
-  import("@/components/three/ocean-atmosphere").then((mod) => ({ default: mod.OceanAtmosphere }))
-)
-const OceanParticles = lazy(() =>
-  import("@/components/three/ocean-atmosphere").then((mod) => ({ default: mod.OceanParticles }))
-)
-const SceneLights = lazy(() =>
-  import("@/components/three/scene-lights").then((mod) => ({ default: mod.SceneLights }))
-)
-
-// Error boundary for 3D
-interface ErrorBoundaryProps {
-  children: ReactNode
-  fallback: ReactNode
-}
-
-interface ErrorBoundaryState {
-  hasError: boolean
-}
-
-class ThreeErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
-  constructor(props: ErrorBoundaryProps) {
-    super(props)
-    this.state = { hasError: false }
-  }
-
-  static getDerivedStateFromError(): ErrorBoundaryState {
-    return { hasError: true }
-  }
-
-  render() {
-    if (this.state.hasError) {
-      return this.props.fallback
-    }
-    return this.props.children
-  }
-}
-
-// Fish Tank fallback
-function FishTankFallback() {
-  return (
-    <div className="w-full h-full rounded-3xl bg-gradient-to-b from-primary-800 to-primary-950 flex items-center justify-center overflow-hidden relative">
-      {/* Animated bubbles */}
-      <div className="absolute inset-0 overflow-hidden">
-        {[...Array(8)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-3 h-3 rounded-full bg-white/20 animate-pulse"
-            style={{
-              left: `${15 + i * 10}%`,
-              bottom: `${-10}%`,
-              animationDelay: `${i * 0.3}s`,
-              animationDuration: "3s",
-            }}
-          />
-        ))}
-      </div>
-      <div className="text-white/60 text-sm">Loading aquarium...</div>
-    </div>
-  )
-}
-
 export function WaveBallSection() {
-  const [shouldRender3D, setShouldRender3D] = useState(false)
   const sectionRef = useRef<HTMLDivElement>(null)
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" })
   const prefersReducedMotion = useReducedMotion()
-
-  useEffect(() => {
-    // Only render 3D on desktop with WebGL support
-    const checkWebGL = () => {
-      try {
-        const canvas = document.createElement("canvas")
-        const gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl")
-        return !!gl
-      } catch {
-        return false
-      }
-    }
-
-    const isDesktop = window.innerWidth >= 768
-    const hasWebGL = checkWebGL()
-
-    if (isDesktop && hasWebGL) {
-      setShouldRender3D(true)
-    }
-  }, [])
 
   return (
     <Section className="relative overflow-hidden bg-gradient-to-b from-neutral-50 to-white py-24 md:py-32">
@@ -124,41 +34,25 @@ export function WaveBallSection() {
                 }}
                 transition={{ duration: 0.4 }}
               >
-                {/* Inner tank */}
-                <div className="w-full h-full rounded-2xl overflow-hidden relative">
-                  {/* Tank glass effect overlay - enhanced */}
+                {/* Video container */}
+                <div className="w-full h-full rounded-2xl overflow-hidden relative bg-primary-950">
+                  {/* Glass effect overlay */}
                   <div className="absolute inset-0 z-10 pointer-events-none">
-                    <div className="absolute inset-0 bg-gradient-to-br from-white/15 via-transparent to-transparent" />
-                    <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/40 to-transparent" />
-                    <div className="absolute left-0 top-0 h-full w-px bg-gradient-to-b from-white/20 via-transparent to-transparent" />
-                    <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-primary-950/60 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-transparent" />
+                    <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+                    <div className="absolute left-0 top-0 h-full w-px bg-gradient-to-b from-white/15 via-transparent to-transparent" />
                   </div>
 
-                  {shouldRender3D ? (
-                    <ThreeErrorBoundary fallback={<FishTankFallback />}>
-                      <Suspense fallback={<FishTankFallback />}>
-                        <CanvasWrapper cameraPosition={[0, 0, 15]}>
-                          {/* Underwater atmosphere */}
-                          <OceanAtmosphere color="#0a4d8c" density={0.015} />
-
-                          {/* Lighting */}
-                          <SceneLights />
-
-                          {/* Floating particles for underwater effect */}
-                          <OceanParticles count={50} />
-
-                          {/* Fish swimming */}
-                          <FishScene
-                            position={[0, 0, 0]}
-                            scale={0.8}
-                            animationSpeed={0.7}
-                          />
-                        </CanvasWrapper>
-                      </Suspense>
-                    </ThreeErrorBoundary>
-                  ) : (
-                    <FishTankFallback />
-                  )}
+                  {/* Looping video */}
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
+                  >
+                    <source src="/vid1.mp4" type="video/mp4" />
+                  </video>
                 </div>
               </motion.div>
 

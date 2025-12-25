@@ -1,6 +1,13 @@
 "use server"
 
 import { z } from "zod"
+import { Resend } from "resend"
+
+// Initialize Resend with API key from environment
+const resend = new Resend(process.env.RESEND_API_KEY)
+
+// Email recipient
+const NOTIFICATION_EMAIL = "matthewtrundle@gmail.com"
 
 // Lead form validation schema
 const leadFormSchema = z.object({
@@ -68,28 +75,42 @@ export async function submitLead(
   }
 
   try {
-    // Log the lead (in production, send to CRM/email)
+    // Log the lead
     console.log("=== NEW LEAD RECEIVED ===")
     console.log("Timestamp:", new Date().toISOString())
     console.log("Name:", validated.data.name)
     console.log("Email:", validated.data.email)
-    console.log("Phone:", validated.data.phone || "Not provided")
-    console.log("Property Interest:", validated.data.propertyInterest || "General inquiry")
-    console.log("Preferred Contact:", validated.data.preferredContact)
-    console.log("Check-in:", validated.data.checkIn || "Flexible")
-    console.log("Check-out:", validated.data.checkOut || "Flexible")
-    console.log("Guests:", validated.data.guests || "Not specified")
-    console.log("Message:", validated.data.message || "No message")
-    console.log("Source:", validated.data.source)
     console.log("========================")
 
-    // TODO: Integrate with:
-    // - Email service (Resend, SendGrid)
-    // - CRM (HubSpot, Airtable)
-    // - Slack notification
-
-    // Simulate network delay
-    await new Promise((resolve) => setTimeout(resolve, 500))
+    // Send email notification
+    if (process.env.RESEND_API_KEY) {
+      await resend.emails.send({
+        from: "Port Aransas Estates <onboarding@resend.dev>",
+        to: NOTIFICATION_EMAIL,
+        subject: `New Lead: ${validated.data.name} - ${validated.data.propertyInterest || "General Inquiry"}`,
+        html: `
+          <h2>New Lead from Port Aransas Estates Website</h2>
+          <p><strong>Submitted:</strong> ${new Date().toLocaleString("en-US", { timeZone: "America/Chicago" })}</p>
+          <hr />
+          <h3>Contact Information</h3>
+          <p><strong>Name:</strong> ${validated.data.name}</p>
+          <p><strong>Email:</strong> <a href="mailto:${validated.data.email}">${validated.data.email}</a></p>
+          <p><strong>Phone:</strong> ${validated.data.phone || "Not provided"}</p>
+          <p><strong>Preferred Contact:</strong> ${validated.data.preferredContact}</p>
+          <hr />
+          <h3>Inquiry Details</h3>
+          <p><strong>Property Interest:</strong> ${validated.data.propertyInterest || "General inquiry"}</p>
+          <p><strong>Check-in:</strong> ${validated.data.checkIn || "Flexible"}</p>
+          <p><strong>Check-out:</strong> ${validated.data.checkOut || "Flexible"}</p>
+          <p><strong>Guests:</strong> ${validated.data.guests || "Not specified"}</p>
+          <hr />
+          <h3>Message</h3>
+          <p>${validated.data.message || "No message provided"}</p>
+          <hr />
+          <p style="color: #666; font-size: 12px;">Source: ${validated.data.source}</p>
+        `,
+      })
+    }
 
     return {
       success: true,
