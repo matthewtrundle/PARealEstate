@@ -77,14 +77,6 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
-        {/* Preload critical 3D model for desktop */}
-        <link
-          rel="preload"
-          href="/models/fish-school-converted.glb"
-          as="fetch"
-          crossOrigin="anonymous"
-          media="(min-width: 1024px)"
-        />
       </head>
       <body className="font-body antialiased">
         <LenisProvider>
