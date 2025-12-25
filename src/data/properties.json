@@ -1,0 +1,744 @@
+{
+  "properties": [
+    {
+      "id": "azure-shores-estate",
+      "slug": "azure-shores-estate",
+      "status": "active",
+      "featured": true,
+      "name": "Azure Shores Estate",
+      "tagline": "Panoramic Gulf Views from Every Room",
+      "description": "Experience the ultimate in beachfront luxury at Azure Shores Estate. This stunning 6-bedroom home offers panoramic Gulf views from every room, a private infinity pool, and direct beach access. A rare opportunity to own one of Port Aransas's most prestigious beachfront properties.",
+      "shortDescription": "6BR beachfront estate with infinity pool and direct beach access",
+      "location": {
+        "address": "123 Gulf Shore Drive",
+        "city": "Port Aransas",
+        "state": "TX",
+        "zip": "78373",
+        "coordinates": { "lat": 27.8339, "lng": -97.0611 },
+        "distanceToBeach": "Beachfront",
+        "neighborhood": "Mustang Island"
+      },
+      "specs": {
+        "bedrooms": 6,
+        "bathrooms": 7,
+        "sqft": 5200,
+        "lotSize": "0.45 acres",
+        "yearBuilt": 2019,
+        "floors": 3
+      },
+      "pricing": {
+        "listPrice": 2850000,
+        "pricePerSqft": 548,
+        "currency": "USD",
+        "status": "Active",
+        "daysOnMarket": 12
+      },
+      "features": {
+        "highlights": ["Gulf Front", "Private Infinity Pool", "Direct Beach Access", "Elevator"],
+        "outdoor": ["Private heated infinity pool", "Hot tub", "Outdoor shower", "Covered patio", "BBQ grill", "Beach access", "Fire pit"],
+        "indoor": ["Gourmet kitchen", "Wine refrigerator", "Smart home system", "High ceilings", "Impact windows", "Elevator"],
+        "investment": ["STR Zoned", "Strong Rental History", "Turn-key Furnished"]
+      },
+      "images": {
+        "hero": "/images/properties/azure-shores/hero.jpg",
+        "gallery": [
+          { "src": "/images/properties/azure-shores/living.jpg", "alt": "Open concept living room with gulf views", "category": "interior" },
+          { "src": "/images/properties/azure-shores/pool.jpg", "alt": "Private infinity pool overlooking the beach", "category": "outdoor" },
+          { "src": "/images/properties/azure-shores/master.jpg", "alt": "Master suite with ocean views", "category": "interior" },
+          { "src": "/images/properties/azure-shores/kitchen.jpg", "alt": "Gourmet chef's kitchen", "category": "interior" }
+        ]
+      },
+      "details": {
+        "propertyType": "Single Family",
+        "construction": "Concrete/Stucco",
+        "roof": "Metal",
+        "parking": "3 Car Garage",
+        "hvac": "Central A/C",
+        "hoa": "$350/month"
+      },
+      "seo": {
+        "title": "Azure Shores Estate | Beachfront Home for Sale in Port Aransas",
+        "description": "Luxury 6BR beachfront estate with infinity pool and direct beach access in Port Aransas, TX. $2,850,000. Request listing details."
+      }
+    },
+    {
+      "id": "sunset-cove-villa",
+      "slug": "sunset-cove-villa",
+      "status": "active",
+      "featured": true,
+      "name": "Sunset Cove Villa",
+      "tagline": "Where Luxury Meets the Waves",
+      "description": "Sunset Cove Villa is a masterpiece of coastal design just steps from the sand. Watch spectacular Texas sunsets from your private rooftop deck, relax in the heated pool, or stroll to world-class fishing and dining. Excellent investment opportunity with proven rental income.",
+      "shortDescription": "4BR coastal modern home with rooftop deck and heated pool",
+      "location": {
+        "address": "456 Sandpiper Lane",
+        "city": "Port Aransas",
+        "state": "TX",
+        "zip": "78373",
+        "coordinates": { "lat": 27.8285, "lng": -97.0598 },
+        "distanceToBeach": "150 ft",
+        "neighborhood": "Cinnamon Shore"
+      },
+      "specs": {
+        "bedrooms": 4,
+        "bathrooms": 4.5,
+        "sqft": 3200,
+        "lotSize": "0.18 acres",
+        "yearBuilt": 2021,
+        "floors": 3
+      },
+      "pricing": {
+        "listPrice": 1595000,
+        "pricePerSqft": 498,
+        "currency": "USD",
+        "status": "Active",
+        "daysOnMarket": 8
+      },
+      "features": {
+        "highlights": ["Rooftop Deck", "Heated Pool", "Gulf View", "New Construction"],
+        "outdoor": ["Heated pool", "Rooftop deck with lounge", "Outdoor shower", "Covered patio", "Gas grill"],
+        "indoor": ["Open concept living", "Chef's kitchen", "Smart home system", "Impact windows"],
+        "investment": ["STR Zoned", "$180K Gross Rental History", "Turn-key"]
+      },
+      "images": {
+        "hero": "/images/properties/sunset-cove/hero.jpg",
+        "gallery": [
+          { "src": "/images/properties/sunset-cove/rooftop.jpg", "alt": "Rooftop deck with sunset views", "category": "outdoor" },
+          { "src": "/images/properties/sunset-cove/living.jpg", "alt": "Modern living space", "category": "interior" },
+          { "src": "/images/properties/sunset-cove/pool.jpg", "alt": "Private heated pool", "category": "outdoor" }
+        ]
+      },
+      "details": {
+        "propertyType": "Single Family",
+        "construction": "Wood Frame",
+        "roof": "Metal",
+        "parking": "2 Car Garage",
+        "hvac": "Central A/C",
+        "hoa": "$275/month"
+      },
+      "seo": {
+        "title": "Sunset Cove Villa | Modern Beach Home for Sale in Port Aransas",
+        "description": "Coastal modern 4BR home with rooftop deck, heated pool, and stunning sunset views in Port Aransas, TX. $1,595,000. View listing details."
+      }
+    },
+    {
+      "id": "pearl-beach-house",
+      "slug": "pearl-beach-house",
+      "status": "active",
+      "featured": true,
+      "name": "The Pearl Beach House",
+      "tagline": "Timeless Elegance on the Shore",
+      "description": "The Pearl Beach House combines classic coastal charm with modern luxury. This 5-bedroom home features designer interiors, a wraparound porch perfect for morning coffee or evening cocktails, and a private pool and hot tub. An ideal primary residence or second home.",
+      "shortDescription": "5BR classic coastal home with wraparound porch and private pool",
+      "location": {
+        "address": "789 Ocean Breeze Road",
+        "city": "Port Aransas",
+        "state": "TX",
+        "zip": "78373",
+        "coordinates": { "lat": 27.8312, "lng": -97.0632 },
+        "distanceToBeach": "200 ft",
+        "neighborhood": "Palmilla Beach"
+      },
+      "specs": {
+        "bedrooms": 5,
+        "bathrooms": 5,
+        "sqft": 4100,
+        "lotSize": "0.25 acres",
+        "yearBuilt": 2018,
+        "floors": 2
+      },
+      "pricing": {
+        "listPrice": 1895000,
+        "pricePerSqft": 462,
+        "currency": "USD",
+        "status": "Active",
+        "daysOnMarket": 21
+      },
+      "features": {
+        "highlights": ["Wraparound Porch", "Private Pool", "Hot Tub", "Beach View"],
+        "outdoor": ["Private pool", "Hot tub", "Wraparound porch", "Outdoor dining", "Gas grill", "Fire pit"],
+        "indoor": ["Coastal designer interiors", "Gourmet kitchen", "Game room", "Impact windows"],
+        "investment": ["STR Zoned", "Excellent Rental Potential", "Fully Furnished"]
+      },
+      "images": {
+        "hero": "/images/properties/pearl-beach/hero.jpg",
+        "gallery": [
+          { "src": "/images/properties/pearl-beach/porch.jpg", "alt": "Wraparound porch with ocean views", "category": "outdoor" },
+          { "src": "/images/properties/pearl-beach/living.jpg", "alt": "Coastal living room", "category": "interior" },
+          { "src": "/images/properties/pearl-beach/kitchen.jpg", "alt": "Gourmet kitchen", "category": "interior" }
+        ]
+      },
+      "details": {
+        "propertyType": "Single Family",
+        "construction": "Wood Frame",
+        "roof": "Metal",
+        "parking": "2 Car Garage",
+        "hvac": "Central A/C",
+        "hoa": "$200/month"
+      },
+      "seo": {
+        "title": "The Pearl Beach House | Classic Coastal Home for Sale in Port Aransas",
+        "description": "Classic coastal 5BR home with wraparound porch, private pool, and designer interiors in Port Aransas, TX. $1,895,000. Get listing details."
+      }
+    },
+    {
+      "id": "seaglass-penthouse",
+      "slug": "seaglass-penthouse",
+      "status": "active",
+      "featured": true,
+      "name": "Seaglass Penthouse",
+      "tagline": "Elevated Luxury with Endless Views",
+      "description": "Perched atop an exclusive waterfront building, Seaglass Penthouse offers unobstructed 180-degree views of the Gulf. This 4-bedroom penthouse features floor-to-ceiling windows, a private terrace, and access to resort-style amenities including pools, spa, and fitness center.",
+      "shortDescription": "4BR penthouse condo with 180-degree gulf views and resort amenities",
+      "location": {
+        "address": "1000 Waterfront Boulevard, PH1",
+        "city": "Port Aransas",
+        "state": "TX",
+        "zip": "78373",
+        "coordinates": { "lat": 27.8355, "lng": -97.0645 },
+        "distanceToBeach": "50 ft",
+        "neighborhood": "The Dunes"
+      },
+      "specs": {
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "sqft": 3800,
+        "lotSize": "N/A",
+        "yearBuilt": 2020,
+        "floors": 1
+      },
+      "pricing": {
+        "listPrice": 2195000,
+        "pricePerSqft": 578,
+        "currency": "USD",
+        "status": "Active",
+        "daysOnMarket": 5
+      },
+      "features": {
+        "highlights": ["Penthouse", "180-Degree Gulf Views", "Resort Amenities", "Private Terrace"],
+        "outdoor": ["Private terrace", "Resort pools", "Hot tub access", "Beach service"],
+        "indoor": ["Floor-to-ceiling windows", "Chef's kitchen", "Wine storage", "Smart home"],
+        "investment": ["Condo", "Concierge Services", "Lock-and-Leave Lifestyle"]
+      },
+      "images": {
+        "hero": "/images/properties/seaglass/hero.jpg",
+        "gallery": [
+          { "src": "/images/properties/seaglass/view.jpg", "alt": "Panoramic gulf views", "category": "interior" },
+          { "src": "/images/properties/seaglass/terrace.jpg", "alt": "Private terrace", "category": "outdoor" },
+          { "src": "/images/properties/seaglass/master.jpg", "alt": "Master suite with views", "category": "interior" }
+        ]
+      },
+      "details": {
+        "propertyType": "Condo",
+        "construction": "Concrete",
+        "roof": "Flat/Built-up",
+        "parking": "2 Assigned Spaces",
+        "hvac": "Central A/C",
+        "hoa": "$850/month"
+      },
+      "seo": {
+        "title": "Seaglass Penthouse | Luxury Condo for Sale in Port Aransas",
+        "description": "Exclusive 4BR penthouse condo with 180-degree gulf views and resort amenities in Port Aransas, TX. $2,195,000. Request availability."
+      }
+    },
+    {
+      "id": "driftwood-retreat",
+      "slug": "driftwood-retreat",
+      "status": "active",
+      "featured": false,
+      "name": "Driftwood Retreat",
+      "tagline": "Your Private Paradise",
+      "description": "Escape to Driftwood Retreat, a charming 3-bedroom cottage that perfectly blends comfort with coastal style. Featuring a private pool, outdoor kitchen, and just a short walk to the beach, this is an ideal investment property or vacation home.",
+      "shortDescription": "3BR coastal cottage with private pool and outdoor kitchen",
+      "location": {
+        "address": "234 Driftwood Way",
+        "city": "Port Aransas",
+        "state": "TX",
+        "zip": "78373",
+        "coordinates": { "lat": 27.8298, "lng": -97.0587 },
+        "distanceToBeach": "300 ft",
+        "neighborhood": "Port Royal"
+      },
+      "specs": {
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "sqft": 2200,
+        "lotSize": "0.12 acres",
+        "yearBuilt": 2016,
+        "floors": 2
+      },
+      "pricing": {
+        "listPrice": 875000,
+        "pricePerSqft": 398,
+        "currency": "USD",
+        "status": "Active",
+        "daysOnMarket": 30
+      },
+      "features": {
+        "highlights": ["Private Pool", "Outdoor Kitchen", "Near Beach", "Updated"],
+        "outdoor": ["Private pool", "Outdoor kitchen", "Covered deck", "Gas grill"],
+        "indoor": ["Updated kitchen", "Open floor plan", "Impact windows"],
+        "investment": ["STR Zoned", "$95K Rental History", "Turn-key"]
+      },
+      "images": {
+        "hero": "/images/properties/driftwood/hero.jpg",
+        "gallery": [
+          { "src": "/images/properties/driftwood/pool.jpg", "alt": "Private pool area", "category": "outdoor" },
+          { "src": "/images/properties/driftwood/living.jpg", "alt": "Cozy living space", "category": "interior" }
+        ]
+      },
+      "details": {
+        "propertyType": "Single Family",
+        "construction": "Wood Frame",
+        "roof": "Metal",
+        "parking": "2 Car Garage",
+        "hvac": "Central A/C",
+        "hoa": "$150/month"
+      },
+      "seo": {
+        "title": "Driftwood Retreat | Beach Cottage for Sale in Port Aransas",
+        "description": "Charming 3BR coastal cottage with private pool and outdoor kitchen in Port Aransas, TX. $875,000. View listing details."
+      }
+    },
+    {
+      "id": "coral-bay-manor",
+      "slug": "coral-bay-manor",
+      "status": "active",
+      "featured": false,
+      "name": "Coral Bay Manor",
+      "tagline": "Grand Coastal Living",
+      "description": "Coral Bay Manor is a magnificent 7-bedroom estate designed for large family gatherings and special occasions. With multiple living areas, a chef's kitchen, game room, and expansive outdoor entertaining spaces, this property generates exceptional rental income.",
+      "shortDescription": "7BR grand estate with game room and multiple entertaining areas",
+      "location": {
+        "address": "567 Coral Bay Circle",
+        "city": "Port Aransas",
+        "state": "TX",
+        "zip": "78373",
+        "coordinates": { "lat": 27.8275, "lng": -97.0612 },
+        "distanceToBeach": "400 ft",
+        "neighborhood": "Cinnamon Shore"
+      },
+      "specs": {
+        "bedrooms": 7,
+        "bathrooms": 8,
+        "sqft": 6500,
+        "lotSize": "0.35 acres",
+        "yearBuilt": 2017,
+        "floors": 3
+      },
+      "pricing": {
+        "listPrice": 3250000,
+        "pricePerSqft": 500,
+        "currency": "USD",
+        "status": "Active",
+        "daysOnMarket": 45
+      },
+      "features": {
+        "highlights": ["7 Bedrooms", "Game Room", "Private Pool", "Elevator"],
+        "outdoor": ["Large private pool", "Hot tub", "Outdoor bar", "Multiple decks", "Fire pit"],
+        "indoor": ["Game room", "Multiple living areas", "2 kitchens", "Elevator", "Theater room"],
+        "investment": ["STR Zoned", "$350K+ Gross Rental", "Event Venue Potential"]
+      },
+      "images": {
+        "hero": "/images/properties/coral-bay/hero.jpg",
+        "gallery": [
+          { "src": "/images/properties/coral-bay/pool.jpg", "alt": "Resort-style pool", "category": "outdoor" },
+          { "src": "/images/properties/coral-bay/game.jpg", "alt": "Game room", "category": "interior" },
+          { "src": "/images/properties/coral-bay/kitchen.jpg", "alt": "Gourmet kitchen", "category": "interior" }
+        ]
+      },
+      "details": {
+        "propertyType": "Single Family",
+        "construction": "Concrete/Stucco",
+        "roof": "Metal",
+        "parking": "3 Car Garage",
+        "hvac": "Central A/C (3 zones)",
+        "hoa": "$400/month"
+      },
+      "seo": {
+        "title": "Coral Bay Manor | Grand Beach Estate for Sale in Port Aransas",
+        "description": "Magnificent 7BR estate with game room, multiple entertaining areas, and private pool in Port Aransas, TX. $3,250,000. Investment opportunity."
+      }
+    },
+    {
+      "id": "gulf-breeze-condo",
+      "slug": "gulf-breeze-condo",
+      "status": "active",
+      "featured": false,
+      "name": "Gulf Breeze Condo",
+      "tagline": "Affordable Beachfront Living",
+      "description": "Gulf Breeze Condo offers an incredible entry point into Port Aransas beachfront ownership. This updated 2-bedroom condo features stunning gulf views, community pool, and direct beach access. Perfect for a weekend retreat or investment property.",
+      "shortDescription": "2BR beachfront condo with gulf views and community amenities",
+      "location": {
+        "address": "200 Beach Club Drive, Unit 304",
+        "city": "Port Aransas",
+        "state": "TX",
+        "zip": "78373",
+        "coordinates": { "lat": 27.8322, "lng": -97.0578 },
+        "distanceToBeach": "Beachfront",
+        "neighborhood": "Beach Club"
+      },
+      "specs": {
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "sqft": 1100,
+        "lotSize": "N/A",
+        "yearBuilt": 2008,
+        "floors": 1
+      },
+      "pricing": {
+        "listPrice": 425000,
+        "pricePerSqft": 386,
+        "currency": "USD",
+        "status": "Active",
+        "daysOnMarket": 14
+      },
+      "features": {
+        "highlights": ["Beachfront", "Gulf Views", "Community Pool", "Updated"],
+        "outdoor": ["Private balcony", "Community pool", "Beach access", "BBQ area"],
+        "indoor": ["Recently updated", "Open kitchen", "Gulf view from living room"],
+        "investment": ["STR Zoned", "Strong Rental Demand", "Low HOA"]
+      },
+      "images": {
+        "hero": "/images/properties/gulf-breeze/hero.jpg",
+        "gallery": [
+          { "src": "/images/properties/gulf-breeze/view.jpg", "alt": "Gulf view from balcony", "category": "outdoor" },
+          { "src": "/images/properties/gulf-breeze/living.jpg", "alt": "Living area", "category": "interior" }
+        ]
+      },
+      "details": {
+        "propertyType": "Condo",
+        "construction": "Concrete",
+        "roof": "Flat",
+        "parking": "1 Assigned Space",
+        "hvac": "Central A/C",
+        "hoa": "$425/month"
+      },
+      "seo": {
+        "title": "Gulf Breeze Condo | Beachfront Condo for Sale in Port Aransas",
+        "description": "Updated 2BR beachfront condo with gulf views and community pool in Port Aransas, TX. $425,000. Great investment opportunity."
+      }
+    },
+    {
+      "id": "tidal-wave-house",
+      "slug": "tidal-wave-house",
+      "status": "active",
+      "featured": false,
+      "name": "Tidal Wave House",
+      "tagline": "Modern Beach Architecture",
+      "description": "Tidal Wave House showcases stunning contemporary architecture with its bold lines and walls of glass. This 4-bedroom modern masterpiece features an open floor plan, minimalist design, and seamless indoor-outdoor living with a spectacular pool.",
+      "shortDescription": "4BR contemporary home with striking modern design",
+      "location": {
+        "address": "321 Surf Drive",
+        "city": "Port Aransas",
+        "state": "TX",
+        "zip": "78373",
+        "coordinates": { "lat": 27.8301, "lng": -97.0625 },
+        "distanceToBeach": "250 ft",
+        "neighborhood": "Mustang Island"
+      },
+      "specs": {
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "sqft": 3400,
+        "lotSize": "0.2 acres",
+        "yearBuilt": 2022,
+        "floors": 2
+      },
+      "pricing": {
+        "listPrice": 1695000,
+        "pricePerSqft": 499,
+        "currency": "USD",
+        "status": "Active",
+        "daysOnMarket": 18
+      },
+      "features": {
+        "highlights": ["Modern Design", "Pool", "Floor-to-Ceiling Glass", "Smart Home"],
+        "outdoor": ["Geometric pool", "Sun deck", "Outdoor living room", "Gas grill"],
+        "indoor": ["Open concept living", "Chef's kitchen", "Integrated smart home"],
+        "investment": ["STR Zoned", "Architectural Showcase", "Premium Rates"]
+      },
+      "images": {
+        "hero": "/images/properties/tidal-wave/hero.jpg",
+        "gallery": [
+          { "src": "/images/properties/tidal-wave/exterior.jpg", "alt": "Modern exterior", "category": "outdoor" },
+          { "src": "/images/properties/tidal-wave/living.jpg", "alt": "Open living space", "category": "interior" },
+          { "src": "/images/properties/tidal-wave/pool.jpg", "alt": "Geometric pool", "category": "outdoor" }
+        ]
+      },
+      "details": {
+        "propertyType": "Single Family",
+        "construction": "Concrete/Steel",
+        "roof": "Flat/TPO",
+        "parking": "2 Car Garage",
+        "hvac": "Central A/C",
+        "hoa": "$200/month"
+      },
+      "seo": {
+        "title": "Tidal Wave House | Modern Beach Home for Sale in Port Aransas",
+        "description": "Striking 4BR contemporary home with bold modern design and geometric pool in Port Aransas, TX. $1,695,000."
+      }
+    },
+    {
+      "id": "pelican-point",
+      "slug": "pelican-point",
+      "status": "active",
+      "featured": false,
+      "name": "Pelican Point",
+      "tagline": "Classic Texas Beach Living",
+      "description": "Pelican Point embodies the spirit of classic Texas beach living. This 3-bedroom stilt home features a large deck, outdoor dining, and authentic coastal charm. Perfect for fishing enthusiasts with easy boat access and close to the jetties.",
+      "shortDescription": "3BR classic stilt home near fishing and jetties",
+      "location": {
+        "address": "654 Pelican Way",
+        "city": "Port Aransas",
+        "state": "TX",
+        "zip": "78373",
+        "coordinates": { "lat": 27.8268, "lng": -97.0601 },
+        "distanceToBeach": "500 ft",
+        "neighborhood": "Port Royal"
+      },
+      "specs": {
+        "bedrooms": 3,
+        "bathrooms": 2.5,
+        "sqft": 1800,
+        "lotSize": "0.1 acres",
+        "yearBuilt": 2010,
+        "floors": 2
+      },
+      "pricing": {
+        "listPrice": 595000,
+        "pricePerSqft": 331,
+        "currency": "USD",
+        "status": "Active",
+        "daysOnMarket": 60
+      },
+      "features": {
+        "highlights": ["Near Jetties", "Large Deck", "Boat Parking", "Fishing"],
+        "outdoor": ["Wraparound deck", "Fish cleaning station", "Outdoor shower", "Gas grill", "Boat parking"],
+        "indoor": ["Open kitchen", "Vaulted ceilings", "Impact windows"],
+        "investment": ["STR Zoned", "Fishing Community", "Value Opportunity"]
+      },
+      "images": {
+        "hero": "/images/properties/pelican-point/hero.jpg",
+        "gallery": [
+          { "src": "/images/properties/pelican-point/deck.jpg", "alt": "Spacious deck", "category": "outdoor" },
+          { "src": "/images/properties/pelican-point/living.jpg", "alt": "Coastal living room", "category": "interior" }
+        ]
+      },
+      "details": {
+        "propertyType": "Single Family",
+        "construction": "Wood Frame",
+        "roof": "Metal",
+        "parking": "Carport",
+        "hvac": "Central A/C",
+        "hoa": "None"
+      },
+      "seo": {
+        "title": "Pelican Point | Classic Beach House for Sale in Port Aransas",
+        "description": "Classic 3BR stilt home near fishing and jetties in Port Aransas, TX. $595,000. View listing."
+      }
+    },
+    {
+      "id": "starfish-landing",
+      "slug": "starfish-landing",
+      "status": "active",
+      "featured": false,
+      "name": "Starfish Landing",
+      "tagline": "Family Fun Headquarters",
+      "description": "Starfish Landing is designed with families in mind. This 5-bedroom home features a private pool with kid-friendly features, game room with arcade games, and a fully fenced yard. Walking distance to restaurants and the beach. Strong rental performer.",
+      "shortDescription": "5BR family home with kid-friendly pool and game room",
+      "location": {
+        "address": "432 Starfish Lane",
+        "city": "Port Aransas",
+        "state": "TX",
+        "zip": "78373",
+        "coordinates": { "lat": 27.8288, "lng": -97.0595 },
+        "distanceToBeach": "350 ft",
+        "neighborhood": "Old Town"
+      },
+      "specs": {
+        "bedrooms": 5,
+        "bathrooms": 4,
+        "sqft": 3600,
+        "lotSize": "0.18 acres",
+        "yearBuilt": 2019,
+        "floors": 2
+      },
+      "pricing": {
+        "listPrice": 1250000,
+        "pricePerSqft": 347,
+        "currency": "USD",
+        "status": "Active",
+        "daysOnMarket": 25
+      },
+      "features": {
+        "highlights": ["Kid-Friendly Pool", "Game Room", "Fenced Yard", "Walk to Beach"],
+        "outdoor": ["Pool with shallow end", "Fenced yard", "Outdoor dining", "Gas grill"],
+        "indoor": ["Game room with arcade", "Bunk rooms", "Open kitchen"],
+        "investment": ["STR Zoned", "$150K Rental History", "Family Favorite"]
+      },
+      "images": {
+        "hero": "/images/properties/starfish/hero.jpg",
+        "gallery": [
+          { "src": "/images/properties/starfish/pool.jpg", "alt": "Family-friendly pool", "category": "outdoor" },
+          { "src": "/images/properties/starfish/game.jpg", "alt": "Game room", "category": "interior" },
+          { "src": "/images/properties/starfish/bunk.jpg", "alt": "Kids bunk room", "category": "interior" }
+        ]
+      },
+      "details": {
+        "propertyType": "Single Family",
+        "construction": "Wood Frame",
+        "roof": "Metal",
+        "parking": "2 Car Garage",
+        "hvac": "Central A/C",
+        "hoa": "$175/month"
+      },
+      "seo": {
+        "title": "Starfish Landing | Family Beach House for Sale in Port Aransas",
+        "description": "Family-friendly 5BR home with kid pool and game room in Port Aransas, TX. $1,250,000. Investment opportunity."
+      }
+    },
+    {
+      "id": "ocean-mist-retreat",
+      "slug": "ocean-mist-retreat",
+      "status": "active",
+      "featured": false,
+      "name": "Ocean Mist Retreat",
+      "tagline": "Serenity by the Sea",
+      "description": "Ocean Mist Retreat offers a peaceful escape with its zen-inspired design and lush landscaping. This 3-bedroom oasis features a meditation garden, yoga deck, and spa-like bathrooms. Ideal for a wellness-focused primary residence or retreat property.",
+      "shortDescription": "3BR zen-inspired retreat with meditation garden and yoga deck",
+      "location": {
+        "address": "876 Tranquil Shore Drive",
+        "city": "Port Aransas",
+        "state": "TX",
+        "zip": "78373",
+        "coordinates": { "lat": 27.8335, "lng": -97.0618 },
+        "distanceToBeach": "200 ft",
+        "neighborhood": "Palmilla Beach"
+      },
+      "specs": {
+        "bedrooms": 3,
+        "bathrooms": 3.5,
+        "sqft": 2600,
+        "lotSize": "0.15 acres",
+        "yearBuilt": 2020,
+        "floors": 2
+      },
+      "pricing": {
+        "listPrice": 995000,
+        "pricePerSqft": 383,
+        "currency": "USD",
+        "status": "Active",
+        "daysOnMarket": 35
+      },
+      "features": {
+        "highlights": ["Meditation Garden", "Yoga Deck", "Spa Bathrooms", "Peaceful"],
+        "outdoor": ["Meditation garden", "Yoga deck", "Hot tub", "Zen landscaping", "Outdoor shower"],
+        "indoor": ["Spa-like bathrooms", "Rain showers", "Peaceful interiors", "Sound system"],
+        "investment": ["STR Zoned", "Wellness Retreat Potential", "Unique Property"]
+      },
+      "images": {
+        "hero": "/images/properties/ocean-mist/hero.jpg",
+        "gallery": [
+          { "src": "/images/properties/ocean-mist/garden.jpg", "alt": "Zen meditation garden", "category": "outdoor" },
+          { "src": "/images/properties/ocean-mist/spa.jpg", "alt": "Spa bathroom", "category": "interior" },
+          { "src": "/images/properties/ocean-mist/yoga.jpg", "alt": "Yoga deck", "category": "outdoor" }
+        ]
+      },
+      "details": {
+        "propertyType": "Single Family",
+        "construction": "Wood Frame",
+        "roof": "Metal",
+        "parking": "2 Car Garage",
+        "hvac": "Central A/C",
+        "hoa": "$225/month"
+      },
+      "seo": {
+        "title": "Ocean Mist Retreat | Zen Beach House for Sale in Port Aransas",
+        "description": "Zen-inspired 3BR retreat with meditation garden and spa bathrooms in Port Aransas, TX. $995,000."
+      }
+    },
+    {
+      "id": "captains-quarters",
+      "slug": "captains-quarters",
+      "status": "active",
+      "featured": false,
+      "name": "Captain's Quarters",
+      "tagline": "Nautical Charm, Modern Comfort",
+      "description": "Captain's Quarters combines classic nautical design with modern amenities. This 4-bedroom home features ship-inspired details, a crow's nest observation deck, and marina views. Perfect for boating enthusiasts with nearby slip access available.",
+      "shortDescription": "4BR nautical-themed home with crow's nest and marina views",
+      "location": {
+        "address": "555 Harbor View Road",
+        "city": "Port Aransas",
+        "state": "TX",
+        "zip": "78373",
+        "coordinates": { "lat": 27.8252, "lng": -97.0589 },
+        "distanceToBeach": "600 ft",
+        "neighborhood": "The Harbor"
+      },
+      "specs": {
+        "bedrooms": 4,
+        "bathrooms": 3.5,
+        "sqft": 2900,
+        "lotSize": "0.14 acres",
+        "yearBuilt": 2015,
+        "floors": 3
+      },
+      "pricing": {
+        "listPrice": 1095000,
+        "pricePerSqft": 378,
+        "currency": "USD",
+        "status": "Active",
+        "daysOnMarket": 42
+      },
+      "features": {
+        "highlights": ["Crow's Nest Deck", "Marina Views", "Nautical Design", "Boat Slip Access"],
+        "outdoor": ["Crow's nest observation deck", "Covered patio", "Fish cleaning station", "Gas grill"],
+        "indoor": ["Nautical themed decor", "Full kitchen", "Open living"],
+        "investment": ["STR Zoned", "Boater's Dream", "Unique Character"]
+      },
+      "images": {
+        "hero": "/images/properties/captains/hero.jpg",
+        "gallery": [
+          { "src": "/images/properties/captains/crowsnest.jpg", "alt": "Crow's nest deck", "category": "outdoor" },
+          { "src": "/images/properties/captains/living.jpg", "alt": "Nautical living room", "category": "interior" },
+          { "src": "/images/properties/captains/harbor.jpg", "alt": "Harbor views", "category": "outdoor" }
+        ]
+      },
+      "details": {
+        "propertyType": "Single Family",
+        "construction": "Wood Frame",
+        "roof": "Metal",
+        "parking": "2 Car Garage",
+        "hvac": "Central A/C",
+        "hoa": "$150/month"
+      },
+      "seo": {
+        "title": "Captain's Quarters | Nautical Beach House for Sale in Port Aransas",
+        "description": "Nautical-themed 4BR home with crow's nest and marina views in Port Aransas, TX. $1,095,000."
+      }
+    }
+  ],
+  "filters": {
+    "bedroomOptions": [1, 2, 3, 4, 5, "6+"],
+    "propertyTypes": [
+      { "id": "single-family", "label": "Single Family" },
+      { "id": "condo", "label": "Condo" },
+      { "id": "townhome", "label": "Townhome" }
+    ],
+    "featureFilters": [
+      { "id": "pool", "label": "Private Pool" },
+      { "id": "beachfront", "label": "Beachfront" },
+      { "id": "gulf-view", "label": "Gulf View" },
+      { "id": "str-zoned", "label": "STR Zoned" },
+      { "id": "new-construction", "label": "New Construction" },
+      { "id": "elevator", "label": "Elevator" }
+    ],
+    "priceRanges": [
+      { "id": "under-500k", "label": "Under $500K", "min": 0, "max": 500000 },
+      { "id": "500k-1m", "label": "$500K - $1M", "min": 500000, "max": 1000000 },
+      { "id": "1m-2m", "label": "$1M - $2M", "min": 1000000, "max": 2000000 },
+      { "id": "over-2m", "label": "$2M+", "min": 2000000, "max": null }
+    ]
+  }
+}

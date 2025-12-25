@@ -1,0 +1,42 @@
+{
+  "site": {
+    "name": "Port Aransas Real Estate",
+    "shortName": "PA Real Estate",
+    "tagline": "Beach Homes & Condos for Sale",
+    "description": "We help buyers and investors discover and inquire about beach homes and condos for sale in Port Aransas, Texas.",
+    "url": "https://portaransasrealestate.com"
+  },
+  "contact": {
+    "phone": "(361) 555-0123",
+    "email": "info@portaransasrealestate.com",
+    "address": {
+      "street": "456 Mustang Island Drive",
+      "city": "Port Aransas",
+      "state": "TX",
+      "zip": "78373"
+    },
+    "hours": "9am - 6pm CST, Mon-Sat",
+    "responseTime": "within 24 hours"
+  },
+  "social": {
+    "instagram": "https://instagram.com/portaransasrealestate",
+    "facebook": "https://facebook.com/portaransasrealestate"
+  },
+  "seo": {
+    "defaultTitle": "Port Aransas Real Estate | Homes & Condos for Sale",
+    "titleTemplate": "%s | Port Aransas Real Estate",
+    "defaultDescription": "Explore Port Aransas real estate including beachfront homes, condos, and investment properties. Request listings and connect with local experts.",
+    "ogImage": "/images/og-default.jpg"
+  },
+  "features": {
+    "totalListings": "50+",
+    "yearsExperience": 15,
+    "propertiesSold": "500+",
+    "marketExpertise": "Port Aransas Specialist"
+  },
+  "trust": {
+    "responseTime": "< 24 hours",
+    "clientSatisfaction": "98%",
+    "closedTransactions": 500
+  }
+}

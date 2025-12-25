@@ -1,0 +1,70 @@
+{
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "Sarah & Michael T.",
+      "location": "Austin, TX",
+      "property": "Beachfront Home Buyer",
+      "rating": 5,
+      "text": "We searched for over a year for the perfect Port Aransas beach home. The team's local knowledge was invaluable—they knew about a property before it even hit the market. We closed in 45 days and couldn't be happier.",
+      "date": "2024-11",
+      "featured": true
+    },
+    {
+      "id": "2",
+      "name": "Jennifer R.",
+      "location": "Houston, TX",
+      "property": "Investment Property Buyer",
+      "rating": 5,
+      "text": "As an investor, I needed someone who understood the STR regulations and rental potential. They helped me analyze properties and find one that's now generating $120K in annual rental income.",
+      "date": "2024-10",
+      "featured": true
+    },
+    {
+      "id": "3",
+      "name": "The Martinez Family",
+      "location": "Dallas, TX",
+      "property": "Second Home Buyer",
+      "rating": 5,
+      "text": "Buying a second home felt overwhelming at first. They walked us through every step, from financing options to property inspections. Our kids now ask every weekend when we're going to 'the beach house.'",
+      "date": "2024-09",
+      "featured": true
+    },
+    {
+      "id": "4",
+      "name": "Robert & Linda K.",
+      "location": "Denver, CO",
+      "property": "Condo Buyer",
+      "rating": 5,
+      "text": "We were buying remotely from Colorado and they made it seamless. Video tours, detailed market analysis, and constant communication. We got exactly what we wanted without ever setting foot in Port A until closing.",
+      "date": "2024-10",
+      "featured": true
+    },
+    {
+      "id": "5",
+      "name": "David W.",
+      "location": "San Antonio, TX",
+      "property": "Home Seller",
+      "rating": 5,
+      "text": "Sold our property in 3 weeks at asking price. Their marketing was exceptional—professional photography, drone footage, and they knew exactly how to position the property to attract serious buyers.",
+      "date": "2024-08",
+      "featured": false
+    },
+    {
+      "id": "6",
+      "name": "The Thompson Group",
+      "location": "Oklahoma City, OK",
+      "property": "Multi-Property Investor",
+      "rating": 5,
+      "text": "We've purchased three properties through them over the past two years. Each transaction was smooth, and they've helped us build a portfolio that generates consistent cash flow. True partners in our investment journey.",
+      "date": "2024-07",
+      "featured": true
+    }
+  ],
+  "stats": {
+    "propertiesSold": 500,
+    "yearsExperience": 15,
+    "clientSatisfaction": "98%",
+    "averageClosingTime": "42 days"
+  }
+}

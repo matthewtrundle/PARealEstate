@@ -1,0 +1,628 @@
+[
+  {
+    "slug": "families",
+    "title": "Raising a Family in Port Aransas",
+    "headline": "Where Kids Grow Up with Sand Between Their Toes",
+    "description": "Discover why Port Aransas is an ideal place to raise children, with excellent schools, safe beaches, and an outdoor lifestyle.",
+    "intro": "Imagine your kids growing up where the beach is the backyard, where fishing lessons happen after school, and where summer means endless days exploring tide pools. Port Aransas offers families a rare combination: small-town safety and community, excellent educational options, and an unparalleled outdoor lifestyle.",
+    "sections": [
+      {
+        "title": "Education Options",
+        "content": "Port Aransas ISD provides small class sizes and personalized attention through elementary school. For middle and high school, families typically choose Flour Bluff ISD (known for strong academics and athletics) or the highly-rated Calallen ISD. Private school options in Corpus Christi include Incarnate Word Academy and several other quality institutions.",
+        "highlights": ["Small class sizes in Port A elementary", "Access to Corpus Christi schools", "Strong athletic programs nearby", "Marine science opportunities through UT"]
+      },
+      {
+        "title": "Outdoor Lifestyle",
+        "content": "Children in Port Aransas grow up with nature as their playground. Beach days aren't special occasions—they're Tuesday afternoons. Kids learn to fish before they learn to ride bikes, discover marine biology in tide pools, and develop an appreciation for the outdoors that shapes their character.",
+        "highlights": ["Beach access minutes away", "Fishing and boating culture", "Wildlife encounters daily", "Active outdoor lifestyle"]
+      },
+      {
+        "title": "Community & Safety",
+        "content": "Port Aransas maintains a small-town feel where neighbors know each other and kids can safely explore. The community rallies around its young people, with local businesses supporting school events and residents volunteering for youth programs.",
+        "highlights": ["Tight-knit community", "Safe environment", "Low crime rates", "Involved neighbors"]
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Beach Lifestyle",
+        "description": "Your children grow up with the ocean as their playground, developing a connection to nature that stays with them for life.",
+        "icon": "beach"
+      },
+      {
+        "title": "Small Class Sizes",
+        "description": "Local elementary school offers personalized attention, with easy access to excellent middle and high school options.",
+        "icon": "school"
+      },
+      {
+        "title": "Safe Community",
+        "description": "The kind of small-town environment where kids can ride bikes to the beach and everyone knows your family.",
+        "icon": "shield"
+      },
+      {
+        "title": "Outdoor Education",
+        "description": "Unique opportunities for hands-on learning through UT Marine Science Institute, fishing, and nature exploration.",
+        "icon": "nature"
+      }
+    ],
+    "considerations": [
+      {
+        "title": "School Commute",
+        "description": "Middle and high school students typically attend schools in Corpus Christi, requiring a 20-30 minute commute."
+      },
+      {
+        "title": "Activities Off-Island",
+        "description": "Organized sports, dance studios, and some activities require trips to Corpus Christi."
+      }
+    ],
+    "testimonial": {
+      "quote": "Our kids have learned to fish, surf, and respect the ocean. They're growing up with experiences most kids only dream of. We wouldn't trade it for anything.",
+      "author": "The Mitchell Family",
+      "role": "Residents since 2018"
+    },
+    "relatedNeighborhoods": ["cinnamon-shore", "beachwalk"],
+    "relatedProperties": {
+      "type": "Single-family home",
+      "priceRange": "$500K - $1.2M",
+      "features": ["Multiple bedrooms", "Yard space", "Near beach access", "Community amenities"]
+    },
+    "seoKeywords": ["raising family port aransas", "schools port aransas", "family life port a", "moving to port aransas with kids"],
+    "faqs": [
+      {
+        "question": "What are the schools like?",
+        "answer": "Port Aransas ISD covers elementary. Most families choose Flour Bluff or Calallen ISD for middle/high school, both excellent districts with athletics and academics."
+      },
+      {
+        "question": "Are there activities for kids?",
+        "answer": "Endless beach activities, fishing, summer surf camps, and marine science programs. Organized sports typically in Corpus Christi."
+      }
+    ],
+    "callToAction": {
+      "title": "Find Your Family's Beach Home",
+      "description": "Browse family-friendly properties in Port Aransas's best neighborhoods for children.",
+      "buttonText": "View Family Homes",
+      "buttonLink": "/properties?type=single-family"
+    }
+  },
+  {
+    "slug": "retirees",
+    "title": "Retiring in Port Aransas",
+    "headline": "Your Coastal Retirement Paradise Awaits",
+    "description": "Why Port Aransas is the perfect retirement destination with low taxes, mild winters, active lifestyle, and welcoming community.",
+    "intro": "Picture your retirement: morning coffee watching dolphins in the channel, afternoon fishing from the jetties, sunset cocktails at a waterfront bar. Port Aransas offers retirees an active coastal lifestyle with no state income tax, mild winters, abundant recreation, and a welcoming community of like-minded residents.",
+    "sections": [
+      {
+        "title": "Tax Advantages",
+        "content": "Texas has no state income tax, making retirement income go further. Property taxes in Port Aransas are reasonable by Texas standards, and the low cost of living compared to coastal destinations in California or Florida makes your retirement savings last.",
+        "highlights": ["No state income tax", "Reasonable property taxes", "Lower cost than CA/FL coasts", "Affordable dining and recreation"]
+      },
+      {
+        "title": "Active Lifestyle",
+        "content": "Retirement here isn't about slowing down—it's about living actively. Fishing, kayaking, birdwatching, golf cart cruising, and beach walking keep retirees engaged. Many take up new hobbies like paddleboarding or photography, inspired by the natural beauty.",
+        "highlights": ["Fishing year-round", "Walking and beach time", "Golf cart lifestyle", "New hobbies to explore"]
+      },
+      {
+        "title": "Healthcare Access",
+        "content": "Corpus Christi, just 30 minutes away, provides excellent healthcare facilities including CHRISTUS Spohn hospitals and numerous specialty providers. Emergency services in Port Aransas are reliable, and non-emergency care is easily accessible.",
+        "highlights": ["Major hospitals 30 minutes", "Specialty care available", "Local emergency services", "Growing healthcare options"]
+      }
+    ],
+    "benefits": [
+      {
+        "title": "No State Income Tax",
+        "description": "Keep more of your retirement income with Texas's tax-friendly policies for retirees.",
+        "icon": "tax"
+      },
+      {
+        "title": "Mild Winters",
+        "description": "Escape harsh winters while enjoying four seasons. Average January high is 61°F.",
+        "icon": "weather"
+      },
+      {
+        "title": "Active Community",
+        "description": "Join a community of active retirees who fish, socialize, and enjoy life to the fullest.",
+        "icon": "community"
+      },
+      {
+        "title": "Affordable Paradise",
+        "description": "Coastal living at a fraction of California or Florida prices.",
+        "icon": "money"
+      }
+    ],
+    "testimonial": {
+      "quote": "We retired here from Minnesota and haven't looked back. I fish three days a week, we've made wonderful friends, and we save a fortune on taxes.",
+      "author": "Bob & Carol Johnson",
+      "role": "Retired 2020"
+    },
+    "relatedNeighborhoods": ["cinnamon-shore", "downtown"],
+    "relatedProperties": {
+      "type": "Condo or single-story home",
+      "priceRange": "$400K - $900K",
+      "features": ["Low maintenance", "Single story", "Community amenities", "Walkable location"]
+    },
+    "seoKeywords": ["retiring port aransas", "retirement texas coast", "retire beach texas", "port aransas retirees"],
+    "faqs": [
+      {
+        "question": "What's healthcare like?",
+        "answer": "Corpus Christi (30 minutes) has excellent hospitals and specialists. Local urgent care handles minor issues."
+      },
+      {
+        "question": "Is it affordable?",
+        "answer": "Yes—much more affordable than coastal CA or FL. No state income tax helps retirement income go further."
+      }
+    ],
+    "callToAction": {
+      "title": "Find Your Retirement Home",
+      "description": "Explore low-maintenance condos and single-story homes perfect for retirement.",
+      "buttonText": "View Retirement Properties",
+      "buttonLink": "/properties"
+    }
+  },
+  {
+    "slug": "remote-workers",
+    "title": "Working Remotely from Port Aransas",
+    "headline": "Your Home Office Could Have a Beach View",
+    "description": "Port Aransas offers the perfect work-from-home setup: reliable internet, inspiring views, and adventure waiting at 5 PM.",
+    "intro": "Why work from a gray cubicle when your office could overlook the Gulf? Port Aransas has emerged as a remote work paradise, offering reliable high-speed internet, affordable cost of living, and an instant adventure the moment you close your laptop. Join a growing community of digital nomads and remote professionals who've discovered this coastal secret.",
+    "sections": [
+      {
+        "title": "Connectivity",
+        "content": "Modern Port Aransas has solid internet infrastructure supporting video calls and remote work demands. Fiber and high-speed cable are available in developed areas. Many rentals and homes advertise their internet speeds, and co-working spots are emerging.",
+        "highlights": ["Fiber available in key areas", "High-speed cable widespread", "Coffee shops with WiFi", "Backup options available"]
+      },
+      {
+        "title": "Work-Life Balance",
+        "content": "The work-from-beach lifestyle is real. Start your day with sunrise beach yoga, take lunch at a waterfront restaurant, and close your laptop to fish, surf, or paddleboard. The balance that seemed impossible in the city happens naturally here.",
+        "highlights": ["Morning beach runs", "Waterfront lunch spots", "Sunset surf sessions", "True work-life balance"]
+      },
+      {
+        "title": "Community of Remote Workers",
+        "content": "You won't be alone. Port Aransas has attracted a community of remote workers, freelancers, and digital entrepreneurs. Informal meetups happen at coffee shops, and connections form easily among those who've made this lifestyle choice.",
+        "highlights": ["Growing remote worker community", "Informal networking", "Entrepreneurial spirit", "Shared lifestyle values"]
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Reliable Internet",
+        "description": "Modern infrastructure supports video calls, large file transfers, and demanding remote work.",
+        "icon": "wifi"
+      },
+      {
+        "title": "Low Cost of Living",
+        "description": "Your remote salary goes further here than in coastal California or New York.",
+        "icon": "money"
+      },
+      {
+        "title": "Adventure at 5 PM",
+        "description": "Close your laptop and be fishing, surfing, or at a beach bar within minutes.",
+        "icon": "adventure"
+      },
+      {
+        "title": "No State Income Tax",
+        "description": "Keep more of your remote income with Texas's tax-friendly policies.",
+        "icon": "tax"
+      }
+    ],
+    "testimonial": {
+      "quote": "I moved from Austin after going fully remote. My cost of living dropped, my quality of life skyrocketed, and I'm more productive because I'm happier.",
+      "author": "Sarah Chen",
+      "role": "Software Developer"
+    },
+    "relatedNeighborhoods": ["downtown", "cinnamon-shore"],
+    "relatedProperties": {
+      "type": "Condo or home with dedicated office",
+      "priceRange": "$350K - $700K",
+      "features": ["Home office space", "Strong internet", "Walkable location", "Balcony or patio"]
+    },
+    "seoKeywords": ["remote work port aransas", "work from beach texas", "digital nomad port aransas", "work from home beach"],
+    "faqs": [
+      {
+        "question": "How's the internet?",
+        "answer": "Solid—fiber and high-speed cable available. Most can handle video calls and demanding work. Check specific properties."
+      },
+      {
+        "question": "Is there a co-working space?",
+        "answer": "Informal options at coffee shops. No dedicated co-working yet, but growing demand."
+      }
+    ],
+    "callToAction": {
+      "title": "Find Your Beach Office",
+      "description": "Browse properties with home office potential and strong internet.",
+      "buttonText": "View Properties",
+      "buttonLink": "/properties"
+    }
+  },
+  {
+    "slug": "pets",
+    "title": "Living in Port Aransas with Pets",
+    "headline": "A Paradise for Four-Legged Friends",
+    "description": "Port Aransas is one of Texas's most pet-friendly destinations with dog beaches, pet-friendly restaurants, and outdoor adventures.",
+    "intro": "Port Aransas might be the most pet-friendly beach town in Texas. Dogs run on the beach, join you at restaurant patios, and become part of the community fabric. If your family includes four-legged members, this is a place where they're genuinely welcomed, not just tolerated.",
+    "sections": [
+      {
+        "title": "Beach Access",
+        "content": "Most Port Aransas beaches allow dogs, though leash rules vary by area and time. The sight of dogs romping in the surf is a daily occurrence. Many locals walk their dogs on the beach at sunrise, and pets quickly adapt to the beach lifestyle.",
+        "highlights": ["Dogs allowed on most beaches", "Sunrise beach walks common", "Plenty of running room", "Water-loving dogs thrive"]
+      },
+      {
+        "title": "Pet-Friendly Establishments",
+        "content": "Numerous restaurants feature dog-friendly patios where water bowls and treats are standard. The Salty Dog Gastropub is named for the canine community it welcomes. Bars, shops, and even some accommodations roll out the welcome mat for pets.",
+        "highlights": ["Patio dining with pets", "Pet-friendly bars", "Welcome at many shops", "Pet-friendly rentals available"]
+      },
+      {
+        "title": "Veterinary Care",
+        "content": "Port Aransas has local veterinary services for routine care, with specialty and emergency veterinary care available in Corpus Christi. The pet-owner community is helpful in recommending trusted vets.",
+        "highlights": ["Local vet available", "Emergency care in CC", "Pet supply shops", "Helpful pet owner community"]
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Beach Dogs Welcome",
+        "description": "Most beaches allow dogs, giving your pet the run of the sand and surf.",
+        "icon": "beach"
+      },
+      {
+        "title": "Pet-Friendly Dining",
+        "description": "Bring your dog to patio restaurants and bars throughout town.",
+        "icon": "restaurant"
+      },
+      {
+        "title": "Active Pet Life",
+        "description": "Walking trails, beach time, and outdoor adventures keep pets happy and healthy.",
+        "icon": "activity"
+      },
+      {
+        "title": "Pet Community",
+        "description": "Connect with other pet owners who share the coastal lifestyle.",
+        "icon": "community"
+      }
+    ],
+    "testimonial": {
+      "quote": "Our lab, Captain, has never been happier. Beach runs every morning, restaurant patios that welcome him, and new dog friends daily.",
+      "author": "The Martinez Family",
+      "role": "Residents since 2021"
+    },
+    "relatedNeighborhoods": ["downtown", "mustang-island"],
+    "relatedProperties": {
+      "type": "Home with yard",
+      "priceRange": "$400K - $800K",
+      "features": ["Fenced yard", "Near beach access", "Pet-friendly community", "Outdoor shower for sandy paws"]
+    },
+    "seoKeywords": ["pet friendly port aransas", "dogs port aransas", "dog beach texas", "living with pets port a"],
+    "faqs": [
+      {
+        "question": "Can dogs go on the beach?",
+        "answer": "Yes—most beaches allow dogs. Some areas have leash requirements, others don't. Always clean up after your pet."
+      },
+      {
+        "question": "Are there dog parks?",
+        "answer": "No dedicated dog parks, but the beach is the dog park. Plenty of room to run and play."
+      }
+    ],
+    "callToAction": {
+      "title": "Find Your Pet-Friendly Home",
+      "description": "Browse homes with yards and beach access perfect for pets.",
+      "buttonText": "View Pet-Friendly Properties",
+      "buttonLink": "/properties"
+    }
+  },
+  {
+    "slug": "fishing-life",
+    "title": "The Fishing Lifestyle in Port Aransas",
+    "headline": "Live Where Fishing Is a Way of Life",
+    "description": "Port Aransas is the Fishing Capital of Texas—for anglers, this is home.",
+    "intro": "Port Aransas earned its title as the 'Fishing Capital of Texas' through generations of anglers who've made these waters their life. For the avid fisherman, living here means wetting a line any day, learning from seasoned captains, and joining a community that understands the pull of the water.",
+    "sections": [
+      {
+        "title": "Year-Round Fishing",
+        "content": "Every month brings different opportunities. Spring means trout and redfish in the bays. Summer brings offshore king mackerel and mahi mahi. Fall is legendary for bull reds. Winter offers sheepshead and black drum. There's never not something biting.",
+        "highlights": ["Fish every day of the year", "Seasonal variety", "Multiple environments", "Always something biting"]
+      },
+      {
+        "title": "Fishing Community",
+        "content": "The fishing community in Port Aransas runs deep. Conversations at bait shops are fishing seminars. Local captains are walking encyclopedias. The culture celebrates the catch, respects the resource, and welcomes those who share the passion.",
+        "highlights": ["Knowledgeable locals", "Fishing-focused culture", "Tournaments and events", "Mentorship available"]
+      },
+      {
+        "title": "Access and Infrastructure",
+        "content": "Everything an angler needs is here: charter fleets, bait shops, boat launches, kayak access, wade fishing flats, piers, and jetties. Whether you fish from a center console or stand in the surf, infrastructure supports your pursuit.",
+        "highlights": ["Charter fleet", "Multiple boat ramps", "Bait and tackle shops", "Various fishing styles"]
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Fish Every Day",
+        "description": "When fishing is on your doorstep, every day is a potential fishing day.",
+        "icon": "fishing"
+      },
+      {
+        "title": "Fishing Community",
+        "description": "Join a community that shares your passion and speaks your language.",
+        "icon": "community"
+      },
+      {
+        "title": "Variety of Fishing",
+        "description": "Offshore, inshore, pier, jetty, surf, kayak—every style is accessible.",
+        "icon": "variety"
+      },
+      {
+        "title": "Learn from Legends",
+        "description": "Generations of fishing knowledge available from local captains and veterans.",
+        "icon": "learning"
+      }
+    ],
+    "testimonial": {
+      "quote": "I fished here for 20 years on vacations before moving. Now I fish three times a week and still can't believe this is my life.",
+      "author": "Mike Rodriguez",
+      "role": "Retired, Avid Angler"
+    },
+    "relatedNeighborhoods": ["downtown", "pirates-bay"],
+    "relatedProperties": {
+      "type": "Home with boat access",
+      "priceRange": "$500K - $1.5M",
+      "features": ["Boat slip or lift", "Near marina", "Fish cleaning station", "Easy water access"]
+    },
+    "seoKeywords": ["fishing lifestyle port aransas", "living fishing port a", "angler port aransas", "fishing capital texas"],
+    "callToAction": {
+      "title": "Find Your Angler's Home",
+      "description": "Browse properties with boat access and proximity to the water.",
+      "buttonText": "View Waterfront Properties",
+      "buttonLink": "/properties"
+    }
+  },
+  {
+    "slug": "boating",
+    "title": "The Boating Lifestyle in Port Aransas",
+    "headline": "For Those Who Live to Be on the Water",
+    "description": "Easy bay access, excellent marinas, and year-round boating make Port Aransas a boater's paradise.",
+    "intro": "For boaters, Port Aransas offers what landlocked dreams are made of: easy access to protected bays, the open Gulf, intercoastal waterways, and a network of marinas and facilities. Whether you own a center console, sailboat, or yacht, life on the water is always just steps away.",
+    "sections": [
+      {
+        "title": "Access and Marinas",
+        "content": "Port Aransas has multiple marinas offering wet slips, dry storage, and full-service facilities. The ship channel provides deep-water access to the Gulf, while protected bays offer calm cruising. Launch ramps accommodate boats of all sizes.",
+        "highlights": ["Multiple marina options", "Deep water Gulf access", "Protected bay cruising", "Launch ramps available"]
+      },
+      {
+        "title": "Boating Community",
+        "content": "The boating community here is welcoming and active. Yacht clubs organize regattas and social events. Fishermen share offshore reports. Cruisers connect for group outings. Whether racing, fishing, or cruising, you'll find your tribe.",
+        "highlights": ["Active yacht clubs", "Social boating events", "Fishing community", "Cruising groups"]
+      },
+      {
+        "title": "Year-Round Season",
+        "content": "Unlike northern destinations, boating in Port Aransas is genuinely year-round. Winter brings milder conditions but plenty of fishable days. Spring through fall is prime, with calm mornings and consistent conditions.",
+        "highlights": ["Year-round boating", "Mild winters", "Consistent conditions", "Long season"]
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Year-Round Access",
+        "description": "Boat twelve months a year with Texas's mild coastal climate.",
+        "icon": "calendar"
+      },
+      {
+        "title": "Gulf Access",
+        "description": "Deep water channel provides easy passage to the open Gulf.",
+        "icon": "ocean"
+      },
+      {
+        "title": "Marina Options",
+        "description": "Full-service marinas, wet slips, and dry storage available.",
+        "icon": "marina"
+      },
+      {
+        "title": "Boating Community",
+        "description": "Active clubs, events, and fellow boaters who share your passion.",
+        "icon": "community"
+      }
+    ],
+    "testimonial": {
+      "quote": "I keep my boat in the water year-round and use it almost weekly. The access here is unbeatable.",
+      "author": "Tom Wilson",
+      "role": "Sailboat Owner"
+    },
+    "relatedNeighborhoods": ["downtown", "pirates-bay"],
+    "relatedProperties": {
+      "type": "Waterfront with dock",
+      "priceRange": "$700K - $2M+",
+      "features": ["Private dock or slip", "Boat lift", "Deep water access", "Canal frontage"]
+    },
+    "seoKeywords": ["boating port aransas", "marina port aransas", "boat life texas coast", "waterfront living port a"],
+    "callToAction": {
+      "title": "Find Your Waterfront Property",
+      "description": "Browse homes with docks, slips, and water access.",
+      "buttonText": "View Waterfront Homes",
+      "buttonLink": "/properties?waterfront=true"
+    }
+  },
+  {
+    "slug": "snowbirds",
+    "title": "Snowbirding in Port Aransas",
+    "headline": "Escape the Cold—Winter on the Texas Coast",
+    "description": "Why Port Aransas is becoming a favorite destination for winter escapees seeking mild weather and low costs.",
+    "intro": "As northern states freeze, Port Aransas basks in mild winter sunshine. A growing community of 'snowbirds' has discovered this Texas coast secret—winters that rarely dip below 45°F, reasonable rental and home prices, and a welcoming community of fellow escapees. Leave the snow shovel behind.",
+    "sections": [
+      {
+        "title": "Winter Weather",
+        "content": "Port Aransas winters are genuinely mild. January averages 61°F for highs and rarely drops below 40°F. While it's too cool for Gulf swimming, beach walking, fishing, and outdoor activities continue comfortably. Cold fronts pass quickly.",
+        "highlights": ["Average high 61°F in January", "Rarely below 40°F", "Many outdoor activities", "Quick-passing fronts"]
+      },
+      {
+        "title": "Snowbird Community",
+        "content": "A sizable community of winter visitors has developed, creating social networks, informal groups, and a sense of belonging. Many return year after year, reconnecting with friends and establishing winter routines.",
+        "highlights": ["Growing snowbird community", "Recurring friendships", "Social activities", "Sense of belonging"]
+      },
+      {
+        "title": "Affordable Winter Living",
+        "content": "Winter is low season in Port Aransas, meaning better rates on rentals, fewer crowds at restaurants, and generally lower costs. Long-term winter rentals are available at reasonable rates.",
+        "highlights": ["Low-season rental rates", "Less crowded", "Lower dining costs", "Long-term rental options"]
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Mild Winters",
+        "description": "Trade snow and ice for 60-degree days and sunshine.",
+        "icon": "weather"
+      },
+      {
+        "title": "Affordable Escape",
+        "description": "Low-season rates make winter stays economical.",
+        "icon": "money"
+      },
+      {
+        "title": "Active Lifestyle",
+        "description": "Fishing, birding, and beach activities continue through winter.",
+        "icon": "activity"
+      },
+      {
+        "title": "Snowbird Community",
+        "description": "Join other winter escapees who've found this Texas secret.",
+        "icon": "community"
+      }
+    ],
+    "testimonial": {
+      "quote": "We've spent winters here for five years. We pay less than Arizona, the weather is just as nice, and we've made lifelong friends.",
+      "author": "Dave & Linda Thompson",
+      "role": "Snowbirds from Wisconsin"
+    },
+    "relatedNeighborhoods": ["downtown", "cinnamon-shore"],
+    "relatedProperties": {
+      "type": "Condo or furnished rental",
+      "priceRange": "$1,500 - $3,000/month winter rental",
+      "features": ["Furnished", "Short-term lease", "Utilities included", "Walkable location"]
+    },
+    "seoKeywords": ["snowbird port aransas", "winter texas coast", "escape cold texas", "winter rental port aransas"],
+    "callToAction": {
+      "title": "Plan Your Winter Escape",
+      "description": "Find long-term winter rentals or your own coastal retreat.",
+      "buttonText": "View Winter Properties",
+      "buttonLink": "/properties"
+    }
+  },
+  {
+    "slug": "beach-lifestyle",
+    "title": "The Beach Bum Life in Port Aransas",
+    "headline": "Flip-Flops Required, Stress Optional",
+    "description": "Embrace the casual, laid-back lifestyle where flip-flops are dress code and the beach is always calling.",
+    "intro": "Some people vacation at the beach. Others live it. Port Aransas offers an authentically casual lifestyle where flip-flops are acceptable everywhere, nobody's in a hurry, and the only schedule that matters is the tide chart. If you've ever dreamed of escaping the rat race for a simpler beach life, this is the place.",
+    "sections": [
+      {
+        "title": "Casual Culture",
+        "content": "There's no dress code in Port Aransas—not really. Flip-flops, shorts, and tank tops are the uniform. Fine dining means wearing shoes. The pressure to perform, impress, or keep up with the Joneses simply doesn't exist here.",
+        "highlights": ["No dress code", "Flip-flop lifestyle", "Low-pressure environment", "Authentic casual"]
+      },
+      {
+        "title": "Beach Time",
+        "content": "The beach isn't a special occasion—it's a daily option. Morning walks, afternoon swims, sunset drinks—the beach is woven into daily life. Many residents have beach chairs in their cars, ready for spontaneous sand time.",
+        "highlights": ["Daily beach access", "Spontaneous beach trips", "Beach as lifestyle", "Sunset as routine"]
+      },
+      {
+        "title": "Simple Pleasures",
+        "content": "Life slows down here. Coffee tastes better when you're watching pelicans. Conversations go longer when there's no hurry. The simple pleasures—good food, good drinks, good company—take center stage.",
+        "highlights": ["Slower pace", "Simple pleasures", "Present-moment living", "Less stress"]
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Low-Key Living",
+        "description": "Trade stress for salt air and rush hour for sunset hour.",
+        "icon": "relax"
+      },
+      {
+        "title": "Beach Every Day",
+        "description": "When the beach is minutes away, every day can be a beach day.",
+        "icon": "beach"
+      },
+      {
+        "title": "Casual Community",
+        "description": "Find your tribe among others who chose the laid-back life.",
+        "icon": "community"
+      },
+      {
+        "title": "Simple Living",
+        "description": "Focus on what matters—experiences, connections, nature.",
+        "icon": "simplicity"
+      }
+    ],
+    "testimonial": {
+      "quote": "I traded a corner office for a beach chair. People think I'm crazy. But I'm the happiest I've ever been.",
+      "author": "Jennifer Lake",
+      "role": "Former Corporate Executive"
+    },
+    "relatedNeighborhoods": ["downtown"],
+    "relatedProperties": {
+      "type": "Beach cottage or condo",
+      "priceRange": "$300K - $600K",
+      "features": ["Beach proximity", "Low maintenance", "Casual vibe", "Walkable to town"]
+    },
+    "seoKeywords": ["beach lifestyle port aransas", "casual living port a", "beach bum life texas", "simple living beach"],
+    "callToAction": {
+      "title": "Find Your Beach Home",
+      "description": "Browse casual cottages and condos perfect for the beach lifestyle.",
+      "buttonText": "View Beach Properties",
+      "buttonLink": "/properties"
+    }
+  },
+  {
+    "slug": "investment-owners",
+    "title": "Owning Investment Property in Port Aransas",
+    "headline": "Your Beach Investment That Pays for Itself",
+    "description": "Port Aransas investment properties offer strong vacation rental returns with personal use benefits.",
+    "intro": "Port Aransas investment properties offer something rare: strong rental returns AND a personal beach retreat. The tourism-driven economy keeps vacation rentals in high demand, while you maintain a place to escape whenever you want. Many owners find their properties pay for themselves while building equity in paradise.",
+    "sections": [
+      {
+        "title": "Rental Market",
+        "content": "Port Aransas draws visitors year-round, with summer peak season driving premium rates. Spring breakers, fall fishermen, winter snowbirds, and weekend warriors create demand across all seasons. Professional management makes remote ownership practical.",
+        "highlights": ["Year-round demand", "Summer peak rates", "Diverse visitor base", "Professional management available"]
+      },
+      {
+        "title": "Return Potential",
+        "content": "Well-positioned properties can generate 6-10% gross returns, with some premium properties exceeding that. The key is location, amenities, and professional marketing. Many owners cover mortgage, taxes, and HOA with rental income.",
+        "highlights": ["6-10% gross returns possible", "Premium properties higher", "Cover carrying costs", "Build equity"]
+      },
+      {
+        "title": "Personal Use",
+        "content": "Unlike pure investments, vacation rental ownership gives you a beach home. Block personal use during off-peak periods, keep a closet for your gear, and enjoy your investment firsthand. It's an investment that improves your life.",
+        "highlights": ["Personal use periods", "Beach home for you", "Best of both worlds", "Lifestyle investment"]
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Strong Returns",
+        "description": "Vacation rental demand generates income that can cover carrying costs.",
+        "icon": "returns"
+      },
+      {
+        "title": "Personal Beach Home",
+        "description": "Keep a place at the beach for your own escapes.",
+        "icon": "home"
+      },
+      {
+        "title": "Equity Building",
+        "description": "Build wealth in a tangible asset while others pay the mortgage.",
+        "icon": "equity"
+      },
+      {
+        "title": "Tax Benefits",
+        "description": "Rental properties offer depreciation and expense deductions.",
+        "icon": "tax"
+      }
+    ],
+    "testimonial": {
+      "quote": "Our condo covers its costs and gave us six weeks of beach time last year. Best investment we ever made.",
+      "author": "The Garcias",
+      "role": "Investment Owners"
+    },
+    "relatedNeighborhoods": ["cinnamon-shore", "beachwalk"],
+    "relatedProperties": {
+      "type": "Condo or beach house",
+      "priceRange": "$400K - $1M+",
+      "features": ["Beach access", "Pool or amenities", "Rental proven", "Management available"]
+    },
+    "seoKeywords": ["investment property port aransas", "vacation rental port a", "beach investment texas", "rental income port aransas"],
+    "callToAction": {
+      "title": "Explore Investment Properties",
+      "description": "Find properties with proven rental history and income potential.",
+      "buttonText": "View Investment Properties",
+      "buttonLink": "/properties"
+    }
+  }
+]

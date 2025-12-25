@@ -1,0 +1,266 @@
+[
+  {
+    "slug": "sandfest",
+    "name": "Texas SandFest",
+    "category": "festival",
+    "description": "World-class sand sculpture competition featuring master sculptors from around the globe.",
+    "longDescription": "Texas SandFest is one of the largest sand sculpture competitions in the United States, drawing master sculptors from around the world to create incredible temporary art on Port Aransas beaches. The three-day event features competition categories, amateur sculpting areas, live music, food vendors, and activities for all ages. The sculptures—some towering over 10 feet—are breathtaking feats of art and engineering.",
+    "recurring": {
+      "frequency": "annual",
+      "month": "April"
+    },
+    "location": "Port Aransas Beach",
+    "duration": "3 days",
+    "cost": "Free beach viewing, VIP packages available",
+    "website": "https://texassandfest.org",
+    "highlights": ["Master sand sculptors", "Amateur competition", "Live music", "Food vendors", "Art demonstrations"],
+    "whatToExpect": ["Massive sand sculptures", "Competition viewing", "Interactive art areas", "Beach festival atmosphere", "Photo opportunities"],
+    "tips": ["Arrive early for parking", "Bring sunscreen", "Best sculptures completed by Saturday", "Weekend is busiest"],
+    "history": "SandFest began in 1997 and has grown into one of the premier sand sculpture events in the country, attracting tens of thousands of visitors annually.",
+    "seoKeywords": ["sandfest port aransas", "sand sculpture competition", "texas sandfest", "port aransas festival"],
+    "relatedEvents": ["fourth-of-july", "deep-sea-roundup"],
+    "nearbyPlaces": ["beach-access-1", "pelican-lounge"]
+  },
+  {
+    "slug": "deep-sea-roundup",
+    "name": "Deep Sea Roundup",
+    "category": "fishing-tournament",
+    "description": "Texas's oldest fishing tournament, celebrating over 90 years of offshore fishing tradition.",
+    "longDescription": "The Deep Sea Roundup is Texas's oldest fishing tournament, dating back to 1932. This multi-day offshore fishing competition attracts hundreds of anglers competing for prizes in categories including kingfish, tarpon, ling, and more. The weigh-ins are spectacles themselves, with crowds gathering at the marina to see the day's catches.",
+    "recurring": {
+      "frequency": "annual",
+      "month": "July"
+    },
+    "location": "Port Aransas Marina",
+    "duration": "3 days",
+    "cost": "Entry fee for competitors; spectating free",
+    "highlights": ["90+ year tradition", "Major prize money", "Exciting weigh-ins", "Marina atmosphere", "Fishing culture celebration"],
+    "whatToExpect": ["Boat parade", "Daily weigh-ins", "Crowd excitement", "Trophy fish displays", "Fishing vendor village"],
+    "tips": ["Watch the weigh-ins (usually 4-6 PM)", "Marina area gets crowded", "Book fishing charters months ahead", "Great spectator event"],
+    "history": "Started in 1932, the Deep Sea Roundup is the oldest fishing tournament in Texas, helping establish Port Aransas as the 'Fishing Capital of Texas.'",
+    "seoKeywords": ["deep sea roundup", "fishing tournament port aransas", "oldest texas fishing tournament"],
+    "relatedEvents": ["texas-legends-billfish"],
+    "nearbyPlaces": ["deep-sea-fishing-charters", "fishermans-wharf-bar"]
+  },
+  {
+    "slug": "fourth-of-july",
+    "name": "Fourth of July Celebration",
+    "category": "holiday",
+    "description": "Independence Day festivities with beach parties, parade, and spectacular fireworks over the Gulf.",
+    "longDescription": "Port Aransas celebrates Independence Day with Texas-sized enthusiasm. The festivities include a beach parade, sand castle competitions, live music, and the crown jewel—a massive fireworks display launched over the Gulf. The beach fills with families, the bars fill with revelers, and the sky fills with color.",
+    "recurring": {
+      "frequency": "annual",
+      "month": "July"
+    },
+    "location": "Downtown Port Aransas and beaches",
+    "duration": "1 day (fireworks at dusk)",
+    "cost": "Free",
+    "highlights": ["Beach fireworks", "Golf cart parade", "Live music", "Beach parties", "Community celebration"],
+    "whatToExpect": ["Crowded beaches", "Festive atmosphere", "Fireworks over water", "Parade down main street", "Restaurant specials"],
+    "tips": ["Book lodging months in advance", "Arrive early for beach parking", "Bring lawn chairs for fireworks", "Traffic heavy all day"],
+    "seoKeywords": ["fourth of july port aransas", "july 4th port aransas", "fireworks port a", "independence day beach texas"],
+    "relatedEvents": ["sandfest", "deep-sea-roundup"]
+  },
+  {
+    "slug": "texas-legends-billfish",
+    "name": "Texas Legends Billfish Tournament",
+    "category": "fishing-tournament",
+    "description": "Premier billfish tournament targeting marlin, sailfish, and other pelagic species.",
+    "longDescription": "The Texas Legends Billfish Tournament brings serious offshore anglers to Port Aransas for world-class billfish competition. Teams target blue marlin, white marlin, sailfish, and other pelagic species in Gulf waters. The tournament features significant prize money and attracts top boats from across the region.",
+    "recurring": {
+      "frequency": "annual",
+      "month": "August"
+    },
+    "location": "Port Aransas Marina",
+    "duration": "3 days",
+    "cost": "Entry fee for competitors; spectating free",
+    "highlights": ["Billfish focus", "Premium tournament", "Exciting weigh-ins", "Top fishing boats", "Significant prizes"],
+    "whatToExpect": ["Impressive vessels", "Billfish weigh-ins", "Offshore fishing culture", "Evening celebrations", "Fishing industry presence"],
+    "tips": ["Watch boats depart at dawn", "Weigh-ins are exciting", "Great for fishing enthusiasts", "Book accommodations early"],
+    "seoKeywords": ["billfish tournament port aransas", "marlin fishing texas", "texas legends billfish"],
+    "relatedEvents": ["deep-sea-roundup"]
+  },
+  {
+    "slug": "whooping-crane-festival",
+    "name": "Whooping Crane Festival",
+    "category": "nature",
+    "description": "Celebration of the endangered whooping crane's winter residence with tours, speakers, and birding.",
+    "longDescription": "The Whooping Crane Festival celebrates the return of these magnificent endangered birds to their winter home at Aransas National Wildlife Refuge. The multi-day event features boat tours to view the cranes, expert speakers, birding workshops, and nature photography opportunities. It's a must for birders and nature enthusiasts.",
+    "recurring": {
+      "frequency": "annual",
+      "month": "February"
+    },
+    "location": "Port Aransas and Aransas National Wildlife Refuge",
+    "duration": "3 days",
+    "cost": "Varies by activity; some free",
+    "highlights": ["Whooping crane viewing", "Expert speakers", "Boat tours", "Photography workshops", "Nature celebration"],
+    "whatToExpect": ["Guided crane tours", "Educational presentations", "Birding activities", "Conservation focus", "Nature enthusiast community"],
+    "tips": ["Book boat tours early—they sell out", "Bring binoculars and camera", "Dress in layers for boat tours", "Reserve lodging well ahead"],
+    "seoKeywords": ["whooping crane festival", "whooping cranes port aransas", "birding festival texas", "crane watching texas"],
+    "relatedEvents": ["spring-migration"]
+  },
+  {
+    "slug": "harvest-moon-regatta",
+    "name": "Harvest Moon Regatta",
+    "category": "sailing",
+    "description": "Overnight sailing race from Galveston to Port Aransas—one of the largest regattas in the country.",
+    "longDescription": "The Harvest Moon Regatta is an overnight sailing race from Galveston to Port Aransas, one of the largest point-to-point regattas in the United States. Hundreds of sailboats make the 150+ nautical mile journey, arriving in Port Aransas to celebration and fanfare. The finish party is legendary.",
+    "recurring": {
+      "frequency": "annual",
+      "month": "October"
+    },
+    "location": "Port Aransas Marina (finish)",
+    "duration": "Race overnight; celebration continues",
+    "cost": "Free to watch; entry fee for racers",
+    "highlights": ["Hundreds of sailboats", "Overnight race", "Finish line excitement", "Legendary party", "Sailing community"],
+    "whatToExpect": ["Boats arriving throughout day", "Finish line celebration", "Sailor reunions", "Marina festivities", "Nautical atmosphere"],
+    "tips": ["Watch boats arrive morning and afternoon", "Marina area is festive", "Great photo opportunities", "Join the celebration atmosphere"],
+    "seoKeywords": ["harvest moon regatta", "sailing race port aransas", "regatta texas coast", "sailboat race galveston port aransas"],
+    "relatedEvents": []
+  },
+  {
+    "slug": "spring-break",
+    "name": "Spring Break Season",
+    "category": "seasonal",
+    "description": "Annual influx of spring breakers bringing energy, crowds, and beach party atmosphere.",
+    "longDescription": "Spring Break transforms Port Aransas with an influx of families, college students, and sun-seekers escaping winter. March sees crowds peak, especially during Texas Week when most Texas schools are on break. The beach buzzes with activity, restaurants are packed, and the town embraces the energy.",
+    "recurring": {
+      "frequency": "annual",
+      "month": "March"
+    },
+    "location": "Throughout Port Aransas",
+    "duration": "Throughout March",
+    "cost": "N/A",
+    "highlights": ["Beach crowds", "Festive atmosphere", "Family activities", "Extended hours", "Full restaurants"],
+    "whatToExpect": ["Crowded beaches", "Higher prices", "Wait times at restaurants", "Booking challenges", "Energy and excitement"],
+    "tips": ["Book months in advance", "Texas Week is busiest", "Expect higher prices", "Patience required for crowds"],
+    "seoKeywords": ["spring break port aransas", "texas spring break beach", "march port aransas"],
+    "relatedEvents": ["sandfest"]
+  },
+  {
+    "slug": "lighted-boat-parade",
+    "name": "Lighted Boat Parade",
+    "category": "holiday",
+    "description": "Festive holiday boat parade with decorated vessels lighting up the harbor.",
+    "longDescription": "The Lighted Boat Parade brings holiday magic to the water as boat owners decorate their vessels with lights, themes, and creativity. The parade winds through the harbor while spectators watch from shore, enjoying the festive display. It's a beloved local tradition that kicks off the holiday season.",
+    "recurring": {
+      "frequency": "annual",
+      "month": "December"
+    },
+    "location": "Port Aransas Harbor",
+    "duration": "1 evening",
+    "cost": "Free to watch",
+    "highlights": ["Decorated boats", "Holiday lights", "Harbor viewing", "Community tradition", "Festive atmosphere"],
+    "whatToExpect": ["Boats with lights and decorations", "Creative themes", "Shore viewing spots", "Hot cocoa weather", "Community gathering"],
+    "tips": ["Arrive early for good viewing spot", "Roberts Point Park is popular", "Dress warmly", "Bring hot drinks"],
+    "seoKeywords": ["lighted boat parade port aransas", "christmas boat parade texas", "holiday events port aransas"],
+    "relatedEvents": ["christmas-events"]
+  },
+  {
+    "slug": "beachcombers-bash",
+    "name": "Beachcombers Bash",
+    "category": "community",
+    "description": "Community celebration with beach clean-up, local vendors, and family activities.",
+    "longDescription": "Beachcombers Bash combines community service with celebration. The event begins with a beach clean-up effort, followed by vendor markets, food, music, and family activities. It's Port Aransas at its community-minded best—taking care of the beach that takes care of us.",
+    "recurring": {
+      "frequency": "annual",
+      "month": "October"
+    },
+    "location": "Port Aransas Beach",
+    "duration": "1 day",
+    "cost": "Free",
+    "highlights": ["Beach cleanup", "Local vendors", "Live music", "Family activities", "Community spirit"],
+    "whatToExpect": ["Morning cleanup", "Vendor market", "Food and drinks", "Kids activities", "Environmental focus"],
+    "tips": ["Bring gloves for cleanup", "Family-friendly all day", "Support local vendors", "Good community introduction"],
+    "seoKeywords": ["beachcombers bash port aransas", "beach cleanup event port a", "community event port aransas"]
+  },
+  {
+    "slug": "fishing-fiesta",
+    "name": "Fishing Fiesta",
+    "category": "fishing-tournament",
+    "description": "Family-friendly fishing tournament with kids division and community celebration.",
+    "longDescription": "Fishing Fiesta is Port Aransas's family-friendly fishing tournament, featuring divisions for kids and adults. The event celebrates the fishing culture that defines Port Aransas while welcoming newcomers to the sport. Weigh-ins, prizes, and festivities create a community atmosphere.",
+    "recurring": {
+      "frequency": "annual",
+      "month": "May"
+    },
+    "location": "Port Aransas Marina",
+    "duration": "2 days",
+    "cost": "Entry fee; spectating free",
+    "highlights": ["Kids division", "Family-friendly", "Community event", "Fishing introduction", "Prizes for all levels"],
+    "whatToExpect": ["Fishing competition", "Kids activities", "Weigh-ins", "Community celebration", "Family atmosphere"],
+    "tips": ["Great for first-time anglers", "Sign kids up early", "Spectating is fun too", "Community-focused"],
+    "seoKeywords": ["fishing fiesta port aransas", "kids fishing tournament port a", "family fishing event"]
+  },
+  {
+    "slug": "art-center-shows",
+    "name": "Port Aransas Art Center Shows",
+    "category": "arts",
+    "description": "Rotating art exhibitions and gallery events showcasing local and regional artists.",
+    "longDescription": "The Port Aransas Art Center hosts rotating exhibitions throughout the year, showcasing local artists, regional talent, and themed collections. Opening receptions, artist talks, and workshops add depth to the visual arts experience. The center is a cultural anchor for the community.",
+    "recurring": {
+      "frequency": "monthly"
+    },
+    "location": "Port Aransas Art Center",
+    "duration": "Exhibitions last 4-6 weeks",
+    "cost": "Free admission",
+    "highlights": ["Local artists", "Rotating exhibitions", "Opening receptions", "Workshops", "Coastal-inspired art"],
+    "whatToExpect": ["Gallery exhibitions", "Artist talks", "Opening receptions", "Art workshops", "Gift shop"],
+    "tips": ["Check current exhibition schedule", "Opening receptions are social", "Free admission", "Workshops require registration"],
+    "seoKeywords": ["art center port aransas", "art gallery port a", "local art exhibitions"]
+  },
+  {
+    "slug": "farmers-market",
+    "name": "Port Aransas Farmers Market",
+    "category": "community",
+    "description": "Weekly farmers market with local produce, artisan goods, and community gathering.",
+    "longDescription": "The Port Aransas Farmers Market brings local farmers, artisans, and food vendors together weekly. Fresh Gulf seafood, local produce, handmade crafts, and prepared foods create a vibrant community gathering. It's where locals shop and visitors discover local flavors.",
+    "recurring": {
+      "frequency": "weekly",
+      "dayOfWeek": "Saturday"
+    },
+    "location": "Downtown Port Aransas",
+    "duration": "Morning hours",
+    "cost": "Free admission",
+    "highlights": ["Fresh produce", "Local seafood", "Artisan goods", "Prepared foods", "Community gathering"],
+    "whatToExpect": ["Vendor booths", "Fresh produce", "Local crafts", "Food vendors", "Social atmosphere"],
+    "tips": ["Arrive early for best selection", "Bring cash", "Bring reusable bags", "Saturdays only"],
+    "seoKeywords": ["farmers market port aransas", "local produce port a", "saturday market port aransas"]
+  },
+  {
+    "slug": "music-on-the-beach",
+    "name": "Music on the Beach Concert Series",
+    "category": "entertainment",
+    "description": "Free summer concert series with live music on the beach.",
+    "longDescription": "Music on the Beach brings live performances to the sand throughout summer. These free concerts feature local and regional bands playing everything from country to rock to beach music. Bring your chairs, coolers, and dancing shoes for sunset entertainment.",
+    "recurring": {
+      "frequency": "weekly",
+      "dayOfWeek": "Thursday"
+    },
+    "location": "Port Aransas Beach",
+    "duration": "Summer evenings",
+    "cost": "Free",
+    "highlights": ["Live music", "Beach setting", "Free admission", "Sunset timing", "Family-friendly"],
+    "whatToExpect": ["Live bands", "Beach setting", "Bring your own seating", "Dancing encouraged", "Sunset vibes"],
+    "tips": ["Bring beach chairs", "BYOB usually allowed", "Arrive for sunset", "Family-friendly event"],
+    "seoKeywords": ["beach concert port aransas", "live music beach port a", "summer concerts port aransas"]
+  },
+  {
+    "slug": "new-years-eve",
+    "name": "New Year's Eve Celebration",
+    "category": "holiday",
+    "description": "Ring in the New Year with beach fireworks and downtown festivities.",
+    "longDescription": "Port Aransas welcomes the New Year with celebrations throughout town. Restaurants host special dinners, bars throw parties, and the countdown culminates with fireworks over the Gulf. It's a festive but relatively intimate celebration compared to big-city chaos.",
+    "recurring": {
+      "frequency": "annual",
+      "month": "December"
+    },
+    "location": "Downtown and beaches",
+    "duration": "1 evening",
+    "cost": "Varies by venue",
+    "highlights": ["Beach fireworks", "Restaurant specials", "Bar parties", "Intimate celebration", "Gulf backdrop"],
+    "whatToExpect": ["Special dinner menus", "Bar celebrations", "Midnight fireworks", "Festive atmosphere", "Easy parking"],
+    "tips": ["Make dinner reservations early", "Bars get crowded late", "Beach fireworks at midnight", "Taxis limited—plan ahead"],
+    "seoKeywords": ["new years eve port aransas", "nye celebration port a", "new years fireworks port aransas"]
+  }
+]

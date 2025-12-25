@@ -1,0 +1,585 @@
+[
+  {
+    "slug": "best-restaurants",
+    "title": "Best Restaurants in Port Aransas",
+    "category": "dining",
+    "description": "From casual beach shacks to upscale waterfront dining, discover the best restaurants Port Aransas has to offer.",
+    "intro": "Port Aransas's dining scene punches well above its weight for a small beach town. Whether you're craving fresh-off-the-boat Gulf seafood, authentic Tex-Mex, or a fine dining experience with bay views, you'll find it here. We've eaten our way through town to bring you the definitive guide to the best restaurants in Port A.",
+    "items": [
+      {
+        "rank": 1,
+        "name": "Shells Pasta & Seafood",
+        "slug": "shells-pasta-seafood",
+        "description": "Upscale-casual Italian-Gulf fusion with fresh pasta and an excellent wine list.",
+        "highlights": ["House-made pasta daily", "Extensive wine list", "Gulf seafood with Italian preparations"],
+        "priceRange": "$$$",
+        "bestFor": "Special occasion dinners"
+      },
+      {
+        "rank": 2,
+        "name": "Snoopy's Pier",
+        "slug": "snoopys-pier",
+        "description": "Iconic waterfront spot with sunset views and classic Gulf seafood.",
+        "highlights": ["Legendary sunsets", "Dolphin watching from tables", "Famous fried shrimp baskets"],
+        "priceRange": "$$",
+        "bestFor": "Sunset dining"
+      },
+      {
+        "rank": 3,
+        "name": "Lisabella's Bistro",
+        "slug": "lisabellas-bistro",
+        "description": "Intimate chef-owned bistro with creative American-French cuisine.",
+        "highlights": ["Chef-owned kitchen", "BYOB wine policy", "Seasonal menu"],
+        "priceRange": "$$$",
+        "bestFor": "Romantic dinners"
+      },
+      {
+        "rank": 4,
+        "name": "The Gaff",
+        "slug": "gaff-restaurant",
+        "description": "Marina-view dining with Gulf-to-table seafood and craft cocktails.",
+        "highlights": ["Marina views", "Craft cocktail program", "Fresh daily catches"],
+        "priceRange": "$$$",
+        "bestFor": "Waterfront cocktails and dinner"
+      },
+      {
+        "rank": 5,
+        "name": "Virginia's on the Bay",
+        "slug": "virginia-seafood",
+        "description": "Classic Texas seafood house with bay views and honest cooking.",
+        "highlights": ["Bay views", "Family-owned tradition", "Famous seafood gumbo"],
+        "priceRange": "$$",
+        "bestFor": "Traditional seafood"
+      }
+    ],
+    "tips": ["Reservations recommended for upscale spots, especially weekends", "Many restaurants close Mondays or Tuesdays in off-season", "Cash still preferred at some casual spots"],
+    "seoKeywords": ["best restaurants port aransas", "where to eat port a", "top dining port aransas"],
+    "lastUpdated": "2025-01",
+    "relatedLists": ["best-seafood", "best-breakfast", "best-happy-hour"]
+  },
+  {
+    "slug": "best-seafood",
+    "title": "Best Seafood in Port Aransas",
+    "category": "dining",
+    "description": "Fresh from the Gulf to your plate—the best seafood restaurants and dishes in Port Aransas.",
+    "intro": "You're on the Texas coast—of course you want seafood. Port Aransas fishing boats bring in catches daily, and the best restaurants turn that fresh bounty into memorable meals. From no-frills shrimp baskets to elegant preparations worth traveling for, here's where to find the best seafood in Port A.",
+    "items": [
+      {
+        "rank": 1,
+        "name": "Billy's Seafood",
+        "slug": "billys-seafood",
+        "description": "Buy fish right where boats unload or have it cooked fresh.",
+        "highlights": ["Ultra-fresh from the boats", "Market and restaurant", "Cooked to order"],
+        "priceRange": "$$",
+        "bestFor": "Freshest possible fish"
+      },
+      {
+        "rank": 2,
+        "name": "Deep Sea Headquarters",
+        "slug": "deep-sea-headquarters",
+        "description": "Right at the marina, serving what came in that day.",
+        "highlights": ["Marina location", "Watch boats unload", "Big portions"],
+        "priceRange": "$$",
+        "bestFor": "After fishing trip meal"
+      },
+      {
+        "rank": 3,
+        "name": "Moby Dick's",
+        "slug": "moby-dicks",
+        "description": "Famous oyster bar with fresh-shucked raw bar.",
+        "highlights": ["Oysters shucked to order", "Casual atmosphere", "Cold beer"],
+        "priceRange": "$$",
+        "bestFor": "Raw oysters"
+      },
+      {
+        "rank": 4,
+        "name": "Port Aransas Seafood Company",
+        "slug": "seafood-company",
+        "description": "Family-friendly spot with generous portions of Gulf classics.",
+        "highlights": ["Huge portions", "Family-friendly", "Classic preparations"],
+        "priceRange": "$$",
+        "bestFor": "Families"
+      }
+    ],
+    "tips": ["Ask what came in today—daily specials are often the best", "Gulf shrimp are sweeter than imported", "Spring and fall have best variety"],
+    "seoKeywords": ["best seafood port aransas", "fresh fish port a", "oysters port aransas", "shrimp port aransas"],
+    "lastUpdated": "2025-01",
+    "relatedLists": ["best-restaurants", "best-waterfront-dining"]
+  },
+  {
+    "slug": "best-breakfast",
+    "title": "Best Breakfast in Port Aransas",
+    "category": "dining",
+    "description": "Start your beach day right with the best breakfast spots in Port Aransas.",
+    "intro": "Whether you're fueling up before a fishing trip, recovering from last night's beach bars, or enjoying a lazy vacation morning, Port Aransas has breakfast covered. From classic diners to trendy cafes, here's where to find the best morning meals.",
+    "items": [
+      {
+        "rank": 1,
+        "name": "The Donut Hole",
+        "slug": "donut-hole",
+        "description": "Beloved institution since 1984 with legendary donuts and kolaches.",
+        "highlights": ["Fresh donuts daily", "Famous kolaches", "Opens 5 AM", "Local institution"],
+        "priceRange": "$",
+        "bestFor": "Early morning fuel"
+      },
+      {
+        "rank": 2,
+        "name": "Beach Lodge Restaurant",
+        "slug": "beach-lodge-restaurant",
+        "description": "Old-school diner with massive omelets and friendly staff.",
+        "highlights": ["Huge omelets", "Diner vibes", "Great prices"],
+        "priceRange": "$",
+        "bestFor": "Big breakfast"
+      },
+      {
+        "rank": 3,
+        "name": "Coffee Waves",
+        "slug": "coffee-waves",
+        "description": "Surf-themed coffee shop with excellent espresso and breakfast.",
+        "highlights": ["House-roasted coffee", "Fresh pastries", "Good WiFi"],
+        "priceRange": "$",
+        "bestFor": "Coffee and light breakfast"
+      }
+    ],
+    "tips": ["Get to Donut Hole early—they sell out", "Weekend mornings are busy everywhere", "Some spots cash only"],
+    "seoKeywords": ["best breakfast port aransas", "donuts port a", "brunch port aransas"],
+    "lastUpdated": "2025-01",
+    "relatedLists": ["best-restaurants", "best-coffee"]
+  },
+  {
+    "slug": "best-bars",
+    "title": "Best Bars in Port Aransas",
+    "category": "nightlife",
+    "description": "From beach bars to dive bars to rooftop lounges—the best places to drink in Port Aransas.",
+    "intro": "Port Aransas knows how to pour a drink. Whether you want a frozen concoction on the beach, a cold beer in a salty dive, or craft cocktails with sunset views, there's a bar calling your name. Here's our guide to the best bars in Port A.",
+    "items": [
+      {
+        "rank": 1,
+        "name": "Wanna Wanna Beach Bar",
+        "slug": "wanna-wanna-beach-bar",
+        "description": "Legendary beach bar with famous frozen drinks and live music.",
+        "highlights": ["Famous frozen drinks", "Live music", "Beach location", "Party atmosphere"],
+        "priceRange": "$$",
+        "bestFor": "Beach party vibes"
+      },
+      {
+        "rank": 2,
+        "name": "Sunset Lounge",
+        "slug": "sunset-lounge",
+        "description": "Rooftop bar with panoramic sunset views and craft cocktails.",
+        "highlights": ["Best sunset views", "Craft cocktails", "Elevated atmosphere"],
+        "priceRange": "$$$",
+        "bestFor": "Sunset drinks"
+      },
+      {
+        "rank": 3,
+        "name": "Island Time Brewing",
+        "slug": "island-time-brewing",
+        "description": "Local craft brewery with house-made beers and chill taproom.",
+        "highlights": ["House-made craft beer", "Outdoor seating", "Food trucks"],
+        "priceRange": "$$",
+        "bestFor": "Craft beer lovers"
+      },
+      {
+        "rank": 4,
+        "name": "Shorty's Place",
+        "slug": "texas-state-aquarium-bar",
+        "description": "Authentic dive bar with pool tables and local character.",
+        "highlights": ["Real dive bar", "Cheap beer", "Pool tables", "Local crowd"],
+        "priceRange": "$",
+        "bestFor": "Dive bar experience"
+      }
+    ],
+    "tips": ["Most beach bars are cash-only or cash-preferred", "Happy hours are usually 4-6 PM", "Dress is always casual"],
+    "seoKeywords": ["best bars port aransas", "beach bars port a", "nightlife port aransas"],
+    "lastUpdated": "2025-01",
+    "relatedLists": ["best-happy-hour", "best-live-music"]
+  },
+  {
+    "slug": "best-fishing-spots",
+    "title": "Best Fishing Spots in Port Aransas",
+    "category": "activities",
+    "description": "Where to cast a line in the 'Fishing Capital of Texas'—from piers to jetties to offshore.",
+    "intro": "Port Aransas earned its title as the 'Fishing Capital of Texas' honestly. The variety of fishing here is remarkable—from world-class offshore action to productive bay flats to accessible pier fishing. Here's where to wet a line.",
+    "items": [
+      {
+        "rank": 1,
+        "name": "The Jetties",
+        "description": "Iconic rock jetties with access to species typically requiring a boat.",
+        "highlights": ["Free access", "Multiple species", "South jetty vehicle accessible"],
+        "bestFor": "Experienced anglers seeking variety"
+      },
+      {
+        "rank": 2,
+        "name": "Horace Caldwell Pier",
+        "slug": "fishing-pier",
+        "description": "Gulf pier with rod rentals, bait, and beginner-friendly access.",
+        "highlights": ["Rod rentals", "Bait available", "Good for beginners"],
+        "bestFor": "Families and first-timers"
+      },
+      {
+        "rank": 3,
+        "name": "Deep Sea Charters",
+        "description": "Offshore trips targeting snapper, kingfish, and billfish.",
+        "highlights": ["Trophy fish", "Party and private boats", "All equipment included"],
+        "bestFor": "Serious anglers seeking big fish"
+      },
+      {
+        "rank": 4,
+        "name": "Redfish Bay",
+        "description": "Shallow flats with sight-casting opportunities for redfish and trout.",
+        "highlights": ["Sight fishing", "Calm water", "Fly fishing possible"],
+        "bestFor": "Light tackle and fly fishing"
+      }
+    ],
+    "tips": ["Check regulations for size and bag limits", "Red snapper season is limited—book early", "Incoming tide best for most spots"],
+    "seoKeywords": ["fishing port aransas", "where to fish port a", "fishing spots texas coast"],
+    "lastUpdated": "2025-01",
+    "relatedLists": ["best-fishing-charters", "best-family-activities"]
+  },
+  {
+    "slug": "best-beaches",
+    "title": "Best Beaches in Port Aransas",
+    "category": "outdoor",
+    "description": "Find your perfect stretch of sand—from busy beach parks to quiet hideaways.",
+    "intro": "With miles of Gulf coastline, Port Aransas offers beaches for every preference. Whether you want full amenities and crowds, or a quiet stretch of sand to yourself, you'll find it. Here's our guide to the best beaches.",
+    "items": [
+      {
+        "rank": 1,
+        "name": "Mustang Island State Park",
+        "slug": "mustang-island-state-park",
+        "description": "5 miles of pristine, less-developed beach within the state park.",
+        "highlights": ["Natural dunes", "Less crowded", "Camping available"],
+        "bestFor": "Nature lovers seeking quieter beach"
+      },
+      {
+        "rank": 2,
+        "name": "Beach Access Road 1 (Horace Caldwell Pier)",
+        "slug": "beach-access-1",
+        "description": "Main beach with full amenities, pier, and easy access.",
+        "highlights": ["Full facilities", "Pier fishing", "Equipment rentals nearby"],
+        "bestFor": "Families wanting convenience"
+      },
+      {
+        "rank": 3,
+        "name": "San Jose Island",
+        "slug": "san-jose-island",
+        "description": "Uninhabited barrier island accessible by boat—pristine and private.",
+        "highlights": ["Undeveloped", "Best shelling", "No crowds"],
+        "bestFor": "Escape and serious shelling"
+      }
+    ],
+    "tips": ["State park requires entry fee", "Bring everything to San Jose Island—no facilities", "Beach driving requires permit"],
+    "seoKeywords": ["best beaches port aransas", "beaches port a", "state park beach texas"],
+    "lastUpdated": "2025-01",
+    "relatedLists": ["best-family-activities", "best-sunset-spots"]
+  },
+  {
+    "slug": "best-family-activities",
+    "title": "Best Family Activities in Port Aransas",
+    "category": "activities",
+    "description": "Kid-friendly fun for the whole family—from beach activities to rainy day options.",
+    "intro": "Port Aransas is a fantastic family destination, with activities that kids love and parents enjoy too. From beach building to dolphin watching to arcade games, here's how to keep everyone entertained.",
+    "items": [
+      {
+        "rank": 1,
+        "name": "Dolphin Watching Cruise",
+        "description": "Boat tours with near-certain dolphin sightings that thrill kids.",
+        "highlights": ["95%+ sighting rate", "Dolphins come close", "Educational narration"],
+        "bestFor": "All ages"
+      },
+      {
+        "rank": 2,
+        "name": "UT Marine Science Institute",
+        "slug": "ut-marine-science-institute",
+        "description": "Free educational facility with touch tanks and aquariums.",
+        "highlights": ["Free admission", "Touch tanks", "Educational"],
+        "bestFor": "Curious kids and rainy days"
+      },
+      {
+        "rank": 3,
+        "name": "Roberts Point Park",
+        "slug": "roberts-point-park",
+        "description": "Playground, pier, and ship watching in one waterfront park.",
+        "highlights": ["Playground", "Watch cargo ships", "Free"],
+        "bestFor": "Younger kids"
+      },
+      {
+        "rank": 4,
+        "name": "Mini Golf",
+        "slug": "mini-golf",
+        "description": "Beach-themed putt-putt fun open day and evening.",
+        "highlights": ["18 holes", "Evening hours", "Air-conditioned break area"],
+        "bestFor": "Classic family fun"
+      }
+    ],
+    "tips": ["Dolphin cruises work for all ages", "Marine science institute is free", "Many restaurants kid-friendly"],
+    "seoKeywords": ["family activities port aransas", "things to do with kids port a", "family fun port aransas"],
+    "lastUpdated": "2025-01",
+    "relatedLists": ["best-beaches", "best-rainy-day-activities"]
+  },
+  {
+    "slug": "best-sunset-spots",
+    "title": "Best Sunset Spots in Port Aransas",
+    "category": "experiences",
+    "description": "Where to watch the sun paint the sky over the Gulf of Mexico.",
+    "intro": "Port Aransas sunsets are legendary—the wide Gulf horizon creates conditions for spectacular golden hour shows. Whether you prefer beach, boat, or bar, here's where to catch the best sunset views.",
+    "items": [
+      {
+        "rank": 1,
+        "name": "Snoopy's Pier",
+        "slug": "snoopys-pier",
+        "description": "Waterfront dining with unobstructed sunset views over the water.",
+        "highlights": ["Dining with sunset", "Waterfront seating", "Iconic location"],
+        "bestFor": "Sunset dinner"
+      },
+      {
+        "rank": 2,
+        "name": "Sunset Lounge",
+        "slug": "sunset-lounge",
+        "description": "Rooftop bar with panoramic views named for its best feature.",
+        "highlights": ["Rooftop panoramic", "Craft cocktails", "Elevated atmosphere"],
+        "bestFor": "Cocktails and views"
+      },
+      {
+        "rank": 3,
+        "name": "Sunset Cruise",
+        "description": "On-the-water experience with dolphins and spectacular light.",
+        "highlights": ["On the water", "Dolphins possible", "BYOB options"],
+        "bestFor": "Romantic evening"
+      },
+      {
+        "rank": 4,
+        "name": "Roberts Point Park",
+        "slug": "roberts-point-park",
+        "description": "Free waterfront park with channel views.",
+        "highlights": ["Free", "Ship channel views", "Family-friendly"],
+        "bestFor": "Families and budget"
+      }
+    ],
+    "tips": ["Arrive 30-45 minutes before sunset for position", "Clouds often make better colors", "West-facing locations have best views"],
+    "seoKeywords": ["sunset port aransas", "where to watch sunset port a", "sunset views texas coast"],
+    "lastUpdated": "2025-01",
+    "relatedLists": ["best-bars", "best-restaurants"]
+  },
+  {
+    "slug": "best-date-night",
+    "title": "Best Date Night Spots in Port Aransas",
+    "category": "experiences",
+    "description": "Romantic restaurants, sunset spots, and activities for couples.",
+    "intro": "Port Aransas provides perfect settings for romance—from sunset cruises to intimate bistros to starry beach walks. Whether you're celebrating an anniversary or just enjoying time together, here are the most romantic experiences in Port A.",
+    "items": [
+      {
+        "rank": 1,
+        "name": "Lisabella's Bistro",
+        "slug": "lisabellas-bistro",
+        "description": "Intimate chef-owned bistro perfect for romantic dinners.",
+        "highlights": ["Intimate atmosphere", "BYOB wine", "Creative cuisine"],
+        "priceRange": "$$$",
+        "bestFor": "Special dinner"
+      },
+      {
+        "rank": 2,
+        "name": "Sunset Cruise",
+        "description": "Watch the sunset from the water with champagne and dolphins.",
+        "highlights": ["On the water", "BYOB options", "Magical light"],
+        "bestFor": "Romantic experience"
+      },
+      {
+        "rank": 3,
+        "name": "Beach Horseback Riding",
+        "description": "Ride horses along the beach at sunset.",
+        "highlights": ["Unique experience", "Sunset timing", "Romantic photos"],
+        "bestFor": "Adventure and romance"
+      }
+    ],
+    "tips": ["Sunset timing varies—check sunset time before booking", "Make reservations for dinners", "Beach walks after dinner are free and romantic"],
+    "seoKeywords": ["romantic port aransas", "date night port a", "couples activities port aransas"],
+    "lastUpdated": "2025-01",
+    "relatedLists": ["best-restaurants", "best-sunset-spots"]
+  },
+  {
+    "slug": "best-pet-friendly",
+    "title": "Best Pet-Friendly Spots in Port Aransas",
+    "category": "lifestyle",
+    "description": "Dog-friendly beaches, restaurants, and activities for traveling with pets.",
+    "intro": "Port Aransas is one of the most pet-friendly beach destinations in Texas. Dogs are welcome on most beaches, many patios allow four-legged friends, and the laid-back atmosphere extends to furry family members. Here's where to go with your pet.",
+    "items": [
+      {
+        "rank": 1,
+        "name": "Port Aransas Beaches",
+        "description": "Most beaches allow dogs, though leash rules vary.",
+        "highlights": ["Dogs allowed on beach", "Plenty of running room", "Water access"],
+        "bestFor": "Beach dogs"
+      },
+      {
+        "rank": 2,
+        "name": "Salty Dog Gastropub",
+        "slug": "salty-dog-gastropub",
+        "description": "Named for dogs and welcomes them on the patio.",
+        "highlights": ["Dog-friendly patio", "Water bowls", "Good food"],
+        "bestFor": "Dining with dogs"
+      },
+      {
+        "rank": 3,
+        "name": "Leonabelle Turnbull Birding Center",
+        "slug": "leonabelle-turnbull-birding-center",
+        "description": "Leashed dogs welcome on the boardwalks.",
+        "highlights": ["Shaded boardwalks", "Wildlife viewing", "Free"],
+        "bestFor": "Nature walks"
+      }
+    ],
+    "tips": ["Bring water and shade—sand gets hot", "Many restaurants have pet-friendly patios", "Check specific beach rules for leash requirements"],
+    "seoKeywords": ["pet friendly port aransas", "dog beach port a", "dogs allowed port aransas"],
+    "lastUpdated": "2025-01",
+    "relatedLists": ["best-beaches", "best-restaurants"]
+  },
+  {
+    "slug": "best-happy-hour",
+    "title": "Best Happy Hours in Port Aransas",
+    "category": "dining",
+    "description": "The best drink deals and appetizer specials for value-minded visitors.",
+    "intro": "Happy hour in Port Aransas means cold drinks, good deals, and usually a water view. Most bars and restaurants offer afternoon specials, making 4-6 PM prime drinking time. Here are the best happy hour spots.",
+    "items": [
+      {
+        "rank": 1,
+        "name": "Wanna Wanna Beach Bar",
+        "slug": "wanna-wanna-beach-bar",
+        "description": "Afternoon drink specials at an iconic beach bar.",
+        "highlights": ["Frozen drink specials", "Beach location", "Live music"],
+        "priceRange": "$$",
+        "bestFor": "Beach party happy hour"
+      },
+      {
+        "rank": 2,
+        "name": "The Gaff",
+        "slug": "gaff-restaurant",
+        "description": "Marina views with discounted cocktails and appetizers.",
+        "highlights": ["Marina views", "Craft cocktail deals", "Appetizer specials"],
+        "priceRange": "$$",
+        "bestFor": "Upscale happy hour"
+      },
+      {
+        "rank": 3,
+        "name": "La Playa Mexican Grille",
+        "slug": "la-playa-mexican-grille",
+        "description": "Margarita specials with Gulf views.",
+        "highlights": ["Margarita deals", "Gulf views", "Chips and salsa"],
+        "priceRange": "$",
+        "bestFor": "Margarita lovers"
+      }
+    ],
+    "tips": ["Most happy hours 4-6 PM", "Many include food specials", "Arrive before sunset for views"],
+    "seoKeywords": ["happy hour port aransas", "drink specials port a", "cheap drinks port aransas"],
+    "lastUpdated": "2025-01",
+    "relatedLists": ["best-bars", "best-restaurants"]
+  },
+  {
+    "slug": "best-live-music",
+    "title": "Best Live Music in Port Aransas",
+    "category": "entertainment",
+    "description": "Where to find live bands, acoustic sets, and entertainment in Port Aransas.",
+    "intro": "Port Aransas has a surprisingly active live music scene for a small beach town. Beach bars host bands on weekends, venues bring in touring acts, and the sound of music mingles with Gulf breezes most nights. Here's where to find live entertainment.",
+    "items": [
+      {
+        "rank": 1,
+        "name": "Wanna Wanna Beach Bar",
+        "slug": "wanna-wanna-beach-bar",
+        "description": "Regular live music at the legendary beach bar.",
+        "highlights": ["Weekend bands", "Beach setting", "Lively crowd"],
+        "bestFor": "Beach party with live music"
+      },
+      {
+        "rank": 2,
+        "name": "McKenney's Irish Pub",
+        "slug": "mckenneys-irish-pub",
+        "description": "Celtic music nights and Irish sessions.",
+        "highlights": ["Celtic music", "Intimate setting", "Authentic pub"],
+        "bestFor": "Celtic and folk music"
+      },
+      {
+        "rank": 3,
+        "name": "Crazy Cajun",
+        "slug": "crazy-cajun",
+        "description": "Weekend bands and Cajun zydeco.",
+        "highlights": ["Zydeco music", "Lively atmosphere", "Weekend entertainment"],
+        "bestFor": "Cajun party vibes"
+      }
+    ],
+    "tips": ["Check venue social media for schedules", "Weekend nights busiest", "Most music starts around sunset"],
+    "seoKeywords": ["live music port aransas", "bands port a", "entertainment port aransas"],
+    "lastUpdated": "2025-01",
+    "relatedLists": ["best-bars", "best-nightlife"]
+  },
+  {
+    "slug": "best-coffee",
+    "title": "Best Coffee in Port Aransas",
+    "category": "dining",
+    "description": "Where to find quality coffee and cafe vibes in Port Aransas.",
+    "intro": "Even beach bums need their morning coffee. Port Aransas has solid options for caffeine seekers, from surf-themed shops to quick drive-throughs. Here's where to find the best coffee in Port A.",
+    "items": [
+      {
+        "rank": 1,
+        "name": "Coffee Waves",
+        "slug": "coffee-waves",
+        "description": "Surf-themed coffee shop with house-roasted beans.",
+        "highlights": ["House-roasted coffee", "Surf vibes", "Good WiFi"],
+        "priceRange": "$",
+        "bestFor": "Best coffee quality"
+      },
+      {
+        "rank": 2,
+        "name": "Island Provisions",
+        "slug": "island-provisions",
+        "description": "Gourmet market with excellent espresso.",
+        "highlights": ["Quality espresso", "Gourmet snacks", "Nice setting"],
+        "priceRange": "$$",
+        "bestFor": "Upscale coffee experience"
+      }
+    ],
+    "tips": ["Coffee Waves opens early for fishermen", "WiFi available at most", "Good for remote work"],
+    "seoKeywords": ["coffee port aransas", "coffee shop port a", "cafe port aransas"],
+    "lastUpdated": "2025-01",
+    "relatedLists": ["best-breakfast", "best-restaurants"]
+  },
+  {
+    "slug": "best-waterfront-dining",
+    "title": "Best Waterfront Dining in Port Aransas",
+    "category": "dining",
+    "description": "Restaurants with the best water views—channel, bay, Gulf, and marina.",
+    "intro": "Waterfront dining is half the experience at the coast. Port Aransas offers numerous options with views of the ship channel, Corpus Christi Bay, the marina, or the Gulf. Here are the restaurants with the best water views.",
+    "items": [
+      {
+        "rank": 1,
+        "name": "Snoopy's Pier",
+        "slug": "snoopys-pier",
+        "description": "Perched over the water with ship channel views.",
+        "highlights": ["Over the water", "Sunset views", "Dolphin sightings"],
+        "priceRange": "$$",
+        "bestFor": "Quintessential waterfront"
+      },
+      {
+        "rank": 2,
+        "name": "Korbel's",
+        "slug": "korbels-port-aransas",
+        "description": "Upscale bay views with fine dining.",
+        "highlights": ["Bay panorama", "Sunset", "Fine dining"],
+        "priceRange": "$$$$",
+        "bestFor": "Special occasion with views"
+      },
+      {
+        "rank": 3,
+        "name": "The Gaff",
+        "slug": "gaff-restaurant",
+        "description": "Marina views with boats and craft cocktails.",
+        "highlights": ["Marina location", "Watch boats", "Craft cocktails"],
+        "priceRange": "$$$",
+        "bestFor": "Marina atmosphere"
+      }
+    ],
+    "tips": ["Request waterside seating when reserving", "Arrive before sunset for best light", "Some views are channel, some bay—know what you want"],
+    "seoKeywords": ["waterfront dining port aransas", "water view restaurant port a", "restaurant with view port aransas"],
+    "lastUpdated": "2025-01",
+    "relatedLists": ["best-restaurants", "best-sunset-spots"]
+  }
+]

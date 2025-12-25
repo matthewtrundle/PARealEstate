@@ -1,0 +1,634 @@
+[
+  {
+    "slug": "january",
+    "month": "January",
+    "monthNumber": 1,
+    "title": "January in Port Aransas: Quiet Season & Winter Fishing",
+    "description": "Experience Port Aransas at its quietest with mild weather, low crowds, and excellent winter fishing.",
+    "intro": "January is Port Aransas's quiet season—and that's exactly why some visitors love it. With smaller crowds, lower prices, and mild winter weather by Texas standards, it's perfect for those seeking a peaceful beach escape. Whooping cranes are in residence, winter fishing can be excellent, and you'll feel like the beach belongs to you.",
+    "weather": {
+      "avgHigh": 61,
+      "avgLow": 45,
+      "waterTemp": 58,
+      "rainfall": 1.5,
+      "description": "Mild days with occasional cold fronts. Light jacket weather. Water too cold for most swimmers."
+    },
+    "crowdLevel": "low",
+    "events": ["whooping-crane-season"],
+    "activities": [
+      {
+        "name": "Whooping Crane Tours",
+        "description": "Peak season for viewing endangered whooping cranes at nearby Aransas refuge.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Winter Fishing",
+        "description": "Redfish and trout are active in warmer afternoon hours.",
+        "rating": "good"
+      },
+      {
+        "name": "Birdwatching",
+        "description": "Winter residents and migrants make for excellent birding.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Beach Walking",
+        "description": "Empty beaches perfect for reflective walks and shelling.",
+        "rating": "excellent"
+      }
+    ],
+    "fishing": {
+      "species": ["Redfish", "Speckled Trout", "Black Drum", "Sheepshead"],
+      "conditions": "Fish are deeper and slower. Best on warm afternoons when water temps rise."
+    },
+    "tips": [
+      "Book whooping crane tours in advance—they fill up",
+      "Pack layers—weather can vary 30 degrees in a day",
+      "Some restaurants have reduced hours—check before heading out",
+      "Best hotel rates of the year"
+    ],
+    "packing": ["Light jacket", "Layers", "Binoculars", "Walking shoes", "Rain gear"],
+    "pricing": {
+      "level": "budget",
+      "description": "Lowest rates of the year. Off-season deals abundant."
+    },
+    "seoKeywords": ["port aransas january", "winter port aransas", "january beach texas", "whooping cranes port a"],
+    "highlights": ["Whooping cranes in residence", "Rock-bottom hotel rates", "Empty beaches", "Mild weather"]
+  },
+  {
+    "slug": "february",
+    "month": "February",
+    "monthNumber": 2,
+    "title": "February in Port Aransas: Valentine's Escape & Early Spring",
+    "description": "Romantic getaway season with improving weather and continued quiet crowds.",
+    "intro": "February brings hints of spring to Port Aransas. Temperatures start climbing, days grow longer, and the quiet winter season continues. It's increasingly popular for Valentine's getaways, offering romantic sunsets without summer crowds. Fishing improves as waters slowly warm.",
+    "weather": {
+      "avgHigh": 65,
+      "avgLow": 49,
+      "waterTemp": 59,
+      "rainfall": 1.8,
+      "description": "Warming trend with occasional cold fronts. Pleasant afternoons. Water still cool."
+    },
+    "crowdLevel": "low",
+    "events": ["whooping-crane-season"],
+    "activities": [
+      {
+        "name": "Romantic Getaways",
+        "description": "Perfect for Valentine's trips with sunset cruises and fine dining.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Whooping Crane Tours",
+        "description": "Last weeks of crane season before birds head north.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Fishing",
+        "description": "Improving conditions as water temps slowly rise.",
+        "rating": "good"
+      }
+    ],
+    "fishing": {
+      "species": ["Redfish", "Speckled Trout", "Sheepshead", "Black Drum"],
+      "conditions": "Gradually improving. Sheepshead excellent around structure."
+    },
+    "tips": [
+      "Valentine's weekend books up—reserve early",
+      "Whooping cranes leave mid-March, so go now",
+      "Weather can be unpredictable—pack for range",
+      "Still low-season pricing for most of month"
+    ],
+    "packing": ["Light layers", "Nice dinner outfit", "Binoculars", "Sunscreen"],
+    "pricing": {
+      "level": "budget",
+      "description": "Low-season rates continue. Valentine's weekend slightly higher."
+    },
+    "seoKeywords": ["port aransas february", "valentines port aransas", "romantic getaway texas coast"],
+    "highlights": ["Valentine's destination", "Last crane viewing", "Warming weather", "Low crowds"]
+  },
+  {
+    "slug": "march",
+    "month": "March",
+    "monthNumber": 3,
+    "title": "March in Port Aransas: Spring Break & Migration Season",
+    "description": "Peak spring break season with spring bird migration beginning and improving fishing.",
+    "intro": "March transforms Port Aransas. Spring break brings energy and crowds, spring migration delivers spectacular birding, and fishing shifts into higher gear as waters warm. Weather is increasingly pleasant, though the famous Texas wind picks up. It's the transition from quiet season to busy season.",
+    "weather": {
+      "avgHigh": 72,
+      "avgLow": 56,
+      "waterTemp": 64,
+      "rainfall": 1.5,
+      "description": "Spring weather arrives. Warmer days, occasional storms. Windy periods common."
+    },
+    "crowdLevel": "high",
+    "events": ["spring-break", "spring-migration"],
+    "activities": [
+      {
+        "name": "Spring Break",
+        "description": "Beaches busy with families and college students.",
+        "rating": "good"
+      },
+      {
+        "name": "Bird Migration",
+        "description": "Spring migration brings waves of colorful songbirds.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Fishing",
+        "description": "Improving rapidly as water temps climb.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Beach Activities",
+        "description": "Weather warm enough for beach days.",
+        "rating": "good"
+      }
+    ],
+    "fishing": {
+      "species": ["Redfish", "Speckled Trout", "Flounder", "Sheepshead"],
+      "conditions": "Excellent as fish become more active. Trout bite picks up dramatically."
+    },
+    "tips": [
+      "Book everything early for spring break weeks",
+      "Texas Week (mid-March) is busiest",
+      "Birding is phenomenal during 'fallout' events",
+      "Prices jump during spring break"
+    ],
+    "packing": ["Swimsuit (maybe)", "Layers", "Sunscreen", "Binoculars", "Wind jacket"],
+    "pricing": {
+      "level": "moderate",
+      "description": "Spring break weeks at peak rates. Other weeks still moderate."
+    },
+    "seoKeywords": ["port aransas march", "spring break port aransas", "spring migration texas coast"],
+    "highlights": ["Spring break energy", "Bird migration", "Fishing improves", "Pleasant weather"]
+  },
+  {
+    "slug": "april",
+    "month": "April",
+    "monthNumber": 4,
+    "title": "April in Port Aransas: Perfect Weather & Sandfest",
+    "description": "Ideal weather, world-class birding, and the famous Sandfest sand sculpture competition.",
+    "intro": "April is arguably the best month in Port Aransas. Spring break crowds have departed, summer heat hasn't arrived, and the weather is near perfect. Spring bird migration peaks, Sandfest brings incredible sand art, and the fishing is outstanding. It's the sweet spot of the Port A calendar.",
+    "weather": {
+      "avgHigh": 79,
+      "avgLow": 64,
+      "waterTemp": 70,
+      "rainfall": 2.0,
+      "description": "Near-perfect conditions. Warm days, pleasant evenings. Water swimmable for hardy souls."
+    },
+    "crowdLevel": "moderate",
+    "events": ["sandfest", "spring-migration"],
+    "activities": [
+      {
+        "name": "Sandfest",
+        "description": "World-class sand sculpture competition—a must-see event.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Birding",
+        "description": "Peak spring migration. Colorful warblers, tanagers, buntings.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Fishing",
+        "description": "Outstanding conditions across all types.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Beach Activities",
+        "description": "Perfect beach weather without extreme heat.",
+        "rating": "excellent"
+      }
+    ],
+    "fishing": {
+      "species": ["Redfish", "Speckled Trout", "Flounder", "King Mackerel", "Tarpon"],
+      "conditions": "Peak bay fishing. Offshore season opens up. Everything biting."
+    },
+    "tips": [
+      "Sandfest weekend books months in advance",
+      "Morning birding is magical during fallouts",
+      "Book fishing charters 2-4 weeks ahead",
+      "Perfect time for family visits"
+    ],
+    "packing": ["Swimsuit", "Sunscreen", "Light clothing", "Binoculars", "Camera"],
+    "pricing": {
+      "level": "moderate",
+      "description": "Sandfest weekend premium. Otherwise reasonable shoulder season rates."
+    },
+    "seoKeywords": ["port aransas april", "sandfest port aransas", "spring fishing texas coast", "birding april texas"],
+    "highlights": ["Sandfest", "Peak bird migration", "Perfect weather", "Excellent fishing"]
+  },
+  {
+    "slug": "may",
+    "month": "May",
+    "monthNumber": 5,
+    "title": "May in Port Aransas: Summer Preview & Memorial Day",
+    "description": "Summer season begins with Memorial Day, perfect water temps, and peak fishing.",
+    "intro": "May kicks off summer season in Port Aransas. Memorial Day weekend brings crowds, the water reaches swimming temps, and fishing is phenomenal. It's warm but not yet brutally hot, making it ideal for those who want summer vibes without July intensity. School isn't out yet, so weekdays remain manageable.",
+    "weather": {
+      "avgHigh": 85,
+      "avgLow": 72,
+      "waterTemp": 77,
+      "rainfall": 3.5,
+      "description": "Warm and increasingly humid. Perfect swimming temps. Afternoon storms possible."
+    },
+    "crowdLevel": "moderate",
+    "events": ["memorial-day"],
+    "activities": [
+      {
+        "name": "Swimming",
+        "description": "Water temps finally comfortable for extended swimming.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Fishing",
+        "description": "Outstanding across bay, jetties, and offshore.",
+        "rating": "excellent"
+      },
+      {
+        "name": "All Beach Activities",
+        "description": "Perfect conditions for water sports, beach play, all activities.",
+        "rating": "excellent"
+      }
+    ],
+    "fishing": {
+      "species": ["Redfish", "Speckled Trout", "King Mackerel", "Tarpon", "Cobia"],
+      "conditions": "Peak season in full swing. Offshore kings running. Tarpon around jetties."
+    },
+    "tips": [
+      "Memorial Day weekend requires advance booking",
+      "Weekdays before school ends are sweet spot",
+      "Tarpon fishing peaks late month",
+      "Sunscreen critical—sun intensity increases"
+    ],
+    "packing": ["Swimsuits", "Sunscreen SPF 50", "Light clothing", "Fishing gear", "Aloe vera"],
+    "pricing": {
+      "level": "moderate",
+      "description": "Memorial Day premium. Other weekends moderate. Weekdays good value."
+    },
+    "seoKeywords": ["port aransas may", "memorial day port aransas", "may fishing texas coast"],
+    "highlights": ["Swimming season opens", "Memorial Day", "Excellent fishing", "Pre-peak rates"]
+  },
+  {
+    "slug": "june",
+    "month": "June",
+    "monthNumber": 6,
+    "title": "June in Port Aransas: Summer Season & Family Vacations",
+    "description": "Peak summer begins with schools out, full beaches, and endless water activities.",
+    "intro": "June launches full summer mode in Port Aransas. Schools are out, families flood the beaches, and the town pulses with vacation energy. It's hot, crowded, and absolutely buzzing with activity. Fishing remains excellent, beaches are alive with swimmers and sandcastles, and the days stretch long for maximum vacation time.",
+    "weather": {
+      "avgHigh": 90,
+      "avgLow": 77,
+      "waterTemp": 82,
+      "rainfall": 4.0,
+      "description": "Hot and humid. Gulf is bathwater warm. Afternoon thunderstorms common."
+    },
+    "crowdLevel": "peak",
+    "events": ["deep-sea-roundup"],
+    "activities": [
+      {
+        "name": "Beach Swimming",
+        "description": "Warm Gulf is perfect for swimming and water play.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Deep Sea Fishing",
+        "description": "Offshore action excellent. Deep Sea Roundup tournament.",
+        "rating": "excellent"
+      },
+      {
+        "name": "All Water Sports",
+        "description": "Parasailing, jet skiing, paddleboarding all in high gear.",
+        "rating": "excellent"
+      }
+    ],
+    "fishing": {
+      "species": ["King Mackerel", "Ling", "Mahi Mahi", "Red Snapper", "Tarpon"],
+      "conditions": "Peak offshore. Red snapper season typically open. Deep Sea Roundup excitement."
+    },
+    "tips": [
+      "Book accommodations months in advance",
+      "Deep Sea Roundup brings fishing crowds",
+      "Red snapper season is limited—book charter early",
+      "Beat crowds with early morning beach arrival"
+    ],
+    "packing": ["Multiple swimsuits", "Sunscreen SPF 50+", "Hats", "Light clothing", "Cooler"],
+    "pricing": {
+      "level": "premium",
+      "description": "Peak summer rates. Minimum stays often required."
+    },
+    "seoKeywords": ["port aransas june", "summer port aransas", "family beach vacation texas", "deep sea roundup"],
+    "highlights": ["Peak beach season", "Deep Sea Roundup", "Red snapper fishing", "Full summer energy"]
+  },
+  {
+    "slug": "july",
+    "month": "July",
+    "monthNumber": 7,
+    "title": "July in Port Aransas: Fourth of July & Peak Beach Season",
+    "description": "Hottest month with July 4th celebrations and maximum beach activity.",
+    "intro": "July is Port Aransas at its most intense—the hottest weather, the most crowded beaches, and the biggest party of the year on Independence Day. If you embrace the heat and crowds, it's quintessential Texas beach summer. Fishing remains solid, the water is gloriously warm, and the town celebrates summer with full enthusiasm.",
+    "weather": {
+      "avgHigh": 92,
+      "avgLow": 79,
+      "waterTemp": 85,
+      "rainfall": 2.5,
+      "description": "Hottest month. Very humid. Gulf is bathwater. Heat index over 100 common."
+    },
+    "crowdLevel": "peak",
+    "events": ["july-fourth"],
+    "activities": [
+      {
+        "name": "July 4th Celebrations",
+        "description": "Fireworks, parades, and patriotic beach parties.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Beach Activities",
+        "description": "Peak season for all beach and water activities.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Night Fishing",
+        "description": "Beat the heat with night fishing expeditions.",
+        "rating": "good"
+      }
+    ],
+    "fishing": {
+      "species": ["King Mackerel", "Mahi Mahi", "Red Snapper", "Sailfish"],
+      "conditions": "Hot fishing offshore. Bay fishing best early morning before heat."
+    },
+    "tips": [
+      "July 4th books a year in advance",
+      "Plan beach time for early morning or late afternoon",
+      "Stay hydrated—heat is serious",
+      "Consider night fishing to avoid midday heat"
+    ],
+    "packing": ["Swimsuits", "Sunscreen SPF 50+", "Cooling towels", "Lots of water", "UV protective clothing"],
+    "pricing": {
+      "level": "premium",
+      "description": "Highest rates of summer. July 4th premium pricing."
+    },
+    "seoKeywords": ["port aransas july", "fourth of july port aransas", "july beach texas", "summer vacation port a"],
+    "highlights": ["July 4th fireworks", "Peak summer vibes", "Warmest water", "Full town energy"]
+  },
+  {
+    "slug": "august",
+    "month": "August",
+    "monthNumber": 8,
+    "title": "August in Port Aransas: Late Summer & Shark Fishing",
+    "description": "Schools return, crowds thin, and shark fishing heats up.",
+    "intro": "August is summer's last hurrah in Port Aransas. As schools restart across Texas, crowds begin thinning while summer weather continues. It's still hot and the Gulf is bathwater, but beaches become less frantic. Shark fishing is excellent, and late summer sunsets are spectacular.",
+    "weather": {
+      "avgHigh": 92,
+      "avgLow": 78,
+      "waterTemp": 86,
+      "rainfall": 3.0,
+      "description": "Still very hot. Peak water temps. Occasional tropical weather concerns."
+    },
+    "crowdLevel": "moderate",
+    "events": ["texas-legends-billfish"],
+    "activities": [
+      {
+        "name": "Shark Fishing",
+        "description": "Peak surf shark fishing from the beaches.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Beach Swimming",
+        "description": "Warmest water of year with thinning crowds.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Offshore Fishing",
+        "description": "Excellent conditions continue for offshore.",
+        "rating": "excellent"
+      }
+    ],
+    "fishing": {
+      "species": ["Sharks", "King Mackerel", "Mahi Mahi", "Tarpon", "Ling"],
+      "conditions": "Shark fishing peaks. Offshore still excellent. Bay quieter in heat."
+    },
+    "tips": [
+      "After mid-August, crowds drop significantly",
+      "Monitor tropical weather forecasts",
+      "Shark fishing can be done from beach",
+      "Better value than June/July"
+    ],
+    "packing": ["Swimsuits", "Sunscreen", "Cooling gear", "Weather app for tropical tracking"],
+    "pricing": {
+      "level": "moderate",
+      "description": "Rates drop as schools restart. Good late-summer value."
+    },
+    "seoKeywords": ["port aransas august", "shark fishing port aransas", "late summer beach texas"],
+    "highlights": ["Shark fishing peak", "Thinning crowds", "Warm water", "Better rates"]
+  },
+  {
+    "slug": "september",
+    "month": "September",
+    "monthNumber": 9,
+    "title": "September in Port Aransas: Fall Transition & Fishing Peak",
+    "description": "Fall fishing peaks, temperatures moderate, and crowds dissipate.",
+    "intro": "September is a hidden gem in Port Aransas. Summer crowds have departed, but water remains warm and fishing enters its peak fall season. Weather moderates (slightly), hotel rates drop, and the town enters a pleasant between-seasons rhythm. Just keep an eye on tropical weather.",
+    "weather": {
+      "avgHigh": 88,
+      "avgLow": 74,
+      "waterTemp": 83,
+      "rainfall": 5.0,
+      "description": "Still warm but moderating. Peak hurricane season. Beautiful when storms stay away."
+    },
+    "crowdLevel": "low",
+    "events": ["fall-migration"],
+    "activities": [
+      {
+        "name": "Fishing",
+        "description": "Fall run begins—outstanding across all types.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Beach Swimming",
+        "description": "Warm water, empty beaches—best of both worlds.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Fall Birding",
+        "description": "Fall migration brings waves of southbound birds.",
+        "rating": "excellent"
+      }
+    ],
+    "fishing": {
+      "species": ["Redfish", "Speckled Trout", "Flounder", "Bull Reds", "King Mackerel"],
+      "conditions": "Fall run is legendary. Bull reds crushing bait in surf. Flounder running."
+    },
+    "tips": [
+      "Monitor hurricane forecasts—peak season",
+      "Book refundable accommodations if possible",
+      "Fall fishing can be best of year",
+      "Excellent value month"
+    ],
+    "packing": ["Swimsuit", "Light layers", "Rain gear", "Fishing gear", "Binoculars"],
+    "pricing": {
+      "level": "budget",
+      "description": "Low-season rates return. Excellent value if weather cooperates."
+    },
+    "seoKeywords": ["port aransas september", "fall fishing port aransas", "september beach texas"],
+    "highlights": ["Peak fall fishing", "Empty beaches", "Fall bird migration", "Budget-friendly"]
+  },
+  {
+    "slug": "october",
+    "month": "October",
+    "monthNumber": 10,
+    "title": "October in Port Aransas: Perfect Fall Weather & Fishing",
+    "description": "Ideal temperatures, excellent fishing, and October festivals.",
+    "intro": "October brings perfect weather to Port Aransas. Summer heat breaks, autumn fronts freshen the air, and fishing peaks before cooler water changes patterns. Outdoor festivals take advantage of ideal conditions. It's increasingly popular with those who've discovered the secret—October might be the best month to visit.",
+    "weather": {
+      "avgHigh": 81,
+      "avgLow": 67,
+      "waterTemp": 76,
+      "rainfall": 3.5,
+      "description": "Perfect fall weather. Refreshing fronts. Comfortable days and nights."
+    },
+    "crowdLevel": "low",
+    "events": ["harvest-moon-regatta", "fall-migration"],
+    "activities": [
+      {
+        "name": "Fall Fishing",
+        "description": "Peak season continues with excellent action.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Beach Days",
+        "description": "Perfect beach weather without heat or crowds.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Birding",
+        "description": "Fall migration continues with excellent variety.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Outdoor Activities",
+        "description": "Ideal temps for kayaking, SUP, hiking, all activities.",
+        "rating": "excellent"
+      }
+    ],
+    "fishing": {
+      "species": ["Redfish", "Speckled Trout", "Flounder", "Black Drum"],
+      "conditions": "Excellent fall run. Flounder staging before spawn. Bay fishing superb."
+    },
+    "tips": [
+      "Increasingly popular—book ahead for weekends",
+      "Best weather of the year",
+      "Halloween weekend draws families",
+      "Perfect for fishing trips"
+    ],
+    "packing": ["Light layers", "Swimsuit (water still swimmable)", "Comfortable walking shoes", "Light jacket"],
+    "pricing": {
+      "level": "budget",
+      "description": "Off-peak rates with peak conditions. Best value month."
+    },
+    "seoKeywords": ["port aransas october", "fall port aransas", "october fishing texas coast", "best time to visit port aransas"],
+    "highlights": ["Perfect weather", "Peak fishing", "Low crowds", "Best value"]
+  },
+  {
+    "slug": "november",
+    "month": "November",
+    "monthNumber": 11,
+    "title": "November in Port Aransas: Whooping Cranes Return & Thanksgiving",
+    "description": "Whooping cranes arrive, Thanksgiving crowds visit, and mild fall continues.",
+    "intro": "November marks the return of the whooping cranes to Aransas National Wildlife Refuge, drawing birders from around the world. Thanksgiving week brings visitors, but the rest of the month remains quiet. Weather is mild and pleasant, fishing transitions to winter patterns, and the town settles into its shoulder-season rhythm.",
+    "weather": {
+      "avgHigh": 72,
+      "avgLow": 55,
+      "waterTemp": 68,
+      "rainfall": 2.0,
+      "description": "Mild fall weather. Cool mornings and evenings. Occasional fronts bring seasonal change."
+    },
+    "crowdLevel": "moderate",
+    "events": ["thanksgiving", "whooping-crane-season"],
+    "activities": [
+      {
+        "name": "Whooping Crane Tours",
+        "description": "Endangered cranes return—boat tours begin.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Thanksgiving Getaway",
+        "description": "Popular family destination for the holiday.",
+        "rating": "good"
+      },
+      {
+        "name": "Fishing",
+        "description": "Transitioning to winter patterns. Still productive.",
+        "rating": "good"
+      }
+    ],
+    "fishing": {
+      "species": ["Redfish", "Speckled Trout", "Black Drum", "Sheepshead"],
+      "conditions": "Fall patterns transitioning. Fish moving to warmer water. Still good action."
+    },
+    "tips": [
+      "Book whooping crane tours early—very popular",
+      "Thanksgiving week requires advance booking",
+      "Mild weather great for outdoor activities",
+      "Non-holiday weeks are quiet and affordable"
+    ],
+    "packing": ["Layers", "Light jacket", "Binoculars for cranes", "Comfortable shoes"],
+    "pricing": {
+      "level": "moderate",
+      "description": "Thanksgiving week at higher rates. Otherwise shoulder-season pricing."
+    },
+    "seoKeywords": ["port aransas november", "thanksgiving port aransas", "whooping cranes port aransas"],
+    "highlights": ["Whooping cranes return", "Thanksgiving destination", "Mild weather", "Quiet time"]
+  },
+  {
+    "slug": "december",
+    "month": "December",
+    "monthNumber": 12,
+    "title": "December in Port Aransas: Holiday Beach Escape & Winter Charm",
+    "description": "Festive decorations, holiday events, and peaceful winter beach vibes.",
+    "intro": "December offers a unique Port Aransas experience—holiday cheer meets beach town charm. The town decorates for Christmas, holiday events create festive atmosphere, and the beaches provide peaceful escapes from holiday stress. It's perfect for those seeking a non-traditional holiday or year-end retreat.",
+    "weather": {
+      "avgHigh": 63,
+      "avgLow": 47,
+      "waterTemp": 60,
+      "rainfall": 1.5,
+      "description": "Cool winter weather. Mild by northern standards. Water too cold for swimming."
+    },
+    "crowdLevel": "low",
+    "events": ["christmas-events", "new-years-eve", "whooping-crane-season"],
+    "activities": [
+      {
+        "name": "Holiday Events",
+        "description": "Lighted boat parades, Christmas celebrations, New Year's Eve.",
+        "rating": "good"
+      },
+      {
+        "name": "Whooping Crane Tours",
+        "description": "Crane season in full swing.",
+        "rating": "excellent"
+      },
+      {
+        "name": "Winter Beach Walks",
+        "description": "Empty beaches, peaceful atmosphere, reflective walks.",
+        "rating": "excellent"
+      }
+    ],
+    "fishing": {
+      "species": ["Redfish", "Black Drum", "Sheepshead"],
+      "conditions": "Winter patterns. Fish slower in cold water. Target warm afternoons."
+    },
+    "tips": [
+      "Christmas and New Year's weeks book up",
+      "Lighted boat parade is festive tradition",
+      "Great for non-traditional holiday",
+      "Many restaurants have holiday hours—check ahead"
+    ],
+    "packing": ["Warm layers", "Jacket", "Comfortable walking shoes", "Binoculars"],
+    "pricing": {
+      "level": "moderate",
+      "description": "Holiday weeks higher. Other times very affordable."
+    },
+    "seoKeywords": ["port aransas december", "christmas port aransas", "new years eve port a", "holiday beach texas"],
+    "highlights": ["Holiday events", "Lighted boat parade", "Whooping cranes", "Peaceful beaches"]
+  }
+]

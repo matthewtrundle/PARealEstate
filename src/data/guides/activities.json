@@ -1,0 +1,580 @@
+[
+  {
+    "slug": "deep-sea-fishing",
+    "name": "Deep Sea Fishing",
+    "category": "fishing",
+    "description": "Venture into the Gulf of Mexico for an unforgettable offshore fishing adventure targeting trophy fish.",
+    "longDescription": "Deep sea fishing from Port Aransas takes you miles offshore into the Gulf of Mexico, where blue water holds some of the most exciting game fish in Texas. Charter boats leave at dawn, heading for oil rigs, artificial reefs, and natural structure where red snapper, king mackerel, amberjack, and even billfish prowl. Trips range from half-day excursions to overnight adventures, with party boats and private charters available for all budgets.",
+    "difficulty": "moderate",
+    "duration": "4-12 hours",
+    "bestSeason": ["April", "May", "June", "July", "August", "September", "October"],
+    "bestTime": "Early morning departure",
+    "cost": "$150-$400 per person (party boat) or $1000-$2500 (private charter)",
+    "requirements": ["Fishing license (often included with charter)", "Good physical condition", "Not prone to seasickness"],
+    "whatToBring": ["Sunscreen SPF 50+", "Hat", "Polarized sunglasses", "Non-marking shoes", "Cooler for fish", "Camera", "Motion sickness medication if needed"],
+    "tips": ["Take motion sickness medication the night before, not morning of", "Eat a light breakfast, avoid greasy foods", "Bring cash for tips (15-20% is customary)", "Book well in advance during summer", "Party boats are more affordable but less personalized"],
+    "locations": ["Deep Sea Headquarters", "Fisherman's Wharf", "Woody's Sports Center"],
+    "operators": [
+      {
+        "name": "Deep Sea Headquarters",
+        "phone": "(361) 749-6411",
+        "website": "https://deepseahq.com",
+        "description": "Fleet of party boats and private charters, operating since 1967"
+      },
+      {
+        "name": "Captain Clark's Flagship",
+        "phone": "(361) 749-5252",
+        "description": "Large party boat with covered areas, good for families"
+      }
+    ],
+    "seoKeywords": ["deep sea fishing port aransas", "offshore fishing port a", "charter fishing port aransas", "gulf fishing texas"],
+    "relatedActivities": ["bay-fishing", "jetty-fishing", "pier-fishing"],
+    "faqs": [
+      {
+        "question": "Do I need a fishing license?",
+        "answer": "Licensed charter boats include licenses for all passengers. You only need your own license if fishing from shore or a private boat."
+      },
+      {
+        "question": "What happens to the fish I catch?",
+        "answer": "Most charters clean and bag your catch at no extra charge. You'll need a cooler with ice to transport it."
+      },
+      {
+        "question": "Will I get seasick?",
+        "answer": "Some people do. Take motion sickness medication the night before and morning of. Stay in fresh air, avoid the engine area, keep your eyes on the horizon."
+      }
+    ]
+  },
+  {
+    "slug": "bay-fishing",
+    "name": "Bay & Inshore Fishing",
+    "category": "fishing",
+    "description": "Target redfish, speckled trout, and flounder in the calm waters of Redfish Bay and surrounding flats.",
+    "longDescription": "Bay fishing in Port Aransas offers a different experience than offshore—calmer waters, lighter tackle, and the thrill of sight-casting to tailing redfish on the flats. The extensive bay systems, grass flats, and marsh edges provide habitat for redfish, speckled trout, flounder, and black drum. Guided trips use shallow-draft boats to access skinny water, where you might pole across knee-deep flats in pursuit of trophy fish.",
+    "difficulty": "easy",
+    "duration": "4-8 hours",
+    "bestSeason": ["March", "April", "May", "September", "October", "November"],
+    "bestTime": "Early morning or late afternoon",
+    "cost": "$350-$600 for half-day charter, $550-$800 for full day",
+    "requirements": ["Valid Texas fishing license", "Comfortable with boat travel"],
+    "whatToBring": ["Sunscreen", "Light layers", "Polarized sunglasses", "Hat", "Camera", "Light snacks and water"],
+    "tips": ["Polarized sunglasses are essential for sight fishing", "Listen to your guide—they know where fish are", "Patience is rewarded", "Best action at tide changes"],
+    "locations": ["Redfish Bay", "Estes Flats", "Corpus Christi Bay", "Aransas Bay"],
+    "operators": [
+      {
+        "name": "Redfish Bay Charters",
+        "phone": "(361) 749-3600",
+        "description": "Specializing in sight-casting and fly fishing"
+      }
+    ],
+    "seoKeywords": ["bay fishing port aransas", "redfish port aransas", "speckled trout port a", "inshore fishing texas"],
+    "relatedActivities": ["deep-sea-fishing", "jetty-fishing", "kayak-fishing"],
+    "faqs": [
+      {
+        "question": "What fish will we catch?",
+        "answer": "Primarily redfish, speckled trout, and flounder. Black drum and sheepshead are also common."
+      },
+      {
+        "question": "Is bay fishing good for beginners?",
+        "answer": "Excellent for beginners. Calmer water, lighter tackle, and guides who can teach casting techniques."
+      }
+    ]
+  },
+  {
+    "slug": "jetty-fishing",
+    "name": "Jetty Fishing",
+    "category": "fishing",
+    "description": "Fish from the massive rock jetties protecting the ship channel for a unique shore-based experience.",
+    "longDescription": "The Port Aransas jetties are massive rock structures extending into the Gulf, creating excellent fishing habitat. The rocks provide structure for baitfish, which attract redfish, trout, snook, tarpon, and various offshore species. Fishing the jetties requires careful footing on the rocks but rewards anglers with shore access to typically boat-only species. The south jetty is accessible by vehicle; the north jetty requires crossing by ferry.",
+    "difficulty": "moderate",
+    "duration": "2-6 hours",
+    "bestSeason": ["April", "May", "June", "September", "October"],
+    "bestTime": "Dawn and dusk, incoming tide",
+    "cost": "Free (just need license and tackle)",
+    "requirements": ["Valid Texas fishing license", "Good balance for walking on rocks"],
+    "whatToBring": ["Rod and tackle", "Bait or lures", "Bucket for catch", "Non-slip shoes", "Sunscreen", "Lots of water", "First aid kit for cuts from rocks"],
+    "tips": ["Watch where you step—rocks can be slippery", "Incoming tide best for most species", "Bring tough tackle—you'll get hung up", "Target species change by location on jetty"],
+    "locations": ["South Jetty (vehicle accessible)", "North Jetty (ferry access)"],
+    "seoKeywords": ["jetty fishing port aransas", "jetties port a", "rock fishing texas coast", "shore fishing port aransas"],
+    "relatedActivities": ["pier-fishing", "surf-fishing", "bay-fishing"],
+    "faqs": [
+      {
+        "question": "Which jetty is better?",
+        "answer": "Both produce fish. South jetty is easier to access by car. North jetty requires ferry but can be less crowded."
+      },
+      {
+        "question": "Is it safe to fish from the jetties?",
+        "answer": "Use caution—rocks are uneven and can be slippery. Wear shoes with good grip, never fish alone, and watch for waves."
+      }
+    ]
+  },
+  {
+    "slug": "pier-fishing",
+    "name": "Pier Fishing",
+    "category": "fishing",
+    "description": "Fish from Horace Caldwell Pier without needing a boat, with rod rentals and bait available on-site.",
+    "longDescription": "Horace Caldwell Pier extends into the Gulf, providing easy access to good fishing without a boat. The pier house sells bait, rents rods, and provides tackle, making it perfect for casual anglers or families introducing kids to fishing. Catches include redfish, trout, sheepshead, whiting, and occasional larger species that patrol the structure.",
+    "difficulty": "easy",
+    "duration": "1-4 hours",
+    "bestSeason": ["March", "April", "May", "June", "September", "October", "November"],
+    "bestTime": "Early morning and evening",
+    "cost": "$5-10 pier entry, rod rental $15-20",
+    "requirements": ["Pier entry fee", "Texas fishing license (or pier package)"],
+    "whatToBring": ["Sunscreen", "Hat", "Cooler for drinks", "Camera", "Bucket for catch (or bring for cleaning)"],
+    "tips": ["Best fishing at dawn and dusk", "Live shrimp is the most versatile bait", "Ask the pier staff what's biting", "Cleaning tables available at pier"],
+    "locations": ["Horace Caldwell Pier"],
+    "seoKeywords": ["pier fishing port aransas", "horace caldwell pier fishing", "family fishing port a"],
+    "relatedActivities": ["jetty-fishing", "surf-fishing", "bay-fishing"],
+    "faqs": [
+      {
+        "question": "Do I need my own equipment?",
+        "answer": "No—the pier house rents rods and sells bait. Just show up and fish."
+      },
+      {
+        "question": "Good for kids?",
+        "answer": "Excellent for kids. Easier than shore fishing, with facilities nearby and rental equipment available."
+      }
+    ]
+  },
+  {
+    "slug": "surfing",
+    "name": "Surfing",
+    "category": "water-sports",
+    "description": "Catch waves along the Port Aransas beaches where consistent Gulf swells create beginner-friendly conditions.",
+    "longDescription": "Surfing in Port Aransas won't rival Hawaii, but the Gulf of Mexico delivers consistent small-to-medium waves perfect for learning and longboarding. Winter months and storm fronts generate the best swells, while summer offers gentle waves ideal for beginners. Local surf shops provide lessons, board rentals, and current condition reports. The sandy bottom and warm water make it a forgiving environment for new surfers.",
+    "difficulty": "easy",
+    "duration": "2-4 hours",
+    "bestSeason": ["September", "October", "November", "December", "January", "February", "March"],
+    "bestTime": "Early morning before wind picks up",
+    "cost": "$50-100 for lessons, $25-50 for board rental",
+    "requirements": ["Swimming ability", "Basic fitness"],
+    "whatToBring": ["Rashguard or wetsuit (winter)", "Sunscreen (waterproof)", "Towel", "Change of clothes"],
+    "tips": ["Morning sessions best before afternoon wind", "Check local surf reports for conditions", "Beginners should take a lesson", "Gulf waves are smaller than ocean—adjust expectations"],
+    "locations": ["Beach Access Road 1", "Mustang Island State Park", "Bob Hall Pier area"],
+    "operators": [
+      {
+        "name": "Port Aransas Surf School",
+        "phone": "(361) 749-7873",
+        "description": "Lessons for all ages and abilities"
+      },
+      {
+        "name": "Island Surf Shop",
+        "phone": "(361) 749-0183",
+        "description": "Board rentals and surf reports"
+      }
+    ],
+    "seoKeywords": ["surfing port aransas", "surf lessons port a", "waves texas coast", "learn to surf texas"],
+    "relatedActivities": ["paddleboarding", "bodyboarding", "kiteboarding"],
+    "faqs": [
+      {
+        "question": "Are there waves for surfing?",
+        "answer": "Yes, but they're smaller than ocean waves. Gulf swells are typically 2-4 feet, occasionally bigger during storms and winter."
+      },
+      {
+        "question": "When's the best time to surf?",
+        "answer": "Fall and winter have best swells. Summer is calm but good for beginners. Morning is best any time of year."
+      }
+    ]
+  },
+  {
+    "slug": "paddleboarding",
+    "name": "Stand-Up Paddleboarding",
+    "category": "water-sports",
+    "description": "Explore calm bays and coastal waterways on a stand-up paddleboard with views above the water.",
+    "longDescription": "Stand-up paddleboarding (SUP) has exploded in popularity in Port Aransas, thanks to the calm bay waters, marsh channels, and sheltered waterways perfect for paddling. The elevated vantage point lets you spot fish, rays, and dolphins below the surface. Guided eco-tours take you through birding habitats, sunrise sessions offer magical light, and rentals are available throughout town.",
+    "difficulty": "easy",
+    "duration": "1-3 hours",
+    "bestSeason": ["April", "May", "June", "September", "October"],
+    "bestTime": "Early morning for calm water",
+    "cost": "$25-50 rental, $50-80 guided tour",
+    "requirements": ["Swimming ability", "Basic balance"],
+    "whatToBring": ["Sunscreen", "Hat with strap", "Sunglasses with strap", "Water bottle", "Dry bag for phone"],
+    "tips": ["Start on knees until comfortable", "Morning is calmest", "Paddle into wind first so return is easier", "Bay is calmer than Gulf"],
+    "locations": ["Redfish Bay", "Cinnamon Shore Beach", "Leonabelle Turnbull Birding Center waters"],
+    "operators": [
+      {
+        "name": "Port Aransas SUP Tours",
+        "phone": "(361) 749-7872",
+        "description": "Guided eco-tours and sunrise sessions"
+      },
+      {
+        "name": "Pelican Surf & Rentals",
+        "phone": "(361) 749-0110",
+        "description": "Board rentals with delivery"
+      }
+    ],
+    "seoKeywords": ["paddleboarding port aransas", "SUP port a", "stand up paddle texas coast", "paddle tour port aransas"],
+    "relatedActivities": ["kayaking", "surfing", "fishing"],
+    "faqs": [
+      {
+        "question": "Is paddleboarding hard to learn?",
+        "answer": "Most people stand within minutes. Start on your knees, then work up to standing. Calm bay water makes learning easy."
+      },
+      {
+        "question": "What if I fall off?",
+        "answer": "You'll probably fall a few times—it's part of learning! The water is warm, and you're attached to the board by a leash."
+      }
+    ]
+  },
+  {
+    "slug": "kayaking",
+    "name": "Kayaking",
+    "category": "water-sports",
+    "description": "Paddle through marsh channels, birding areas, and coastal waterways in a kayak.",
+    "longDescription": "Kayaking opens up Port Aransas's hidden waterways—marsh channels, mangrove edges, and birding habitats inaccessible by larger boats. The Leonabelle Turnbull Birding Center has a designated paddle trail, and Mustang Island State Park offers marked routes through coastal wetlands. Guided eco-tours combine paddling with wildlife education, while rentals let you explore independently.",
+    "difficulty": "easy",
+    "duration": "2-4 hours",
+    "bestSeason": ["March", "April", "May", "September", "October", "November"],
+    "bestTime": "Morning for wildlife and calm water",
+    "cost": "$30-60 rental, $50-100 guided tour",
+    "requirements": ["Basic fitness", "Comfort on water"],
+    "whatToBring": ["Sunscreen", "Hat", "Water bottle", "Dry bag", "Binoculars for birding", "Snacks"],
+    "tips": ["Tandem kayaks are easier for beginners", "Paddle trails marked at state park", "Morning best for birding", "Watch for alligators—they're not aggressive but give space"],
+    "locations": ["Mustang Island State Park Paddle Trail", "Leonabelle Turnbull Birding Center", "Redfish Bay"],
+    "operators": [
+      {
+        "name": "Port Aransas Kayak Rentals",
+        "phone": "(361) 749-1600",
+        "description": "Rentals and guided eco-tours"
+      }
+    ],
+    "seoKeywords": ["kayaking port aransas", "paddle trails port a", "kayak rental port aransas", "eco tour kayak"],
+    "relatedActivities": ["paddleboarding", "birdwatching", "fishing"],
+    "faqs": [
+      {
+        "question": "Where are the best paddle trails?",
+        "answer": "Mustang Island State Park has marked trails. Leonabelle Turnbull Birding Center is excellent for wildlife."
+      },
+      {
+        "question": "Are there alligators?",
+        "answer": "Yes, in freshwater and brackish areas. They're not aggressive but maintain distance if you see one."
+      }
+    ]
+  },
+  {
+    "slug": "dolphin-watching",
+    "name": "Dolphin Watching",
+    "category": "wildlife",
+    "description": "See bottlenose dolphins in their natural habitat on boat tours through the ship channel and Gulf.",
+    "longDescription": "Port Aransas is home to a resident population of bottlenose dolphins that frequently delight visitors. Dolphin watching cruises head through the ship channel and into the Gulf, where playful pods are almost always spotted. The dolphins often bow-ride alongside boats, leap from the water, and put on a show. Sighting rates are extremely high, making this a reliable and magical wildlife experience.",
+    "difficulty": "easy",
+    "duration": "1-2 hours",
+    "bestSeason": ["March", "April", "May", "June", "July", "August", "September", "October"],
+    "bestTime": "Morning or late afternoon",
+    "cost": "$20-35 per person",
+    "requirements": ["None"],
+    "whatToBring": ["Camera", "Sunscreen", "Light jacket for wind", "Binoculars"],
+    "tips": ["Morning cruises often calmer", "Dolphins are curious and often approach boats", "Great for all ages", "Also see pelicans, herons, and sometimes sea turtles"],
+    "locations": ["Port Aransas Marina"],
+    "operators": [
+      {
+        "name": "Port Aransas Dolphin Watch",
+        "phone": "(361) 749-5252",
+        "description": "Multiple daily cruises with high success rate"
+      }
+    ],
+    "seoKeywords": ["dolphin watching port aransas", "see dolphins port a", "dolphin cruise texas", "wildlife tour port aransas"],
+    "relatedActivities": ["birdwatching", "shelling", "sunset-cruise"],
+    "faqs": [
+      {
+        "question": "Will we definitely see dolphins?",
+        "answer": "Sighting rate is over 95%. The resident population is reliable, and captains know where to find them."
+      },
+      {
+        "question": "How close do dolphins come?",
+        "answer": "Often very close—they're curious and frequently approach boats to bow-ride or investigate."
+      }
+    ]
+  },
+  {
+    "slug": "birdwatching",
+    "name": "Birdwatching",
+    "category": "wildlife",
+    "description": "World-class birding destination with 500+ species including rare whooping cranes.",
+    "longDescription": "The Port Aransas area is internationally recognized as one of North America's premier birding destinations. Located on the Central Flyway, the region sees millions of migratory birds in spring and fall. Resident species include roseate spoonbills, great blue herons, and numerous shorebirds. The endangered whooping cranes winter nearby at Aransas National Wildlife Refuge. Multiple sanctuaries, boardwalks, and guided tours cater to birders of all levels.",
+    "difficulty": "easy",
+    "duration": "2-6 hours",
+    "bestSeason": ["March", "April", "May", "October", "November", "December", "January", "February"],
+    "bestTime": "Dawn and dusk",
+    "cost": "Free-$75 (self-guided to guided tours)",
+    "requirements": ["None (binoculars recommended)"],
+    "whatToBring": ["Binoculars", "Field guide", "Camera with zoom", "Hat", "Bug spray", "Water", "Notebook"],
+    "tips": ["Dawn is most active", "Leonabelle Turnbull is best free site", "Whooping cranes November-March", "Migration peaks April and October"],
+    "locations": ["Leonabelle Turnbull Birding Center", "Port Aransas Nature Preserve", "Aransas National Wildlife Refuge"],
+    "operators": [
+      {
+        "name": "Coastal Bend Birding Tours",
+        "phone": "(361) 749-1234",
+        "description": "Expert-guided tours including whooping crane trips"
+      }
+    ],
+    "seoKeywords": ["birdwatching port aransas", "birding port a", "whooping cranes texas", "migratory birds texas coast"],
+    "relatedActivities": ["nature-photography", "hiking", "kayaking"],
+    "faqs": [
+      {
+        "question": "When can I see whooping cranes?",
+        "answer": "November through March at Aransas National Wildlife Refuge. Boat tours offer best views."
+      },
+      {
+        "question": "What birds are unique to the area?",
+        "answer": "Roseate spoonbills are stunning year-round. Great blue herons, reddish egrets, and many shorebirds are common."
+      }
+    ]
+  },
+  {
+    "slug": "shelling",
+    "name": "Shelling",
+    "category": "beach",
+    "description": "Hunt for beautiful shells along the beaches, especially after storms at San Jose Island.",
+    "longDescription": "Shelling along the Port Aransas beaches can yield everything from sand dollars and whelks to olive shells and the prized lettered olive. The best shelling occurs after storms when waves deposit fresh shells on the beach. For serious shellers, boat tours to uninhabited San Jose Island offer pristine picking grounds with far less competition. Early morning, low tide, and post-storm conditions are ideal.",
+    "difficulty": "easy",
+    "duration": "1-4 hours",
+    "bestSeason": ["October", "November", "December", "January", "February", "March"],
+    "bestTime": "Low tide, early morning, after storms",
+    "cost": "Free (San Jose Island tours $30-50)",
+    "requirements": ["None"],
+    "whatToBring": ["Mesh bag or bucket", "Sunscreen", "Hat", "Water shoes", "Camera", "Shell identification guide"],
+    "tips": ["Go at low tide", "After storms is best", "San Jose Island has best selection", "Look at wrack line", "Take only empty shells"],
+    "locations": ["Port Aransas Beach", "San Jose Island", "Mustang Island State Park"],
+    "operators": [
+      {
+        "name": "Port Aransas Shelling Tours",
+        "phone": "(361) 749-4855",
+        "description": "Boat tours to San Jose Island"
+      }
+    ],
+    "seoKeywords": ["shelling port aransas", "shell hunting port a", "san jose island shells", "beach shells texas"],
+    "relatedActivities": ["beachcombing", "photography", "dolphin-watching"],
+    "faqs": [
+      {
+        "question": "What shells can I find?",
+        "answer": "Whelks, olive shells, sand dollars (often broken), coquinas, scallops, and occasionally lettered olives."
+      },
+      {
+        "question": "Is San Jose Island worth the trip?",
+        "answer": "Yes—the uninhabited beach has less traffic and better selection, especially after weather events."
+      }
+    ]
+  },
+  {
+    "slug": "sunset-viewing",
+    "name": "Sunset Viewing",
+    "category": "relaxation",
+    "description": "Experience spectacular Texas coast sunsets over the Gulf of Mexico.",
+    "longDescription": "Port Aransas sunsets are legendary—the sky transforms into brilliant oranges, pinks, and purples as the sun sinks over the Gulf. The best viewing spots include Roberts Point Park, the beach at any access point, sunset cruises on the water, and rooftop bars. The wide horizon and clean air create optimal conditions for colorful displays. Sunset cruises combine the view with dolphins and drinks.",
+    "difficulty": "easy",
+    "duration": "1-2 hours",
+    "bestSeason": ["Year-round"],
+    "bestTime": "30 minutes before sunset",
+    "cost": "Free (cruises $25-75)",
+    "requirements": ["None"],
+    "whatToBring": ["Camera", "Light jacket", "Drinks (for beach viewing)"],
+    "tips": ["Arrive 30 minutes early for position", "Roberts Point and beaches face west", "Clouds make colors better", "Sunset cruises include drinks"],
+    "locations": ["Roberts Point Park", "Any beach access", "Rooftop bars", "Sunset cruises"],
+    "seoKeywords": ["sunset port aransas", "sunset cruise port a", "best sunset texas coast"],
+    "relatedActivities": ["sunset-cruise", "photography", "dolphin-watching"],
+    "faqs": [
+      {
+        "question": "Best spot for sunsets?",
+        "answer": "Roberts Point Park has channel views, any beach access works, or take a sunset cruise for on-water experience."
+      }
+    ]
+  },
+  {
+    "slug": "parasailing",
+    "name": "Parasailing",
+    "category": "water-sports",
+    "description": "Soar 500-800 feet above the Gulf for breathtaking aerial views of the coast.",
+    "longDescription": "Parasailing from Port Aransas offers a thrilling perspective of the Texas coast, lifting you 500-800 feet above the Gulf for panoramic views. The experience is surprisingly peaceful once aloft—you hear nothing but wind and can see for miles. Single, tandem, and triple flights accommodate groups. Takeoff and landing are from the boat, so you don't even need to get wet unless you want to.",
+    "difficulty": "easy",
+    "duration": "1-2 hours (10-15 minutes in air)",
+    "bestSeason": ["April", "May", "June", "July", "August", "September", "October"],
+    "bestTime": "Morning or early afternoon",
+    "cost": "$75-125 per person",
+    "requirements": ["No severe fear of heights", "Weight limits apply"],
+    "whatToBring": ["Sunglasses with strap", "Sunscreen", "Camera with strap", "Light clothing"],
+    "tips": ["Morning is less windy", "Ask for dip in water", "Tandem flights available", "Photos are included with many operators"],
+    "locations": ["Port Aransas Marina"],
+    "operators": [
+      {
+        "name": "Island Parasailing",
+        "phone": "(361) 749-7777",
+        "description": "Multiple daily flights, photo packages available"
+      }
+    ],
+    "seoKeywords": ["parasailing port aransas", "parasail port a", "aerial tour port aransas"],
+    "relatedActivities": ["jet-skiing", "boat-tours", "fishing"],
+    "faqs": [
+      {
+        "question": "Is parasailing safe?",
+        "answer": "Very safe with licensed operators. Modern equipment and trained crews make incidents rare."
+      },
+      {
+        "question": "Will I get wet?",
+        "answer": "Only if you request a dip! Takeoff and landing are from the boat deck."
+      }
+    ]
+  },
+  {
+    "slug": "jet-skiing",
+    "name": "Jet Skiing",
+    "category": "water-sports",
+    "description": "Rent a jet ski for thrilling rides through the bay and Gulf waters.",
+    "longDescription": "Jet skiing in Port Aransas provides high-speed fun on the water. Rentals include safety instruction, life jackets, and mapped riding areas through the bay and channel. Single and double jet skis accommodate individuals and pairs. The calm bay waters are perfect for beginners, while more experienced riders can explore further.",
+    "difficulty": "easy",
+    "duration": "1-4 hours",
+    "bestSeason": ["May", "June", "July", "August", "September"],
+    "bestTime": "Late morning to afternoon",
+    "cost": "$75-150 per hour",
+    "requirements": ["Must be 16 to operate", "Valid ID"],
+    "whatToBring": ["Sunscreen", "Sunglasses with strap", "Towel", "Water"],
+    "tips": ["Half-day rental better value", "Follow mapped routes", "Watch for boats in channel", "Stay hydrated"],
+    "locations": ["Port Aransas Marina area"],
+    "operators": [
+      {
+        "name": "Island Jet Ski Rentals",
+        "phone": "(361) 749-5222",
+        "description": "Hourly and half-day rentals"
+      }
+    ],
+    "seoKeywords": ["jet ski rental port aransas", "waverunner port a", "jet ski port aransas"],
+    "relatedActivities": ["parasailing", "boat-tours", "paddleboarding"],
+    "faqs": [
+      {
+        "question": "How old do you have to be?",
+        "answer": "16 to operate, but passengers can be younger with appropriate life jackets."
+      }
+    ]
+  },
+  {
+    "slug": "golf-cart-touring",
+    "name": "Golf Cart Touring",
+    "category": "exploration",
+    "description": "Cruise Port Aransas in a rented golf cart—the quintessential island transportation.",
+    "longDescription": "Golf carts are street legal in Port Aransas, making them the perfect way to explore the island. Rent a cart and cruise to restaurants, shops, and beach access points in laid-back style. It's part transportation, part activity—families love the open-air experience, and finding parking is never a problem. Daily and weekly rentals are available with delivery to your property.",
+    "difficulty": "easy",
+    "duration": "Day or week",
+    "bestSeason": ["Year-round"],
+    "cost": "$50-100 per day, $300-500 per week",
+    "requirements": ["Valid driver's license"],
+    "whatToBring": ["Sunscreen", "Sunglasses", "Light jacket for evening"],
+    "tips": ["Street legal on most roads", "Stay off Highway 361", "Charge nightly", "Kids love riding"],
+    "locations": ["Throughout Port Aransas"],
+    "operators": [
+      {
+        "name": "Port A Golf Cart Rentals",
+        "phone": "(361) 749-6655",
+        "description": "Daily and weekly rentals with delivery"
+      }
+    ],
+    "seoKeywords": ["golf cart rental port aransas", "golf cart port a", "island transportation port aransas"],
+    "relatedActivities": ["exploring", "dining", "shopping"]
+  },
+  {
+    "slug": "beach-bonfire",
+    "name": "Beach Bonfires",
+    "category": "relaxation",
+    "description": "Gather around a beach bonfire under the stars for a memorable evening.",
+    "longDescription": "Beach bonfires are permitted on Port Aransas beaches under certain conditions and with proper permits. Companies offer bonfire setups complete with wood, chairs, s'mores supplies, and cleanup. It's a magical way to end a beach day—watching flames dance under starry skies, listening to waves, and making vacation memories.",
+    "difficulty": "easy",
+    "duration": "2-4 hours",
+    "bestSeason": ["March", "April", "May", "September", "October", "November"],
+    "bestTime": "After sunset",
+    "cost": "$100-250 for setup service",
+    "requirements": ["Permit (arranged by service)", "Fire must be in designated areas"],
+    "whatToBring": ["Blankets", "Drinks", "Snacks", "Camera", "Speakers for music"],
+    "tips": ["Bonfire services handle permits and cleanup", "Below dune line only", "Check fire conditions", "Bring bug spray"],
+    "locations": ["Various beach access points"],
+    "seoKeywords": ["beach bonfire port aransas", "bonfire beach port a", "campfire beach texas"],
+    "relatedActivities": ["stargazing", "sunset-viewing", "beach-camping"]
+  },
+  {
+    "slug": "photography",
+    "name": "Nature & Wildlife Photography",
+    "category": "creative",
+    "description": "Capture stunning images of wildlife, sunsets, and coastal landscapes.",
+    "longDescription": "Port Aransas offers exceptional photography opportunities for all skill levels. The birding centers provide easy access to herons, spoonbills, and other wading birds. Beaches deliver stunning sunrises and sunsets. The marshes and bays offer moody landscapes. Whether you're shooting with a phone or professional gear, the light, wildlife, and scenery deliver memorable images.",
+    "difficulty": "easy",
+    "duration": "Variable",
+    "bestSeason": ["Year-round (migration spring/fall best)"],
+    "bestTime": "Golden hour (sunrise/sunset)",
+    "cost": "Free",
+    "requirements": ["Camera"],
+    "whatToBring": ["Camera and lenses", "Tripod", "Lens cloths", "Bug spray", "Hat"],
+    "tips": ["Golden hour is magical", "Birding centers have boardwalks for stability", "Watch for sea spray on lenses", "Polarizing filter helps with water reflections"],
+    "locations": ["Leonabelle Turnbull Birding Center", "Roberts Point Park", "Beaches", "Jetties"],
+    "seoKeywords": ["photography port aransas", "wildlife photos port a", "bird photography texas coast"],
+    "relatedActivities": ["birdwatching", "sunset-viewing", "wildlife-tours"]
+  },
+  {
+    "slug": "kiteboarding",
+    "name": "Kiteboarding",
+    "category": "water-sports",
+    "description": "Harness Port Aransas's reliable winds for exhilarating kiteboarding sessions.",
+    "longDescription": "Port Aransas's consistent winds make it one of Texas's best kiteboarding destinations. The flat, shallow waters of the bay provide ideal learning conditions, while the Gulf offers more challenging waves for advanced riders. Lessons are available for beginners, and the sport's popularity has created a community of local kiters.",
+    "difficulty": "challenging",
+    "duration": "2-4 hours",
+    "bestSeason": ["March", "April", "May", "September", "October", "November"],
+    "bestTime": "Afternoon when winds pick up",
+    "cost": "$200-400 for lessons, $100-200 equipment rental",
+    "requirements": ["Good fitness", "Swimming ability", "Patience for learning curve"],
+    "whatToBring": ["Rashguard", "Sunscreen", "Sunglasses", "Water"],
+    "tips": ["Take lessons—don't try to teach yourself", "Bay is better for learning", "Consistent afternoon winds", "Join local community for tips"],
+    "locations": ["Bird Island Basin", "Various bay areas"],
+    "seoKeywords": ["kiteboarding port aransas", "kiting texas coast", "kitesurfing port a"],
+    "relatedActivities": ["surfing", "paddleboarding", "windsurfing"]
+  },
+  {
+    "slug": "beach-horseback-riding",
+    "name": "Beach Horseback Riding",
+    "category": "unique",
+    "description": "Ride horses along the beach for a romantic and memorable coastal experience.",
+    "longDescription": "Beach horseback riding combines two quintessential experiences—horses and the beach. Guided rides take you along the sand at the water's edge during sunrise or sunset for an unforgettable experience. Rides accommodate all skill levels, from first-timers to experienced equestrians. It's romantic, peaceful, and provides unique beach photos.",
+    "difficulty": "easy",
+    "duration": "1-2 hours",
+    "bestSeason": ["October", "November", "December", "January", "February", "March", "April", "May"],
+    "bestTime": "Sunrise or sunset",
+    "cost": "$85-150 per person",
+    "requirements": ["Weight limits apply", "No prior riding experience needed"],
+    "whatToBring": ["Long pants", "Closed-toe shoes", "Sunscreen", "Camera"],
+    "tips": ["Sunset rides are most popular—book ahead", "Wear pants, not shorts", "Closed-toe shoes required", "Great for proposals"],
+    "locations": ["Port Aransas Beach"],
+    "seoKeywords": ["horseback riding beach port aransas", "beach horses port a", "horse riding texas beach"],
+    "relatedActivities": ["sunset-viewing", "photography", "beach-activities"]
+  },
+  {
+    "slug": "sailing",
+    "name": "Sailing",
+    "category": "water-sports",
+    "description": "Set sail on the bay and Gulf waters aboard chartered sailboats.",
+    "longDescription": "Sailing from Port Aransas takes you into the bay and Gulf under wind power alone. Charter options range from skippered cruises where you relax and enjoy, to bareboat rentals for experienced sailors. The consistent coastal winds make for reliable sailing conditions, and the scenery—dolphins, pelicans, distant oil rigs—adds to the experience.",
+    "difficulty": "moderate",
+    "duration": "2-6 hours",
+    "bestSeason": ["April", "May", "September", "October", "November"],
+    "bestTime": "Afternoon when winds pick up",
+    "cost": "$150-400 for charter",
+    "requirements": ["None for skippered cruises", "Experience for bareboat rental"],
+    "whatToBring": ["Sunscreen", "Sunglasses", "Light jacket", "Camera"],
+    "tips": ["Afternoon winds are best", "Sunset sails are popular", "Skippered cruises require no experience", "Dress in layers for wind"],
+    "locations": ["Port Aransas Marina"],
+    "seoKeywords": ["sailing port aransas", "sailboat charter port a", "sunset sail texas coast"],
+    "relatedActivities": ["sunset-cruise", "boat-tours", "fishing"]
+  },
+  {
+    "slug": "sand-castle-building",
+    "name": "Sand Castle Building",
+    "category": "beach",
+    "description": "Build sand castles on Port Aransas beaches—or hire pros for amazing sculptures.",
+    "longDescription": "Sand castle building is a beloved beach activity, from simple kid-made creations to elaborate sculptures. Port Aransas hosts Sandfest, one of the largest sand sculpture competitions in the country, each spring. Professional sand sculptors offer lessons and can create spectacular custom pieces. The fine sand and consistent moisture make for good building conditions.",
+    "difficulty": "easy",
+    "duration": "1-4 hours",
+    "bestSeason": ["Year-round"],
+    "bestTime": "Morning before wind picks up",
+    "cost": "Free (lessons $50-100)",
+    "requirements": ["None"],
+    "whatToBring": ["Buckets and shovels", "Spray bottle", "Carving tools", "Sunscreen", "Water"],
+    "tips": ["Wet sand packs better", "Build at water's edge for moist sand", "Use spray bottle to keep it damp", "Morning wind is calmer"],
+    "locations": ["Any beach access"],
+    "seoKeywords": ["sand castles port aransas", "sandfest port a", "beach building port aransas"],
+    "relatedActivities": ["beach-activities", "shelling", "photography"]
+  }
+]
