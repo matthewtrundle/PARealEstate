@@ -138,7 +138,7 @@ export function HeroSection() {
                   <Button
                     variant="outline"
                     size="lg"
-                    className="px-8 py-4 text-base border-neutral-500 text-white hover:bg-white/5 hover:border-neutral-300 rounded-md transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.1)]"
+                    className="px-8 py-4 text-base border-2 border-white/70 text-white hover:bg-white/10 hover:border-white rounded-md transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]"
                     asChild
                   >
                     <a href="#contact-form">Request Consultation</a>

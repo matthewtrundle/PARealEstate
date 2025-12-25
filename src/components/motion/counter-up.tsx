@@ -23,7 +23,7 @@ export function CounterUp({
   className = "",
 }: CounterUpProps) {
   const ref = useRef<HTMLSpanElement>(null)
-  const isInView = useInView(ref, { once: true, amount: 0.5 })
+  const isInView = useInView(ref, { once: true, margin: "-50px" })
   const prefersReducedMotion = useReducedMotion()
   const [displayValue, setDisplayValue] = useState(0)
   const [hasAnimated, setHasAnimated] = useState(false)

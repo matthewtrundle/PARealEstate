@@ -100,17 +100,6 @@ export function Header() {
 
             {/* Desktop CTA - Confident, squared */}
             <div className="hidden md:flex items-center gap-6">
-              <a
-                href={`tel:${SITE_CONFIG.phone.replace(/[^\d+]/g, "")}`}
-                className={cn(
-                  "text-sm transition-colors duration-300",
-                  isScrolled
-                    ? "text-neutral-600 hover:text-neutral-900"
-                    : "text-neutral-300 hover:text-white"
-                )}
-              >
-                {SITE_CONFIG.phone}
-              </a>
               <Button
                 variant="cta"
                 size="sm"
