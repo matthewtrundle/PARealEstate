@@ -119,6 +119,8 @@ export function HeroParallax({ videoUrl, backgroundUrl, children, className = ""
             loop
             muted
             playsInline
+            preload="auto"
+            poster="/images/hero-poster.jpg"
             className="w-full h-full object-cover"
           >
             <source src={videoUrl} type="video/mp4" />

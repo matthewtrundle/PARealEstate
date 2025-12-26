@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/footer"
 import { AnalyticsProvider } from "@/components/providers/analytics-provider"
 import { LenisProvider } from "@/components/providers/lenis-provider"
 import { GlobalSchemas } from "@/components/seo"
+import { ChatWidget } from "@/components/chat"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -89,6 +90,8 @@ export default function RootLayout({
             <Footer />
           </AnalyticsProvider>
         </LenisProvider>
+        {/* AI Chat Widget */}
+        <ChatWidget />
         {/* Premium grain texture overlay */}
         <div className="grain-overlay" aria-hidden="true" />
         <Analytics />
