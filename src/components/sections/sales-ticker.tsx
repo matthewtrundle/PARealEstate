@@ -5,14 +5,14 @@ import { motion, AnimatePresence } from "framer-motion"
 import { cn } from "@/lib/utils"
 
 const recentSales = [
-  { address: "456 Gulf Blvd", neighborhood: "Cinnamon Shore", price: 1250000, daysAgo: 2 },
-  { address: "123 Ocean Dr", neighborhood: "Mustang Island", price: 875000, daysAgo: 4 },
-  { address: "789 Beach Ave", neighborhood: "Pirates Bay", price: 725000, daysAgo: 5 },
-  { address: "321 Surf Lane", neighborhood: "Beachwalk", price: 650000, daysAgo: 7 },
-  { address: "555 Harbor Way", neighborhood: "Downtown", price: 485000, daysAgo: 9 },
-  { address: "888 Dune St", neighborhood: "Port Royal", price: 1100000, daysAgo: 11 },
-  { address: "222 Pelican Rd", neighborhood: "Cinnamon Shore", price: 980000, daysAgo: 14 },
-  { address: "777 Sandpiper Ct", neighborhood: "Mustang Island", price: 790000, daysAgo: 16 },
+  { propertyType: "Beachfront Home", neighborhood: "Cinnamon Shore", price: 1250000, daysAgo: 2 },
+  { propertyType: "Beach Cottage", neighborhood: "Mustang Island", price: 875000, daysAgo: 4 },
+  { propertyType: "Waterfront Condo", neighborhood: "Pirates Bay", price: 725000, daysAgo: 5 },
+  { propertyType: "Canal Home", neighborhood: "Beachwalk", price: 650000, daysAgo: 7 },
+  { propertyType: "Investment Property", neighborhood: "Downtown", price: 485000, daysAgo: 9 },
+  { propertyType: "Luxury Estate", neighborhood: "Port Royal", price: 1100000, daysAgo: 11 },
+  { propertyType: "Beach House", neighborhood: "Cinnamon Shore", price: 980000, daysAgo: 14 },
+  { propertyType: "Gulf View Condo", neighborhood: "Mustang Island", price: 790000, daysAgo: 16 },
 ]
 
 function formatPrice(price: number): string {
@@ -40,7 +40,17 @@ interface SalesTickerProps {
 export function SalesTicker({ className, variant = "banner" }: SalesTickerProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isVisible, setIsVisible] = useState(true)
+  const [isScrolled, setIsScrolled] = useState(false)
   const tickerRef = useRef<HTMLDivElement>(null)
+
+  // Track scroll state
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50)
+    }
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   // Auto-rotate through sales
   useEffect(() => {
@@ -62,7 +72,11 @@ export function SalesTicker({ className, variant = "banner" }: SalesTickerProps)
     const sale = recentSales[currentIndex]
 
     return (
-      <div className={cn("fixed top-20 left-0 right-0 z-40 bg-neutral-900 text-white py-2.5 overflow-hidden", className)}>
+      <div className={cn(
+        "fixed left-0 right-0 z-40 bg-neutral-900 text-white py-2.5 overflow-hidden transition-all duration-500",
+        isScrolled ? "top-20 opacity-100" : "top-20 opacity-0 pointer-events-none",
+        className
+      )}>
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center gap-6 text-sm">
             {/* Live indicator */}
@@ -83,7 +97,7 @@ export function SalesTicker({ className, variant = "banner" }: SalesTickerProps)
                   exit={{ opacity: 0, y: -10 }}
                   className="flex items-center gap-4"
                 >
-                  <span className="text-white">{sale.address}</span>
+                  <span className="text-white">{sale.propertyType}</span>
                   <span className="text-neutral-400">•</span>
                   <span className="text-neutral-400">{sale.neighborhood}</span>
                   <span className="text-neutral-400">•</span>
@@ -133,7 +147,7 @@ export function SalesTicker({ className, variant = "banner" }: SalesTickerProps)
           {[...recentSales, ...recentSales].map((sale, index) => (
             <div key={index} className="flex items-center gap-3 text-sm">
               <span className="text-green-600 font-medium">SOLD</span>
-              <span className="text-neutral-900">{sale.address}</span>
+              <span className="text-neutral-900">{sale.propertyType}</span>
               <span className="text-neutral-400">•</span>
               <span className="text-primary-600 font-semibold">{formatPrice(sale.price)}</span>
             </div>
@@ -156,14 +170,14 @@ export function SalesTicker({ className, variant = "banner" }: SalesTickerProps)
       <div className="space-y-4">
         {recentSales.slice(0, 5).map((sale, index) => (
           <motion.div
-            key={sale.address}
+            key={`${sale.propertyType}-${index}`}
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: index * 0.1 }}
             className="flex items-center justify-between py-2 border-b border-neutral-100 last:border-0"
           >
             <div>
-              <div className="font-medium text-neutral-900 text-sm">{sale.address}</div>
+              <div className="font-medium text-neutral-900 text-sm">{sale.propertyType}</div>
               <div className="text-xs text-neutral-500">{sale.neighborhood}</div>
             </div>
             <div className="text-right">

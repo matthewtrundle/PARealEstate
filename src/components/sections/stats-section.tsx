@@ -1,5 +1,7 @@
 "use client"
 
+import { useRef } from "react"
+import { useInView } from "framer-motion"
 import { Container, Section } from "@/components/layout"
 import { CounterUp, Reveal } from "@/components/motion"
 import { cn } from "@/lib/utils"
@@ -38,7 +40,11 @@ interface StatsSectionProps {
 }
 
 export function StatsSection({ variant = "gradient", className }: StatsSectionProps) {
+  const sectionRef = useRef<HTMLDivElement>(null)
+  const isInView = useInView(sectionRef, { once: true, margin: "-100px" })
+
   return (
+    <div ref={sectionRef}>
     <Section
       className={cn(
         "relative overflow-hidden",
@@ -88,6 +94,7 @@ export function StatsSection({ variant = "gradient", className }: StatsSectionPr
                     prefix={stat.prefix}
                     suffix={stat.suffix}
                     duration={2}
+                    startAnimation={isInView}
                   />
                 </div>
 
@@ -112,5 +119,6 @@ export function StatsSection({ variant = "gradient", className }: StatsSectionPr
         </div>
       </Container>
     </Section>
+    </div>
   )
 }

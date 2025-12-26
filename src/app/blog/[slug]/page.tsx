@@ -87,7 +87,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       name: SITE_CONFIG.name,
       logo: {
         "@type": "ImageObject",
-        url: `${SITE_CONFIG.url}/logo.png`,
+        url: `${SITE_CONFIG.url}/port_aransas_estates_logo_transparent.png`,
       },
     },
     datePublished: post.publishedAt,

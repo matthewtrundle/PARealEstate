@@ -3,7 +3,6 @@
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import { Container, Section } from "@/components/layout"
-import { CounterUp } from "@/components/motion"
 import { useReducedMotion } from "@/hooks/use-reduced-motion"
 
 // Premium easing
@@ -126,7 +125,7 @@ export function WaveBallSection() {
                   }}
                 >
                   <div className="text-2xl font-display text-primary-900 mb-1">
-                    <CounterUp end={18} duration={2} suffix=" mi" />
+                    18 mi
                   </div>
                   <div className="text-sm text-primary-700">of Gulf coastline</div>
                 </motion.div>
@@ -141,9 +140,9 @@ export function WaveBallSection() {
                   }}
                 >
                   <div className="text-2xl font-display text-primary-900 mb-1">
-                    <CounterUp end={300} duration={2} suffix="+" />
+                    365
                   </div>
-                  <div className="text-sm text-primary-700">days of sunshine</div>
+                  <div className="text-sm text-primary-700">days of fun</div>
                 </motion.div>
               </div>
             </motion.div>

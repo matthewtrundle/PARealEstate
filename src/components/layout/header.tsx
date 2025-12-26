@@ -54,11 +54,14 @@ export function Header() {
             {/* Logo */}
             <Link href="/" className="relative flex items-center">
               <Image
-                src="/logo.png"
+                src="/port_aransas_estates_logo_transparent.png"
                 alt="Port Aransas Estates"
-                width={160}
-                height={50}
-                className="h-12 w-auto transition-all duration-300"
+                width={600}
+                height={200}
+                className={cn(
+                  "w-auto transition-all duration-500",
+                  isScrolled ? "h-14" : "h-96 mt-24"
+                )}
                 style={{
                   filter: isScrolled ? "none" : "brightness(0) invert(1)",
                 }}

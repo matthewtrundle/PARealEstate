@@ -12,6 +12,7 @@ interface CounterUpProps {
   suffix?: string
   decimals?: number
   className?: string
+  startAnimation?: boolean // Optional external trigger
 }
 
 export function CounterUp({
@@ -21,15 +22,19 @@ export function CounterUp({
   suffix = "",
   decimals = 0,
   className = "",
+  startAnimation,
 }: CounterUpProps) {
   const ref = useRef<HTMLSpanElement>(null)
-  const isInView = useInView(ref, { once: true, margin: "-50px" })
+  const isInViewInternal = useInView(ref, { once: true, amount: 0.5 })
   const prefersReducedMotion = useReducedMotion()
   const [displayValue, setDisplayValue] = useState(0)
   const [hasAnimated, setHasAnimated] = useState(false)
 
+  // Use external trigger if provided, otherwise use internal viewport detection
+  const shouldAnimate = startAnimation !== undefined ? startAnimation : isInViewInternal
+
   useEffect(() => {
-    if (!isInView || hasAnimated) return
+    if (!shouldAnimate || hasAnimated) return
 
     // Skip animation if user prefers reduced motion
     if (prefersReducedMotion) {
@@ -49,7 +54,7 @@ export function CounterUp({
     })
 
     return () => controls.stop()
-  }, [isInView, end, duration, prefersReducedMotion, hasAnimated])
+  }, [shouldAnimate, end, duration, prefersReducedMotion, hasAnimated])
 
   const formattedValue = displayValue.toFixed(decimals)
 

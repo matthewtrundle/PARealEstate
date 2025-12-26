@@ -240,6 +240,7 @@ export function SellersSection() {
                   <CounterUp
                     end={stat.value}
                     duration={2}
+                    startAnimation={isInView}
                   />
                   {stat.suffix}
                 </div>

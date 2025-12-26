@@ -54,7 +54,7 @@ export function LocalBusinessSchema() {
     },
     sameAs: [SITE_CONFIG.social.facebook, SITE_CONFIG.social.instagram],
     image: `${SITE_CONFIG.url}/images/og-default.jpg`,
-    logo: `${SITE_CONFIG.url}/logo.png`,
+    logo: `${SITE_CONFIG.url}/port_aransas_estates_logo_transparent.png`,
   }
 
   return (
@@ -76,7 +76,7 @@ export function OrganizationSchema() {
     url: SITE_CONFIG.url,
     logo: {
       "@type": "ImageObject",
-      url: `${SITE_CONFIG.url}/logo.png`,
+      url: `${SITE_CONFIG.url}/port_aransas_estates_logo_transparent.png`,
       width: 160,
       height: 50,
     },
