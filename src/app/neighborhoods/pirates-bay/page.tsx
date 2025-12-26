@@ -201,7 +201,7 @@ export default function PiratesBayPage() {
         <CTABanner
           title="Ready for Waterfront Living?"
           description="Explore canal-front homes in Pirates Bay where your boat is always ready and the fish are waiting."
-          primaryCTA={{ text: "View Properties", href: "/properties?neighborhood=pirates-bay" }}
+          primaryCTA={{ text: "Schedule Consultation", href: "/contact" }}
         />
       </Container>
     </>

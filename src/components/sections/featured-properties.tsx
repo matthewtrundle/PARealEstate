@@ -73,10 +73,10 @@ export function FeaturedProperties() {
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.6, ease: easeOutExpo, delay: 0.1 }}
             >
-              Featured Listings
+              Recent Sales
             </motion.span>
             <h2 className="text-fluid-4xl font-display font-normal text-neutral-900 tracking-tight mb-6 relative inline-block">
-              Exceptional properties
+              Proven results
               {/* Animated underline */}
               <motion.span
                 className="absolute -bottom-2 left-0 h-[2px] bg-accent-500"
@@ -91,7 +91,7 @@ export function FeaturedProperties() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, ease: easeOutExpo, delay: 0.3 }}
             >
-              Hand-selected homes and condos in Port Aransas
+              Properties we&apos;ve successfully closed in Port Aransas
             </motion.p>
           </motion.div>
 
@@ -109,7 +109,7 @@ export function FeaturedProperties() {
                 transition={{ duration: 0.7, ease: easeOutExpo }}
               >
                 <Link
-                  href={`/properties/${property.slug}`}
+                  href={`/portfolio/${property.slug}`}
                   className="group block"
                 >
                   <motion.article
@@ -135,14 +135,14 @@ export function FeaturedProperties() {
                       {/* Hover vignette */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-                      {/* Property type badge with pulse */}
+                      {/* SOLD badge */}
                       <motion.div
                         className="absolute top-4 left-4"
                         whileHover={{ scale: 1.05 }}
                         transition={{ duration: 0.2 }}
                       >
-                        <span className="px-3 py-1.5 bg-white/95 backdrop-blur-sm text-xs font-medium text-neutral-700 rounded shadow-sm group-hover:shadow-md transition-shadow duration-300">
-                          {property.features.highlights[0]}
+                        <span className="px-3 py-1.5 bg-green-600 backdrop-blur-sm text-xs font-semibold text-white rounded shadow-sm group-hover:shadow-md transition-shadow duration-300">
+                          SOLD
                         </span>
                       </motion.div>
                     </div>
@@ -170,15 +170,18 @@ export function FeaturedProperties() {
 
                       {/* Price and CTA */}
                       <div className="flex items-center justify-between pt-4 border-t border-neutral-100">
-                        {/* Price with glow on hover */}
-                        <motion.span
-                          className="text-xl font-display font-normal text-neutral-900"
-                          whileHover={{ color: "rgb(29 78 116)" }} // primary-700
-                        >
-                          ${property.pricing.listPrice.toLocaleString()}
-                        </motion.span>
+                        {/* Sale price */}
+                        <div>
+                          <span className="text-xs text-green-600 font-medium block">Sold for</span>
+                          <motion.span
+                            className="text-xl font-display font-normal text-neutral-900"
+                            whileHover={{ color: "rgb(29 78 116)" }}
+                          >
+                            ${(property.salePrice || property.pricing.listPrice).toLocaleString()}
+                          </motion.span>
+                        </div>
                         <span className="text-sm text-primary-700 font-medium flex items-center overflow-hidden">
-                          <span className="group-hover:-translate-x-1 transition-transform duration-300">View</span>
+                          <span className="group-hover:-translate-x-1 transition-transform duration-300">Details</span>
                           <svg
                             className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300"
                             fill="none"
@@ -214,8 +217,8 @@ export function FeaturedProperties() {
                 className="group px-8 py-4 border-neutral-300 text-neutral-700 hover:bg-neutral-100 hover:border-neutral-400 rounded-md transition-all duration-300"
                 asChild
               >
-                <Link href="/properties" className="flex items-center gap-2">
-                  View All Properties
+                <Link href="/portfolio" className="flex items-center gap-2">
+                  View Our Portfolio
                   <svg
                     className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
                     fill="none"

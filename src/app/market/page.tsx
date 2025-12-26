@@ -210,7 +210,7 @@ export default function MarketPage() {
           title="Get a Free Market Analysis"
           description="Interested in buying or selling? Our team can provide a detailed analysis of current market conditions for your property type and target neighborhoods."
           primaryCTA={{ text: "Request Analysis", href: "#contact-form" }}
-          secondaryCTA={{ text: "View Properties", href: "/properties" }}
+          secondaryCTA={{ text: "View Portfolio", href: "/portfolio" }}
         />
       </Container>
     </>

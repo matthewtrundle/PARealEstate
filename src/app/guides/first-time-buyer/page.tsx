@@ -360,8 +360,8 @@ export default function FirstTimeBuyerPage() {
         <CTABanner
           title="Ready to Find Your First Beach Home?"
           description="Let us guide you through your first Port Aransas purchase with local expertise and patient support."
-          primaryCTA={{ text: "View Properties", href: "/properties" }}
-          secondaryCTA={{ text: "Contact Us", href: "/contact" }}
+          primaryCTA={{ text: "Schedule Consultation", href: "/contact" }}
+          secondaryCTA={{ text: "View Portfolio", href: "/portfolio" }}
         />
       </Container>
     </>

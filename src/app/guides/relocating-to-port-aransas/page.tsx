@@ -439,9 +439,9 @@ export default function RelocatingToPortAransasPage() {
       <Container>
         <CTABanner
           title="Ready to Make Port Aransas Home?"
-          description="Browse available properties or let us help you find the perfect home for your island lifestyle."
-          primaryCTA={{ text: "View Properties", href: "/properties" }}
-          secondaryCTA={{ text: "Contact Us", href: "/contact" }}
+          description="Let us help you find the perfect home for your island lifestyle."
+          primaryCTA={{ text: "Schedule Consultation", href: "/contact" }}
+          secondaryCTA={{ text: "View Portfolio", href: "/portfolio" }}
         />
       </Container>
     </>

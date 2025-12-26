@@ -27,7 +27,8 @@ export function CounterUp({
   const ref = useRef<HTMLSpanElement>(null)
   const isInViewInternal = useInView(ref, { once: true, amount: 0.5 })
   const prefersReducedMotion = useReducedMotion()
-  const [displayValue, setDisplayValue] = useState(0)
+  // Start with the end value - ensures SSR and no-JS users see the real value
+  const [displayValue, setDisplayValue] = useState(end)
   const [hasAnimated, setHasAnimated] = useState(false)
 
   // Use external trigger if provided, otherwise use internal viewport detection
@@ -36,7 +37,7 @@ export function CounterUp({
   useEffect(() => {
     if (!shouldAnimate || hasAnimated) return
 
-    // Skip animation if user prefers reduced motion
+    // Skip animation if user prefers reduced motion - just show final value
     if (prefersReducedMotion) {
       setDisplayValue(end)
       setHasAnimated(true)
@@ -45,15 +46,28 @@ export function CounterUp({
 
     setHasAnimated(true)
 
+    // Animate from 0 to end
     const controls = animate(0, end, {
       duration,
       ease: EASING.smooth,
       onUpdate: (value) => {
         setDisplayValue(value)
       },
+      onComplete: () => {
+        // Ensure final value is set even if animation had issues
+        setDisplayValue(end)
+      },
     })
 
-    return () => controls.stop()
+    // Fallback: ensure end value is shown after animation duration + buffer
+    const fallbackTimer = setTimeout(() => {
+      setDisplayValue(end)
+    }, (duration + 0.5) * 1000)
+
+    return () => {
+      controls.stop()
+      clearTimeout(fallbackTimer)
+    }
   }, [shouldAnimate, end, duration, prefersReducedMotion, hasAnimated])
 
   const formattedValue = displayValue.toFixed(decimals)

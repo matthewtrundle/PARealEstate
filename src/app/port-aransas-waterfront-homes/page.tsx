@@ -2,32 +2,30 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { Container, Section } from "@/components/layout"
 import { Breadcrumbs, SEOPageHero, SEOContent, ContentSection, HighlightBox, CTABanner } from "@/components/seo"
-import { PropertyCard } from "@/components/properties"
 import { LeadFormSection } from "@/components/sections"
-import propertiesData from "@/data/properties.json"
 
 export const metadata: Metadata = {
-  title: "Port Aransas Waterfront Homes | Canal & Bay Front Properties",
+  title: "Port Aransas Waterfront Homes | Market Insights & Pricing",
   description:
-    "Browse waterfront homes for sale in Port Aransas, TX. Canal-front and bay-front properties with boat docks, fishing access, and water views.",
+    "Expert insights on Port Aransas waterfront real estate. Canal-front and bay-front property analysis, price trends, and market guidance for water-access homes.",
   keywords: [
     "Port Aransas waterfront homes",
-    "canal front homes Port Aransas",
-    "bay front property Texas",
-    "waterfront homes with boat dock",
-    "Port Aransas fishing homes",
-    "water access homes Texas coast",
+    "canal front property values",
+    "bay front homes Texas",
+    "waterfront real estate Port Aransas",
+    "boat dock homes Texas coast",
+    "water access property analysis",
   ],
   openGraph: {
-    title: "Port Aransas Waterfront Homes | Canal & Bay Properties",
-    description: "Canal-front and bay-front homes with boat docks and water access.",
+    title: "Port Aransas Waterfront Homes | Market Insights & Pricing",
+    description: "Expert insights on canal-front and bay-front property values in Port Aransas.",
   },
 }
 
 export default function WaterfrontHomesPage() {
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Properties", href: "/properties" },
+    { label: "Market Insights", href: "/market" },
     { label: "Waterfront Homes", href: "/port-aransas-waterfront-homes" },
   ]
 
@@ -35,7 +33,7 @@ export default function WaterfrontHomesPage() {
     <>
       <SEOPageHero
         title="Waterfront Homes"
-        subtitle="Canal-front and bay-front properties with boat docks and direct water access."
+        subtitle="Market insights for canal-front and bay-front properties with boat docks and direct water access."
         backgroundImage="/images/hero/waterfront.jpg"
       />
 
@@ -58,6 +56,30 @@ export default function WaterfrontHomesPage() {
                 calm bay waters.
               </p>
             </ContentSection>
+
+            {/* Market Overview */}
+            <div className="my-12 p-8 bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl">
+              <h2 className="text-2xl font-display font-semibold text-neutral-900 mb-6">
+                Waterfront Market Overview
+              </h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <p className="text-sm text-neutral-500 uppercase tracking-wider mb-1">Canal-Front</p>
+                  <p className="text-2xl font-semibold text-primary-800">$600K - $1.2M</p>
+                  <p className="text-sm text-neutral-600 mt-2">Protected docks, calm waters</p>
+                </div>
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <p className="text-sm text-neutral-500 uppercase tracking-wider mb-1">Bay-Front</p>
+                  <p className="text-2xl font-semibold text-primary-800">$1M - $2M</p>
+                  <p className="text-sm text-neutral-600 mt-2">Open water views, deep water</p>
+                </div>
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <p className="text-sm text-neutral-500 uppercase tracking-wider mb-1">Premium</p>
+                  <p className="text-2xl font-semibold text-primary-800">$2M+</p>
+                  <p className="text-sm text-neutral-600 mt-2">Estate properties, ship channel</p>
+                </div>
+              </div>
+            </div>
 
             <HighlightBox title="Waterfront Property Types">
               <ul className="space-y-3 text-neutral-700">
@@ -89,16 +111,16 @@ export default function WaterfrontHomesPage() {
               </p>
               <p>
                 Waterfront properties typically offer more value than beachfront homes, with larger
-                lots and more privacy. Prices range from $600,000 for modest canal-front homes to
-                $2 million+ for premium bay-front estates with deep water.
+                lots and more privacy. Working with an agent who understands the nuances of different
+                waterfront locations is essential to finding the right property.
               </p>
             </ContentSection>
           </SEOContent>
 
           <CTABanner
-            title="Find Your Waterfront Home"
-            description="Tell us about your boating needs and we'll match you with the right property."
-            buttonText="Contact Us"
+            title="Interested in Waterfront Properties?"
+            description="Let's discuss your boating needs and find the right waterfront location for your lifestyle."
+            buttonText="Schedule Consultation"
             buttonHref="/contact?interest=waterfront"
           />
         </Container>
@@ -106,8 +128,8 @@ export default function WaterfrontHomesPage() {
 
       <LeadFormSection
         variant="dark"
-        title="Get Waterfront Property Alerts"
-        subtitle="Be first to know about new canal-front and bay-front listings."
+        title="Start Your Waterfront Search"
+        subtitle="Tell us about your ideal waterfront property and boating requirements."
       />
     </>
   )

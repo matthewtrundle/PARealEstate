@@ -405,9 +405,9 @@ export default function VacationRentalGuidePage() {
       <Container>
         <CTABanner
           title="Looking for a Vacation Rental Property?"
-          description="Browse properties with proven rental potential or let us help you find the perfect investment."
-          primaryCTA={{ text: "View Properties", href: "/properties" }}
-          secondaryCTA={{ text: "Contact Us", href: "/contact" }}
+          description="Let us help you find the perfect investment property with proven rental potential."
+          primaryCTA={{ text: "Schedule Consultation", href: "/contact" }}
+          secondaryCTA={{ text: "View Portfolio", href: "/portfolio" }}
         />
       </Container>
     </>

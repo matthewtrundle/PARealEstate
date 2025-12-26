@@ -60,10 +60,10 @@ export function Header() {
                 height={200}
                 className={cn(
                   "w-auto transition-all duration-500",
-                  isScrolled ? "h-14" : "h-96 mt-24"
+                  pathname === "/" && !isScrolled ? "h-96 mt-24" : "h-40"
                 )}
                 style={{
-                  filter: isScrolled ? "none" : "brightness(0) invert(1)",
+                  filter: pathname === "/" && !isScrolled ? "brightness(0) invert(1)" : "none",
                 }}
                 priority
               />

@@ -14,6 +14,10 @@ export interface Property {
   images: PropertyImages
   details: PropertyDetails
   seo: PropertySEO
+  // Sold property fields
+  saleDate?: string
+  salePrice?: number
+  daysToSell?: number
 }
 
 export interface PropertyLocation {

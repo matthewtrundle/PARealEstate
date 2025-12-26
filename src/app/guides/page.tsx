@@ -69,6 +69,16 @@ const investmentGuides = [
   },
 ]
 
+const sellingGuides = [
+  {
+    title: "Selling Your Port Aransas Property",
+    description:
+      "Expert guidance on selling your beach home or investment property. Market timing, pricing strategy, preparation tips, and what to expect from the selling process.",
+    href: "/guides/selling",
+    category: "Selling",
+  },
+]
+
 const lifestyleGuides = [
   {
     title: "Relocating to Port Aransas",
@@ -131,6 +141,22 @@ export default function GuidesPage() {
                   key={guide.href}
                   {...guide}
                   icon={<TrendingUpIcon size={28} />}
+                />
+              ))}
+            </GuideGrid>
+          </div>
+
+          {/* Selling Guides */}
+          <div className="mb-16">
+            <h2 className="font-display text-2xl text-primary-900 mb-6">
+              Selling Guides
+            </h2>
+            <GuideGrid columns={2}>
+              {sellingGuides.map((guide) => (
+                <GuideCard
+                  key={guide.href}
+                  {...guide}
+                  icon={<HomeIcon size={28} />}
                 />
               ))}
             </GuideGrid>
@@ -206,7 +232,7 @@ export default function GuidesPage() {
           title="Have Questions About Buying?"
           description="Our team of local experts is here to answer your questions and guide you through the process."
           primaryCTA={{ text: "Contact Us", href: "#contact-form" }}
-          secondaryCTA={{ text: "View Properties", href: "/properties" }}
+          secondaryCTA={{ text: "View Portfolio", href: "/portfolio" }}
         />
       </Container>
     </>

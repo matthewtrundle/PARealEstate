@@ -7,13 +7,13 @@ import propertiesData from "@/data/properties.json"
 import type { Property } from "@/types/property"
 
 export const metadata: Metadata = {
-  title: "Port Aransas Homes & Condos for Sale",
+  title: "Our Portfolio | Recent Transactions in Port Aransas",
   description:
-    "Browse homes, condos, and beachfront properties for sale in Port Aransas, Texas. Get pricing, details, and expert guidance.",
+    "Browse our portfolio of successfully closed properties in Port Aransas, Texas. View case studies of beach homes, condos, and investment properties we've helped clients buy and sell.",
   openGraph: {
-    title: "Port Aransas Homes & Condos for Sale",
+    title: "Our Portfolio | Recent Transactions in Port Aransas",
     description:
-      "Browse homes, condos, and beachfront properties for sale in Port Aransas, Texas.",
+      "Browse our portfolio of successfully closed properties in Port Aransas, Texas.",
   },
 }
 
@@ -115,10 +115,10 @@ export default async function PropertiesPage({ searchParams }: PropertiesPagePro
         <Container className="relative z-10">
           <div className="text-center">
             <h1 className="font-display text-fluid-4xl text-white mb-4">
-              Port Aransas Homes & Condos for Sale
+              Our Portfolio
             </h1>
             <p className="text-xl text-white/90 max-w-2xl mx-auto">
-              Browse beachfront homes, condos, and investment properties in Port Aransas, Texas
+              Showcasing our successful transactions across Port Aransas, Texas
             </p>
           </div>
         </Container>
@@ -134,7 +134,7 @@ export default async function PropertiesPage({ searchParams }: PropertiesPagePro
           <div className="flex items-center justify-between mb-6">
             <p className="text-neutral-600">
               <span className="font-semibold text-neutral-900">{filteredProperties.length}</span>{" "}
-              {filteredProperties.length === 1 ? "listing" : "listings"} available
+              successful {filteredProperties.length === 1 ? "transaction" : "transactions"}
             </p>
           </div>
 

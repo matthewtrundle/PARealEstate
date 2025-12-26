@@ -7,33 +7,33 @@ import { LeadFormSection } from "@/components/sections"
 import propertiesData from "@/data/properties.json"
 
 export const metadata: Metadata = {
-  title: "Mustang Island Condos for Sale | Port Aransas Beachfront Condominiums",
+  title: "Mustang Island Condos | Market Analysis & Recent Sales",
   description:
-    "Explore Mustang Island condos for sale in Port Aransas, TX. Oceanfront condominiums with resort amenities, Gulf views, and strong rental income potential.",
+    "Expert insights on Mustang Island condo market. Price trends, building analysis, and investment guidance for Port Aransas beachfront condominiums.",
   keywords: [
-    "Mustang Island condos for sale",
-    "Port Aransas condos",
-    "beachfront condos Texas",
-    "Mustang Island real estate",
-    "Port Aransas condominiums",
+    "Mustang Island condos",
+    "Port Aransas condo market",
+    "beachfront condo values Texas",
+    "Mustang Island real estate analysis",
+    "Port Aransas condominium prices",
     "Gulf Coast condo investment",
   ],
   openGraph: {
-    title: "Mustang Island Condos for Sale | Port Aransas Condominiums",
+    title: "Mustang Island Condos | Market Analysis & Recent Sales",
     description:
-      "Explore Mustang Island condos for sale with Gulf views and resort amenities.",
+      "Expert insights on Mustang Island condo market with price analysis and recent sales data.",
   },
 }
 
 export default function MustangIslandCondosPage() {
-  // Filter condo properties
-  const condoProperties = propertiesData.properties.filter(
+  // Filter condo properties for recent sales showcase
+  const condoSales = propertiesData.properties.filter(
     (p) => p.location.neighborhood === "Mustang Island" || p.specs.floors === 1
   )
 
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Properties", href: "/properties" },
+    { label: "Market Insights", href: "/market" },
     { label: "Mustang Island Condos", href: "/mustang-island-condos" },
   ]
 
@@ -41,7 +41,7 @@ export default function MustangIslandCondosPage() {
     <>
       <SEOPageHero
         title="Mustang Island Condos"
-        subtitle="Beachfront condominiums with resort amenities and stunning Gulf of Mexico views."
+        subtitle="Market insights for beachfront condominiums with resort amenities and Gulf views."
         backgroundImage="/images/hero/condos.jpg"
       />
 
@@ -63,6 +63,30 @@ export default function MustangIslandCondosPage() {
                 resort-style amenities including pools, fitness centers, and on-site management for vacation rentals.
               </p>
             </ContentSection>
+
+            {/* Market Overview */}
+            <div className="my-12 p-8 bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl">
+              <h2 className="text-2xl font-display font-semibold text-neutral-900 mb-6">
+                Condo Market Overview
+              </h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <p className="text-sm text-neutral-500 uppercase tracking-wider mb-1">1-2 Bedroom</p>
+                  <p className="text-2xl font-semibold text-primary-800">$250K - $450K</p>
+                  <p className="text-sm text-neutral-600 mt-2">Entry-level, strong rental demand</p>
+                </div>
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <p className="text-sm text-neutral-500 uppercase tracking-wider mb-1">3 Bedroom</p>
+                  <p className="text-2xl font-semibold text-primary-800">$450K - $700K</p>
+                  <p className="text-sm text-neutral-600 mt-2">Family-sized, premium views</p>
+                </div>
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <p className="text-sm text-neutral-500 uppercase tracking-wider mb-1">Premium Units</p>
+                  <p className="text-2xl font-semibold text-primary-800">$700K+</p>
+                  <p className="text-sm text-neutral-600 mt-2">Top floors, corner units, renovated</p>
+                </div>
+              </div>
+            </div>
 
             <HighlightBox title="Popular Mustang Island Condo Communities">
               <ul className="space-y-3 text-neutral-700">
@@ -100,30 +124,31 @@ export default function MustangIslandCondosPage() {
             </ContentSection>
           </SEOContent>
 
-          {/* Property Listings */}
+          {/* Recent Sales */}
           <div className="mt-16">
-            <h2 className="text-2xl font-display font-semibold text-neutral-900 mb-8">
-              Available Condos
+            <h2 className="text-2xl font-display font-semibold text-neutral-900 mb-2">
+              Recent Condo Sales
             </h2>
-            {condoProperties.length > 0 ? (
+            <p className="text-neutral-600 mb-8">Condos we&apos;ve successfully closed on Mustang Island</p>
+            {condoSales.length > 0 ? (
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {condoProperties.slice(0, 6).map((property) => (
+                {condoSales.slice(0, 6).map((property) => (
                   <PropertyCard key={property.id} property={property as any} />
                 ))}
               </div>
             ) : (
               <div className="text-center py-12 bg-primary-50 rounded-xl">
                 <h3 className="text-xl font-semibold text-neutral-900 mb-2">
-                  New Condo Listings Coming Soon
+                  Interested in Mustang Island Condos?
                 </h3>
                 <p className="text-neutral-600 mb-6">
-                  Be the first to know about new Mustang Island condo listings.
+                  Schedule a consultation to discuss current opportunities in the condo market.
                 </p>
                 <Link
-                  href="/contact"
+                  href="/contact?interest=condos"
                   className="inline-flex items-center px-6 py-3 bg-primary-800 text-white rounded-lg hover:bg-primary-700 transition-colors"
                 >
-                  Get Condo Alerts
+                  Schedule Consultation
                 </Link>
               </div>
             )}
@@ -131,8 +156,8 @@ export default function MustangIslandCondosPage() {
 
           <CTABanner
             title="Interested in Mustang Island Condos?"
-            description="Let us know your budget and preferences. We'll match you with the best condo opportunities."
-            buttonText="Contact Us"
+            description="Let us guide you through the condo market with personalized insights and recommendations."
+            buttonText="Schedule Consultation"
             buttonHref="/contact?interest=condos"
           />
         </Container>
@@ -140,8 +165,8 @@ export default function MustangIslandCondosPage() {
 
       <LeadFormSection
         variant="dark"
-        title="Find Your Perfect Condo"
-        subtitle="Tell us about your ideal Mustang Island condo and we'll send matching listings."
+        title="Explore the Condo Market"
+        subtitle="Tell us about your ideal Mustang Island condo for personalized market insights."
       />
     </>
   )

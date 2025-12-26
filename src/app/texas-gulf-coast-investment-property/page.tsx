@@ -5,28 +5,28 @@ import { Breadcrumbs, SEOPageHero, SEOContent, ContentSection, HighlightBox, CTA
 import { LeadFormSection } from "@/components/sections"
 
 export const metadata: Metadata = {
-  title: "Texas Gulf Coast Investment Property | Coastal Real Estate Opportunities",
+  title: "Texas Gulf Coast Investment Property | Coastal Market Insights",
   description:
-    "Explore Texas Gulf Coast investment properties. From Port Aransas to South Padre, discover coastal real estate with strong appreciation and rental income potential.",
+    "Expert insights on Texas Gulf Coast investment opportunities. Market analysis, regional comparisons, and investment guidance for coastal real estate from Port Aransas to South Padre.",
   keywords: [
     "Texas Gulf Coast investment property",
-    "coastal real estate investment Texas",
-    "Texas beach property investment",
-    "Gulf Coast rental property",
-    "Port Aransas investment",
+    "coastal real estate analysis Texas",
+    "Texas beach property market",
+    "Gulf Coast investment opportunities",
+    "Port Aransas investment insights",
     "South Texas coastal real estate",
   ],
   openGraph: {
-    title: "Texas Gulf Coast Investment Property | Coastal Opportunities",
+    title: "Texas Gulf Coast Investment Property | Coastal Market Insights",
     description:
-      "Discover Texas Gulf Coast investment properties with strong returns.",
+      "Expert insights on Texas Gulf Coast investment opportunities and market analysis.",
   },
 }
 
 export default function GulfCoastInvestmentPage() {
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Investment", href: "/guides/investment-property" },
+    { label: "Market Insights", href: "/market" },
     { label: "Gulf Coast Investment", href: "/texas-gulf-coast-investment-property" },
   ]
 
@@ -34,7 +34,7 @@ export default function GulfCoastInvestmentPage() {
     <>
       <SEOPageHero
         title="Texas Gulf Coast Investment"
-        subtitle="Discover coastal investment opportunities from Port Aransas to South Padre Island."
+        subtitle="Market insights and investment analysis for coastal opportunities from Port Aransas to South Padre."
         backgroundImage="/images/hero/gulf-coast.jpg"
       />
 
@@ -52,57 +52,68 @@ export default function GulfCoastInvestmentPage() {
               </p>
               <p>
                 From the family-friendly beaches of Port Aransas to the resort communities of South Padre Island,
-                Texas offers diverse coastal investment opportunities. The state's business-friendly environment
+                Texas offers diverse coastal investment opportunities. The state&apos;s business-friendly environment
                 and growing economy continue to drive demand for both vacation rentals and permanent residences.
               </p>
             </ContentSection>
 
-            <HighlightBox title="Texas Gulf Coast Markets">
+            {/* Regional Comparison */}
+            <div className="my-12 p-8 bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl">
+              <h2 className="text-2xl font-display font-semibold text-neutral-900 mb-6">
+                Texas Gulf Coast Markets
+              </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-semibold text-neutral-900 mb-2">Port Aransas</h4>
-                  <p className="text-sm text-neutral-600">
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <h4 className="font-semibold text-primary-800 mb-2">Port Aransas</h4>
+                  <p className="text-sm text-neutral-600 mb-2">
                     Premier beach town with strong STR market, fishing culture, and family appeal.
-                    Our specialty market with deep local expertise.
                   </p>
+                  <p className="text-xs text-primary-600">Our specialty market with deep local expertise</p>
                 </div>
-                <div>
-                  <h4 className="font-semibold text-neutral-900 mb-2">Mustang Island</h4>
-                  <p className="text-sm text-neutral-600">
-                    Master-planned communities and beachfront condos. Strong rental performance
-                    and appreciation potential.
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <h4 className="font-semibold text-primary-800 mb-2">Mustang Island</h4>
+                  <p className="text-sm text-neutral-600 mb-2">
+                    Master-planned communities and beachfront condos. Strong rental performance.
                   </p>
+                  <p className="text-xs text-primary-600">Premium pricing, established developments</p>
                 </div>
-                <div>
-                  <h4 className="font-semibold text-neutral-900 mb-2">Rockport</h4>
-                  <p className="text-sm text-neutral-600">
-                    Art community and birding destination. More affordable entry point with
-                    growing tourism appeal.
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <h4 className="font-semibold text-primary-800 mb-2">Rockport</h4>
+                  <p className="text-sm text-neutral-600 mb-2">
+                    Art community and birding destination. More affordable entry point.
                   </p>
+                  <p className="text-xs text-primary-600">Lower prices, growing tourism appeal</p>
                 </div>
-                <div>
-                  <h4 className="font-semibold text-neutral-900 mb-2">South Padre Island</h4>
-                  <p className="text-sm text-neutral-600">
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <h4 className="font-semibold text-primary-800 mb-2">South Padre Island</h4>
+                  <p className="text-sm text-neutral-600 mb-2">
                     Resort destination with high-rise condos and premium rates.
-                    Strong spring break and winter Texan markets.
                   </p>
+                  <p className="text-xs text-primary-600">Strong spring break and winter Texan markets</p>
                 </div>
               </div>
-            </HighlightBox>
+            </div>
 
-            <ContentSection>
-              <h2>Investment Strategies</h2>
-              <p>
-                Texas Gulf Coast investors typically pursue one of three strategies: vacation rentals for
-                cash flow, second homes with rental offset, or land banking in emerging areas. Each approach
-                has distinct advantages depending on your investment goals and time horizon.
-              </p>
-              <p>
-                The vacation rental strategy works particularly well in Port Aransas, where strong demand
-                and favorable regulations support consistent returns. Properties with desirable features
-                like pools, beach access, and quality furnishings can achieve 60-70% occupancy annually.
-              </p>
-            </ContentSection>
+            <HighlightBox title="Investment Strategies">
+              <ul className="space-y-3 text-neutral-700">
+                <li className="flex gap-3">
+                  <span className="text-accent-500">•</span>
+                  <span><strong>Vacation Rentals:</strong> Cash flow focus with 12-18% cap rates possible</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-accent-500">•</span>
+                  <span><strong>Second Home + Rental:</strong> Personal use with rental offset</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-accent-500">•</span>
+                  <span><strong>Land Banking:</strong> Emerging areas with development potential</span>
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-accent-500">•</span>
+                  <span><strong>Long-Term Appreciation:</strong> Prime locations for wealth building</span>
+                </li>
+              </ul>
+            </HighlightBox>
 
             <ContentSection>
               <h2>Why Port Aransas Stands Out</h2>
@@ -120,18 +131,18 @@ export default function GulfCoastInvestmentPage() {
           </SEOContent>
 
           <CTABanner
-            title="Explore Port Aransas Investment"
-            description="Let us show you the investment opportunities in Texas's premier beach town."
-            buttonText="View Properties"
-            buttonHref="/properties"
+            title="Explore Gulf Coast Investment"
+            description="Let's discuss your investment goals and identify the right market for your strategy."
+            buttonText="Schedule Consultation"
+            buttonHref="/contact?interest=investment"
           />
         </Container>
       </Section>
 
       <LeadFormSection
         variant="dark"
-        title="Get Started with Coastal Investment"
-        subtitle="Share your investment goals and we'll identify matching opportunities on the Texas Gulf Coast."
+        title="Start Your Coastal Investment"
+        subtitle="Share your investment goals for personalized market insights and opportunity matching."
       />
     </>
   )

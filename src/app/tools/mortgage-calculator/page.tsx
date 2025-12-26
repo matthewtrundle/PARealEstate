@@ -350,8 +350,8 @@ export default function MortgageCalculatorPage() {
       <Container>
         <CTABanner
           title="Find Your Port Aransas Home"
-          description="Browse available properties within your budget"
-          primaryCTA={{ text: "View Properties", href: "/properties" }}
+          description="Let us help you find properties within your budget"
+          primaryCTA={{ text: "Schedule Consultation", href: "/contact" }}
         />
       </Container>
     </>

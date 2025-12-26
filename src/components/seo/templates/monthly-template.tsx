@@ -236,10 +236,10 @@ export function MonthlyTemplate({ guide }: MonthlyTemplateProps) {
                 {/* CTA */}
                 <div className="border-t pt-6">
                   <Link
-                    href="/properties"
+                    href="/contact"
                     className="block w-full py-3 px-4 bg-primary-600 text-white text-center rounded-lg hover:bg-primary-700 transition-colors"
                   >
-                    Find Your Beach Home
+                    Schedule Consultation
                   </Link>
                 </div>
               </div>

@@ -337,8 +337,8 @@ export default function AffordabilityCalculatorPage() {
       <Container>
         <CTABanner
           title="Find Homes in Your Budget"
-          description="Browse Port Aransas properties within your price range"
-          primaryCTA={{ text: "View Properties", href: "/properties" }}
+          description="Let us help you find Port Aransas properties within your price range"
+          primaryCTA={{ text: "Schedule Consultation", href: "/contact" }}
         />
       </Container>
     </>

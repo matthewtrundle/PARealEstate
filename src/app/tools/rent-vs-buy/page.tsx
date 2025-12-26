@@ -393,7 +393,7 @@ export default function RentVsBuyPage() {
                   Explore Port Aransas properties and start building equity.
                 </p>
                 <Button variant="cta" size="sm" className="w-full" asChild>
-                  <a href="/properties">View Properties</a>
+                  <a href="/contact">Schedule Consultation</a>
                 </Button>
               </div>
             </div>

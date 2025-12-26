@@ -115,7 +115,7 @@ export function WebSiteSchema() {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: `${SITE_CONFIG.url}/properties?q={search_term_string}`,
+        urlTemplate: `${SITE_CONFIG.url}/portfolio?q={search_term_string}`,
       },
       "query-input": "required name=search_term_string",
     },

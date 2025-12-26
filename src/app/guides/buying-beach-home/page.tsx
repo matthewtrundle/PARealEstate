@@ -291,8 +291,8 @@ export default function BuyingBeachHomePage() {
         <CTABanner
           title="Ready to Start Your Beach Home Search?"
           description="Let our Port Aransas specialists guide you through the buying process with local expertise."
-          primaryCTA={{ text: "View Properties", href: "/properties" }}
-          secondaryCTA={{ text: "Contact Us", href: "/contact" }}
+          primaryCTA={{ text: "Schedule Consultation", href: "/contact" }}
+          secondaryCTA={{ text: "View Portfolio", href: "/portfolio" }}
         />
       </Container>
     </>

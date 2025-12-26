@@ -208,7 +208,7 @@ export default function CinnamonShorePage() {
         <CTABanner
           title="Interested in Cinnamon Shore?"
           description="Browse available properties or speak with our team about finding your perfect beach cottage in this exceptional community."
-          primaryCTA={{ text: "View Properties", href: "/properties?neighborhood=cinnamon-shore" }}
+          primaryCTA={{ text: "Schedule Consultation", href: "/contact" }}
         />
       </Container>
     </>

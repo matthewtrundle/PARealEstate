@@ -60,11 +60,11 @@ export function PropertyFilters() {
 
   const handleFilterChange = (name: string, value: string) => {
     const queryString = createQueryString(name, value)
-    router.push(`/properties${queryString ? `?${queryString}` : ""}`, { scroll: false })
+    router.push(`/portfolio${queryString ? `?${queryString}` : ""}`, { scroll: false })
   }
 
   const clearFilters = () => {
-    router.push("/properties", { scroll: false })
+    router.push("/portfolio", { scroll: false })
   }
 
   const hasActiveFilters = searchParams.toString().length > 0

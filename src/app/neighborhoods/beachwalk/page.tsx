@@ -206,7 +206,7 @@ export default function BeachwalkPage() {
         <CTABanner
           title="Experience Beachwalk Living"
           description="Browse available homes in this family-friendly community or let us help you find the perfect beach property."
-          primaryCTA={{ text: "View Properties", href: "/properties?neighborhood=beachwalk" }}
+          primaryCTA={{ text: "Schedule Consultation", href: "/contact" }}
         />
       </Container>
     </>

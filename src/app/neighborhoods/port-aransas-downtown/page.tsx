@@ -209,7 +209,7 @@ export default function DowntownPortAransasPage() {
         <CTABanner
           title="Experience Downtown Port Aransas"
           description="Discover properties with authentic character in the heart of Texas's most beloved beach town."
-          primaryCTA={{ text: "View Properties", href: "/properties?neighborhood=downtown" }}
+          primaryCTA={{ text: "Schedule Consultation", href: "/contact" }}
         />
       </Container>
     </>

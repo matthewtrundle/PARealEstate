@@ -7,32 +7,32 @@ import { LeadFormSection } from "@/components/sections"
 import propertiesData from "@/data/properties.json"
 
 export const metadata: Metadata = {
-  title: "Port Aransas Luxury Homes | Premium Beach Estates",
+  title: "Port Aransas Luxury Homes | Premium Market Analysis",
   description:
-    "Browse luxury homes for sale in Port Aransas, TX. Premium beachfront estates, custom builds, and exclusive properties from $1.5M to $5M+.",
+    "Expert insights on Port Aransas luxury real estate. Market analysis, price trends, and recent sales for premium beach estates and high-end coastal properties.",
   keywords: [
     "Port Aransas luxury homes",
-    "luxury beach homes Texas",
-    "premium Port Aransas real estate",
-    "million dollar beach houses",
-    "luxury coastal estates Texas",
-    "high end Port Aransas properties",
+    "luxury beach real estate Texas",
+    "premium coastal property values",
+    "high end beach homes analysis",
+    "luxury market Port Aransas",
+    "exclusive coastal estates Texas",
   ],
   openGraph: {
-    title: "Port Aransas Luxury Homes | Premium Beach Estates",
-    description: "Premium beachfront estates and luxury properties in Port Aransas.",
+    title: "Port Aransas Luxury Homes | Premium Market Analysis",
+    description: "Expert insights on Port Aransas luxury real estate and premium property values.",
   },
 }
 
 export default function LuxuryHomesPage() {
-  // Filter luxury properties ($1.5M+)
-  const luxuryProperties = propertiesData.properties.filter(
+  // Filter luxury properties ($1.5M+) for recent sales showcase
+  const luxurySales = propertiesData.properties.filter(
     (p) => p.pricing.listPrice >= 1500000
   )
 
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Properties", href: "/properties" },
+    { label: "Market Insights", href: "/market" },
     { label: "Luxury Homes", href: "/port-aransas-luxury-homes" },
   ]
 
@@ -40,7 +40,7 @@ export default function LuxuryHomesPage() {
     <>
       <SEOPageHero
         title="Luxury Homes"
-        subtitle="Exceptional properties for discerning buyers seeking the finest in coastal living."
+        subtitle="Premium market insights for discerning buyers seeking the finest in coastal living."
         backgroundImage="/images/hero/luxury.jpg"
       />
 
@@ -62,6 +62,30 @@ export default function LuxuryHomesPage() {
                 coastal lifestyle.
               </p>
             </ContentSection>
+
+            {/* Market Overview */}
+            <div className="my-12 p-8 bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl">
+              <h2 className="text-2xl font-display font-semibold text-neutral-900 mb-6">
+                Luxury Market Overview
+              </h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <p className="text-sm text-neutral-500 uppercase tracking-wider mb-1">Entry Luxury</p>
+                  <p className="text-2xl font-semibold text-primary-800">$1.5M - $2.5M</p>
+                  <p className="text-sm text-neutral-600 mt-2">Premium homes, select locations</p>
+                </div>
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <p className="text-sm text-neutral-500 uppercase tracking-wider mb-1">Mid Luxury</p>
+                  <p className="text-2xl font-semibold text-primary-800">$2.5M - $4M</p>
+                  <p className="text-sm text-neutral-600 mt-2">Custom builds, prime locations</p>
+                </div>
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <p className="text-sm text-neutral-500 uppercase tracking-wider mb-1">Ultra Luxury</p>
+                  <p className="text-2xl font-semibold text-primary-800">$4M+</p>
+                  <p className="text-sm text-neutral-600 mt-2">Estate properties, trophy homes</p>
+                </div>
+              </div>
+            </div>
 
             <HighlightBox title="Luxury Property Features">
               <ul className="space-y-3 text-neutral-700">
@@ -87,7 +111,7 @@ export default function LuxuryHomesPage() {
             <ContentSection>
               <h2>The Luxury Market</h2>
               <p>
-                Port Aransas luxury properties ($1.5M+) represent a small but active segment of the market.
+                Port Aransas luxury properties ($1.5M+) represent a select segment of the market.
                 These homes attract buyers from across Texas and beyond who seek a premium second home or
                 retirement destination with investment potential.
               </p>
@@ -99,30 +123,31 @@ export default function LuxuryHomesPage() {
             </ContentSection>
           </SEOContent>
 
-          {/* Property Listings */}
+          {/* Recent Sales */}
           <div className="mt-16">
-            <h2 className="text-2xl font-display font-semibold text-neutral-900 mb-8">
-              Featured Luxury Properties
+            <h2 className="text-2xl font-display font-semibold text-neutral-900 mb-2">
+              Recent Luxury Sales
             </h2>
-            {luxuryProperties.length > 0 ? (
+            <p className="text-neutral-600 mb-8">Premium properties we&apos;ve successfully closed</p>
+            {luxurySales.length > 0 ? (
               <div className="grid md:grid-cols-2 gap-8">
-                {luxuryProperties.slice(0, 4).map((property) => (
+                {luxurySales.slice(0, 4).map((property) => (
                   <PropertyCard key={property.id} property={property as any} />
                 ))}
               </div>
             ) : (
               <div className="text-center py-12 bg-primary-50 rounded-xl">
                 <h3 className="text-xl font-semibold text-neutral-900 mb-2">
-                  Exclusive Listings Available
+                  Interested in Luxury Properties?
                 </h3>
                 <p className="text-neutral-600 mb-6">
-                  Many luxury properties are marketed privately. Contact us for access to exclusive listings.
+                  Many luxury properties are marketed privately. Schedule a consultation for exclusive access.
                 </p>
                 <Link
-                  href="/contact"
+                  href="/contact?interest=luxury"
                   className="inline-flex items-center px-6 py-3 bg-primary-800 text-white rounded-lg hover:bg-primary-700 transition-colors"
                 >
-                  Request Private Viewings
+                  Schedule Consultation
                 </Link>
               </div>
             )}
@@ -130,7 +155,7 @@ export default function LuxuryHomesPage() {
 
           <CTABanner
             title="Seeking Luxury?"
-            description="Let us introduce you to Port Aransas's finest properties, including off-market opportunities."
+            description="Let us introduce you to Port Aransas's finest properties and provide personalized market guidance."
             buttonText="Schedule Consultation"
             buttonHref="/contact?interest=luxury"
           />
@@ -139,8 +164,8 @@ export default function LuxuryHomesPage() {
 
       <LeadFormSection
         variant="dark"
-        title="Access Exclusive Listings"
-        subtitle="Tell us about your luxury home requirements and we'll connect you with matching properties."
+        title="Explore the Luxury Market"
+        subtitle="Tell us about your luxury home requirements for personalized market insights."
       />
     </>
   )

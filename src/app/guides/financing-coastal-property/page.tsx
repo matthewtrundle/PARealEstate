@@ -404,8 +404,8 @@ export default function FinancingCoastalPropertyPage() {
         <CTABanner
           title="Ready to Start the Financing Process?"
           description="Connect with lenders experienced in coastal properties and get pre-approved for your Port Aransas purchase."
-          primaryCTA={{ text: "View Properties", href: "/properties" }}
-          secondaryCTA={{ text: "Contact Us", href: "/contact" }}
+          primaryCTA={{ text: "Schedule Consultation", href: "/contact" }}
+          secondaryCTA={{ text: "View Portfolio", href: "/portfolio" }}
         />
       </Container>
     </>

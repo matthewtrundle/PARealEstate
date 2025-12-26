@@ -323,8 +323,8 @@ export default function MarketTrendsPage() {
         <CTABanner
           title="Navigate the Current Market"
           description="Get expert guidance on buying or selling in today's Port Aransas market."
-          primaryCTA={{ text: "View Properties", href: "/properties" }}
-          secondaryCTA={{ text: "Contact Us", href: "/contact" }}
+          primaryCTA={{ text: "Schedule Consultation", href: "/contact" }}
+          secondaryCTA={{ text: "View Portfolio", href: "/portfolio" }}
         />
       </Container>
     </>

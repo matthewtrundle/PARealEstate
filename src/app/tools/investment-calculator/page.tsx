@@ -440,7 +440,7 @@ export default function InvestmentCalculatorPage() {
                   Browse vacation rentals with proven income potential.
                 </p>
                 <Button variant="cta" size="sm" className="w-full" asChild>
-                  <a href="/properties">View Properties</a>
+                  <a href="/contact">Schedule Consultation</a>
                 </Button>
               </div>
             </div>
@@ -462,8 +462,7 @@ export default function InvestmentCalculatorPage() {
         <CTABanner
           title="Ready to Invest?"
           description="Let us help you find the perfect investment property in Port Aransas"
-          primaryCTA={{ text: "View Properties", href: "/properties" }}
-          secondaryCTA={{ text: "Contact Us", href: "/contact" }}
+          primaryCTA={{ text: "Schedule Consultation", href: "/contact" }}
         />
       </Container>
     </>

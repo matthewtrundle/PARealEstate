@@ -1,30 +1,31 @@
 import { Metadata } from "next"
+import Link from "next/link"
 import { Container, Section } from "@/components/layout"
 import { Breadcrumbs, SEOPageHero, SEOContent, ContentSection, HighlightBox, CTABanner } from "@/components/seo"
 import { LeadFormSection } from "@/components/sections"
 
 export const metadata: Metadata = {
-  title: "Port Aransas New Construction Homes | New Build Beach Houses",
+  title: "Port Aransas New Construction | New Build Market Insights",
   description:
-    "Explore new construction homes in Port Aransas, TX. Modern beach houses with coastal design, energy efficiency, and the latest building standards.",
+    "Expert insights on Port Aransas new construction market. Analysis of active developments, builder trends, and pricing for modern beach homes in Texas.",
   keywords: [
     "Port Aransas new construction",
     "new build homes Port Aransas",
-    "new beach houses Texas",
+    "new beach houses Texas market",
     "Port Aransas home builders",
     "new construction coastal homes",
     "modern beach house Texas",
   ],
   openGraph: {
-    title: "Port Aransas New Construction Homes | New Build Properties",
-    description: "Modern new construction beach houses with coastal design.",
+    title: "Port Aransas New Construction | New Build Market Insights",
+    description: "Expert insights on new construction beach homes and active developments in Port Aransas.",
   },
 }
 
 export default function NewConstructionPage() {
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Properties", href: "/properties" },
+    { label: "Market Insights", href: "/market" },
     { label: "New Construction", href: "/port-aransas-new-construction" },
   ]
 
@@ -32,7 +33,7 @@ export default function NewConstructionPage() {
     <>
       <SEOPageHero
         title="New Construction"
-        subtitle="Modern beach homes built to the latest coastal standards and design trends."
+        subtitle="Market insights for modern beach homes built to the latest coastal standards."
         backgroundImage="/images/hero/new-construction.jpg"
       />
 
@@ -55,6 +56,30 @@ export default function NewConstructionPage() {
                 new construction.
               </p>
             </ContentSection>
+
+            {/* Market Overview */}
+            <div className="my-12 p-8 bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl">
+              <h2 className="text-2xl font-display font-semibold text-neutral-900 mb-6">
+                New Construction Price Bands
+              </h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <p className="text-sm text-neutral-500 uppercase tracking-wider mb-1">Spec Homes</p>
+                  <p className="text-2xl font-semibold text-primary-800">$600K - $900K</p>
+                  <p className="text-sm text-neutral-600 mt-2">Move-in ready, standard finishes</p>
+                </div>
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <p className="text-sm text-neutral-500 uppercase tracking-wider mb-1">Semi-Custom</p>
+                  <p className="text-2xl font-semibold text-primary-800">$900K - $1.5M</p>
+                  <p className="text-sm text-neutral-600 mt-2">Select finishes, premium lots</p>
+                </div>
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <p className="text-sm text-neutral-500 uppercase tracking-wider mb-1">Custom Build</p>
+                  <p className="text-2xl font-semibold text-primary-800">$1.5M+</p>
+                  <p className="text-sm text-neutral-600 mt-2">Fully custom, architect-designed</p>
+                </div>
+              </div>
+            </div>
 
             <HighlightBox title="Benefits of New Construction">
               <ul className="space-y-3 text-neutral-700">
@@ -90,12 +115,25 @@ export default function NewConstructionPage() {
                 builders and help you find the right lot for your dream beach home.
               </p>
             </ContentSection>
+
+            <ContentSection>
+              <h2>Builder Relationships</h2>
+              <p>
+                We&apos;ve developed relationships with the top builders in Port Aransas and can provide
+                insights into their construction quality, timelines, and pricing. Whether you&apos;re looking
+                at a spec home or planning a custom build, we can help you navigate the process.
+              </p>
+              <p>
+                New construction offers unique advantages for vacation rental investors, including modern
+                amenities that drive bookings and warranties that reduce maintenance concerns in the early years.
+              </p>
+            </ContentSection>
           </SEOContent>
 
           <CTABanner
-            title="Explore New Construction"
-            description="See what's being built in Port Aransas and find your new home."
-            buttonText="View New Homes"
+            title="Interested in New Construction?"
+            description="Let us guide you through the new construction market and active development options."
+            buttonText="Schedule Consultation"
             buttonHref="/contact?interest=new-construction"
           />
         </Container>
@@ -103,8 +141,8 @@ export default function NewConstructionPage() {
 
       <LeadFormSection
         variant="dark"
-        title="Get New Construction Updates"
-        subtitle="Be first to know about new developments and spec homes coming to market."
+        title="Explore New Construction"
+        subtitle="Tell us about your new home preferences for personalized market insights."
       />
     </>
   )

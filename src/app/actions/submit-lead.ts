@@ -2,6 +2,8 @@
 
 import { z } from "zod"
 import { Resend } from "resend"
+import { render } from "@react-email/components"
+import { InquiryConfirmation } from "@/emails/inquiry-confirmation"
 
 // Initialize Resend with API key from environment
 const resend = new Resend(process.env.RESEND_API_KEY)
@@ -25,6 +27,8 @@ const leadFormSchema = z.object({
     ),
   message: z.string().max(1000, "Message is too long").optional(),
   propertyInterest: z.string().optional(),
+  propertyType: z.string().optional(),
+  priceRange: z.string().optional(),
   preferredContact: z.enum(["email", "phone", "either"]).default("email"),
   checkIn: z.string().optional(),
   checkOut: z.string().optional(),
@@ -54,6 +58,8 @@ export async function submitLead(
     phone: (formData.get("phone") as string) || undefined,
     message: (formData.get("message") as string) || undefined,
     propertyInterest: (formData.get("propertyInterest") as string) || undefined,
+    propertyType: (formData.get("propertyType") as string) || undefined,
+    priceRange: (formData.get("priceRange") as string) || undefined,
     preferredContact:
       (formData.get("preferredContact") as "email" | "phone" | "either") ||
       "email",
@@ -82,12 +88,13 @@ export async function submitLead(
     console.log("Email:", validated.data.email)
     console.log("========================")
 
-    // Send email notification
+    // Send emails if API key is configured
     if (process.env.RESEND_API_KEY) {
+      // 1. Send notification to owner
       await resend.emails.send({
         from: "Port Aransas Estates <onboarding@resend.dev>",
         to: NOTIFICATION_EMAIL,
-        subject: `New Lead: ${validated.data.name} - ${validated.data.propertyInterest || "General Inquiry"}`,
+        subject: `New Lead: ${validated.data.name} - ${validated.data.propertyInterest || validated.data.propertyType || "General Inquiry"}`,
         html: `
           <h2>New Lead from Port Aransas Estates Website</h2>
           <p><strong>Submitted:</strong> ${new Date().toLocaleString("en-US", { timeZone: "America/Chicago" })}</p>
@@ -100,6 +107,8 @@ export async function submitLead(
           <hr />
           <h3>Inquiry Details</h3>
           <p><strong>Property Interest:</strong> ${validated.data.propertyInterest || "General inquiry"}</p>
+          <p><strong>Property Type:</strong> ${validated.data.propertyType || "Not specified"}</p>
+          <p><strong>Price Range:</strong> ${validated.data.priceRange || "Not specified"}</p>
           <p><strong>Check-in:</strong> ${validated.data.checkIn || "Flexible"}</p>
           <p><strong>Check-out:</strong> ${validated.data.checkOut || "Flexible"}</p>
           <p><strong>Guests:</strong> ${validated.data.guests || "Not specified"}</p>
@@ -109,6 +118,24 @@ export async function submitLead(
           <hr />
           <p style="color: #666; font-size: 12px;">Source: ${validated.data.source}</p>
         `,
+      })
+
+      // 2. Send confirmation email to user
+      const confirmationEmailHtml = await render(
+        InquiryConfirmation({
+          name: validated.data.name,
+          propertyInterest: validated.data.propertyInterest,
+          propertyType: validated.data.propertyType,
+          priceRange: validated.data.priceRange,
+          source: validated.data.source,
+        })
+      )
+
+      await resend.emails.send({
+        from: "Port Aransas Estates <onboarding@resend.dev>",
+        to: validated.data.email,
+        subject: "Thanks for reaching out! - Port Aransas Estates",
+        html: confirmationEmailHtml,
       })
     }
 

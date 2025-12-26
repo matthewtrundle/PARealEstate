@@ -61,10 +61,10 @@ export default function ContactPage() {
               </h2>
               <p className="text-neutral-600 mb-8">
                 Thank you for reaching out. We typically respond within 24 hours.
-                In the meantime, feel free to browse our properties.
+                In the meantime, feel free to browse our portfolio of recent transactions.
               </p>
               <Button variant="primary" asChild>
-                <a href="/properties">View Properties</a>
+                <a href="/portfolio">View Portfolio</a>
               </Button>
             </div>
           </Container>

@@ -331,9 +331,9 @@ export default function InvestmentPropertyPage() {
       <Container>
         <CTABanner
           title="Explore Investment Opportunities"
-          description="Browse properties with strong rental potential or speak with our team about investment strategies."
-          primaryCTA={{ text: "View Properties", href: "/properties" }}
-          secondaryCTA={{ text: "Contact Us", href: "/contact" }}
+          description="Speak with our team about investment strategies and properties with strong rental potential."
+          primaryCTA={{ text: "Schedule Consultation", href: "/contact" }}
+          secondaryCTA={{ text: "View Portfolio", href: "/portfolio" }}
         />
       </Container>
     </>

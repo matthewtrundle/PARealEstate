@@ -382,9 +382,9 @@ export default function PriceGuidePage() {
       <Container>
         <CTABanner
           title="Find Properties in Your Price Range"
-          description="Browse available properties or let us help you find the perfect beach home within your budget."
-          primaryCTA={{ text: "View Properties", href: "/properties" }}
-          secondaryCTA={{ text: "Contact Us", href: "/contact" }}
+          description="Let us help you find the perfect beach home within your budget."
+          primaryCTA={{ text: "Schedule Consultation", href: "/contact" }}
+          secondaryCTA={{ text: "View Portfolio", href: "/portfolio" }}
         />
       </Container>
     </>

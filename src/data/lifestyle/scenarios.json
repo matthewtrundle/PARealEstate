@@ -78,9 +78,9 @@
     ],
     "callToAction": {
       "title": "Find Your Family's Beach Home",
-      "description": "Browse family-friendly properties in Port Aransas's best neighborhoods for children.",
-      "buttonText": "View Family Homes",
-      "buttonLink": "/properties?type=single-family"
+      "description": "Let us help you find the perfect family-friendly property in Port Aransas's best neighborhoods.",
+      "buttonText": "Schedule Consultation",
+      "buttonLink": "/contact"
     }
   },
   {
@@ -152,9 +152,9 @@
     ],
     "callToAction": {
       "title": "Find Your Retirement Home",
-      "description": "Explore low-maintenance condos and single-story homes perfect for retirement.",
-      "buttonText": "View Retirement Properties",
-      "buttonLink": "/properties"
+      "description": "Let us help you find the perfect low-maintenance coastal retreat for your retirement.",
+      "buttonText": "Schedule Consultation",
+      "buttonLink": "/contact"
     }
   },
   {
@@ -226,9 +226,9 @@
     ],
     "callToAction": {
       "title": "Find Your Beach Office",
-      "description": "Browse properties with home office potential and strong internet.",
-      "buttonText": "View Properties",
-      "buttonLink": "/properties"
+      "description": "Let us help you find properties with home office potential and strong internet.",
+      "buttonText": "Schedule Consultation",
+      "buttonLink": "/contact"
     }
   },
   {
@@ -300,9 +300,9 @@
     ],
     "callToAction": {
       "title": "Find Your Pet-Friendly Home",
-      "description": "Browse homes with yards and beach access perfect for pets.",
-      "buttonText": "View Pet-Friendly Properties",
-      "buttonLink": "/properties"
+      "description": "Let us help you find homes with yards and beach access perfect for your pets.",
+      "buttonText": "Schedule Consultation",
+      "buttonLink": "/contact"
     }
   },
   {
@@ -364,9 +364,9 @@
     "seoKeywords": ["fishing lifestyle port aransas", "living fishing port a", "angler port aransas", "fishing capital texas"],
     "callToAction": {
       "title": "Find Your Angler's Home",
-      "description": "Browse properties with boat access and proximity to the water.",
-      "buttonText": "View Waterfront Properties",
-      "buttonLink": "/properties"
+      "description": "Let us help you find properties with boat access and proximity to the water.",
+      "buttonText": "Schedule Consultation",
+      "buttonLink": "/contact"
     }
   },
   {
@@ -428,9 +428,9 @@
     "seoKeywords": ["boating port aransas", "marina port aransas", "boat life texas coast", "waterfront living port a"],
     "callToAction": {
       "title": "Find Your Waterfront Property",
-      "description": "Browse homes with docks, slips, and water access.",
-      "buttonText": "View Waterfront Homes",
-      "buttonLink": "/properties?waterfront=true"
+      "description": "Let us help you find homes with docks, slips, and water access.",
+      "buttonText": "Schedule Consultation",
+      "buttonLink": "/contact"
     }
   },
   {
@@ -492,9 +492,9 @@
     "seoKeywords": ["snowbird port aransas", "winter texas coast", "escape cold texas", "winter rental port aransas"],
     "callToAction": {
       "title": "Plan Your Winter Escape",
-      "description": "Find long-term winter rentals or your own coastal retreat.",
-      "buttonText": "View Winter Properties",
-      "buttonLink": "/properties"
+      "description": "Let us help you find the perfect winter retreat on the Texas coast.",
+      "buttonText": "Schedule Consultation",
+      "buttonLink": "/contact"
     }
   },
   {
@@ -556,9 +556,9 @@
     "seoKeywords": ["beach lifestyle port aransas", "casual living port a", "beach bum life texas", "simple living beach"],
     "callToAction": {
       "title": "Find Your Beach Home",
-      "description": "Browse casual cottages and condos perfect for the beach lifestyle.",
-      "buttonText": "View Beach Properties",
-      "buttonLink": "/properties"
+      "description": "Let us help you find the perfect casual cottage or condo for the beach lifestyle.",
+      "buttonText": "Schedule Consultation",
+      "buttonLink": "/contact"
     }
   },
   {
@@ -620,9 +620,9 @@
     "seoKeywords": ["investment property port aransas", "vacation rental port a", "beach investment texas", "rental income port aransas"],
     "callToAction": {
       "title": "Explore Investment Properties",
-      "description": "Find properties with proven rental history and income potential.",
-      "buttonText": "View Investment Properties",
-      "buttonLink": "/properties"
+      "description": "Let us help you find properties with strong rental potential and proven returns.",
+      "buttonText": "Schedule Consultation",
+      "buttonLink": "/contact"
     }
   }
 ]

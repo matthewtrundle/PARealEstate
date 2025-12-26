@@ -296,7 +296,7 @@ export default function ClosingCostCalculatorPage() {
               ? "Browse available properties in Port Aransas"
               : "Get a free market analysis of your property"
           }
-          primaryCTA={{ text: isBuyer ? "View Properties" : "Get Valuation", href: isBuyer ? "/properties" : "/contact" }}
+          primaryCTA={{ text: isBuyer ? "Schedule Consultation" : "Get Valuation", href: "/contact" }}
         />
       </Container>
     </>

@@ -23,8 +23,8 @@ const footerLinks = {
   guides: [
     { href: "/guides", label: "All Guides" },
     { href: "/guides/buying-beach-home", label: "Buying a Beach Home" },
+    { href: "/guides/selling", label: "Selling Your Property" },
     { href: "/guides/investment-property", label: "Investment Property" },
-    { href: "/guides/vacation-rental-guide", label: "Vacation Rentals" },
     { href: "/market", label: "Market Overview" },
   ],
   tools: [

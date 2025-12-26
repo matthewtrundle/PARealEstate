@@ -7,48 +7,48 @@ import { LeadFormSection } from "@/components/sections"
 import propertiesData from "@/data/properties.json"
 
 export const metadata: Metadata = {
-  title: "Port Aransas Vacation Rental Properties | STR Investment Opportunities",
+  title: "Port Aransas Vacation Rentals | STR Investment Insights",
   description:
-    "Invest in Port Aransas vacation rental properties. STR-permitted homes generating $60K-$150K+ annual income. Expert guidance on the Texas vacation rental market.",
+    "Expert insights on Port Aransas vacation rental investment. Market analysis, rental income data, and STR guidance for Texas Gulf Coast properties.",
   keywords: [
     "Port Aransas vacation rental investment",
-    "Port Aransas STR property",
-    "vacation rental homes Texas",
-    "short term rental investment",
-    "Port Aransas rental income property",
-    "Airbnb investment Texas coast",
+    "Port Aransas STR market",
+    "vacation rental income Texas",
+    "short term rental analysis",
+    "Port Aransas rental property values",
+    "Texas coast STR investment",
   ],
   openGraph: {
-    title: "Port Aransas Vacation Rental Properties | Investment Opportunities",
+    title: "Port Aransas Vacation Rentals | STR Investment Insights",
     description:
-      "Invest in Port Aransas vacation rental properties with strong STR income potential.",
+      "Expert insights on Port Aransas vacation rental market with income analysis and investment guidance.",
   },
 }
 
 export default function VacationRentalsPage() {
-  // Filter STR-ready properties
-  const strProperties = propertiesData.properties.filter(
+  // Filter STR-ready properties for recent sales showcase
+  const strSales = propertiesData.properties.filter(
     (p) => p.features.investment?.some((i) => i.toLowerCase().includes("str") || i.toLowerCase().includes("rental"))
   )
 
   const breadcrumbs = [
     { label: "Home", href: "/" },
-    { label: "Properties", href: "/properties" },
+    { label: "Market Insights", href: "/market" },
     { label: "Vacation Rentals", href: "/port-aransas-vacation-rentals" },
   ]
 
   const stats = [
     { value: "8M+", label: "Annual Visitors to Texas Coast" },
-    { value: "$120K", label: "Top Rental Income" },
-    { value: "75%", label: "Average Occupancy (Peak)" },
-    { value: "15%", label: "Avg. Cap Rate" },
+    { value: "$120K", label: "Top Annual Rental Income" },
+    { value: "75%", label: "Average Peak Occupancy" },
+    { value: "12-18%", label: "Typical Cap Rates" },
   ]
 
   return (
     <>
       <SEOPageHero
         title="Vacation Rental Investment"
-        subtitle="STR-permitted properties generating strong returns in the booming Port Aransas market."
+        subtitle="Market insights and investment analysis for Port Aransas STR properties."
         backgroundImage="/images/hero/investment.jpg"
       />
 
@@ -72,6 +72,33 @@ export default function VacationRentalsPage() {
             </ContentSection>
 
             <StatsGrid stats={stats} />
+
+            {/* Market Overview */}
+            <div className="my-12 p-8 bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl">
+              <h2 className="text-2xl font-display font-semibold text-neutral-900 mb-6">
+                Investment Property Price Bands
+              </h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <p className="text-sm text-neutral-500 uppercase tracking-wider mb-1">Entry Level</p>
+                  <p className="text-2xl font-semibold text-primary-800">$400K - $600K</p>
+                  <p className="text-sm text-neutral-600 mt-2">Condos, 1-2 BR homes</p>
+                  <p className="text-xs text-primary-600 mt-1">~$40-60K annual income</p>
+                </div>
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <p className="text-sm text-neutral-500 uppercase tracking-wider mb-1">Sweet Spot</p>
+                  <p className="text-2xl font-semibold text-primary-800">$600K - $1M</p>
+                  <p className="text-sm text-neutral-600 mt-2">3-4 BR homes with pools</p>
+                  <p className="text-xs text-primary-600 mt-1">~$70-100K annual income</p>
+                </div>
+                <div className="bg-white p-6 rounded-xl shadow-sm">
+                  <p className="text-sm text-neutral-500 uppercase tracking-wider mb-1">Premium</p>
+                  <p className="text-2xl font-semibold text-primary-800">$1M+</p>
+                  <p className="text-sm text-neutral-600 mt-2">Beachfront, luxury properties</p>
+                  <p className="text-xs text-primary-600 mt-1">~$100-150K+ annual income</p>
+                </div>
+              </div>
+            </div>
 
             <HighlightBox title="What Makes a Top-Performing STR?">
               <ul className="space-y-3 text-neutral-700">
@@ -108,30 +135,31 @@ export default function VacationRentalsPage() {
             </ContentSection>
           </SEOContent>
 
-          {/* Property Listings */}
+          {/* Recent Sales */}
           <div className="mt-16">
-            <h2 className="text-2xl font-display font-semibold text-neutral-900 mb-8">
-              STR-Ready Properties
+            <h2 className="text-2xl font-display font-semibold text-neutral-900 mb-2">
+              Recent Investment Property Sales
             </h2>
-            {strProperties.length > 0 ? (
+            <p className="text-neutral-600 mb-8">STR-ready properties we&apos;ve successfully closed</p>
+            {strSales.length > 0 ? (
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {strProperties.slice(0, 6).map((property) => (
+                {strSales.slice(0, 6).map((property) => (
                   <PropertyCard key={property.id} property={property as any} />
                 ))}
               </div>
             ) : (
               <div className="text-center py-12 bg-primary-50 rounded-xl">
                 <h3 className="text-xl font-semibold text-neutral-900 mb-2">
-                  Investment Properties Move Fast
+                  Ready to Invest in Port Aransas?
                 </h3>
                 <p className="text-neutral-600 mb-6">
-                  Get early access to STR-ready properties before they hit the market.
+                  Schedule a consultation to discuss investment opportunities and current market conditions.
                 </p>
                 <Link
-                  href="/contact"
+                  href="/contact?interest=investment"
                   className="inline-flex items-center px-6 py-3 bg-primary-800 text-white rounded-lg hover:bg-primary-700 transition-colors"
                 >
-                  Join Investor List
+                  Schedule Consultation
                 </Link>
               </div>
             )}
@@ -139,8 +167,8 @@ export default function VacationRentalsPage() {
 
           <CTABanner
             title="Ready to Invest?"
-            description="Tell us your investment criteria and we'll find properties that match your goals."
-            buttonText="Start Investing"
+            description="Let's discuss your investment criteria and identify properties that match your goals."
+            buttonText="Schedule Consultation"
             buttonHref="/contact?interest=investment"
           />
         </Container>
@@ -148,8 +176,8 @@ export default function VacationRentalsPage() {
 
       <LeadFormSection
         variant="dark"
-        title="Get Investment Property Alerts"
-        subtitle="Be first to know about STR-ready properties with strong rental potential."
+        title="Explore Investment Opportunities"
+        subtitle="Tell us about your investment goals for personalized market insights and recommendations."
       />
     </>
   )

@@ -20,7 +20,7 @@ export function PropertyCard({ property, priority = false }: PropertyCardProps) 
   }
 
   return (
-    <Link href={`/properties/${property.slug}`} className="group" onClick={handleClick}>
+    <Link href={`/portfolio/${property.slug}`} className="group" onClick={handleClick}>
       <article className="bg-white rounded-xl overflow-hidden shadow-card transition-all hover:shadow-card-hover">
         {/* Image */}
         <div className="aspect-[4/3] bg-neutral-100 relative overflow-hidden">
@@ -33,25 +33,22 @@ export function PropertyCard({ property, priority = false }: PropertyCardProps) 
             priority={priority}
           />
 
-          {/* Featured tags */}
-          <div className="absolute top-4 left-4 flex gap-2">
-            {property.features.highlights.slice(0, 2).map((feature) => (
-              <Badge
-                key={feature}
-                variant="default"
-                className="bg-white/90 text-primary-700"
-              >
-                {feature}
-              </Badge>
-            ))}
+          {/* SOLD badge */}
+          <div className="absolute top-4 left-4">
+            <Badge
+              variant="default"
+              className="bg-green-600 text-white font-semibold"
+            >
+              SOLD
+            </Badge>
           </div>
 
-          {/* Featured badge */}
-          {property.featured && (
-            <div className="absolute top-4 right-4">
-              <Badge variant="secondary">Featured</Badge>
-            </div>
-          )}
+          {/* Property type badge */}
+          <div className="absolute top-4 right-4">
+            <Badge variant="secondary" className="bg-white/90 text-neutral-700">
+              {property.details.propertyType}
+            </Badge>
+          </div>
         </div>
 
         <div className="p-6">
@@ -72,12 +69,13 @@ export function PropertyCard({ property, priority = false }: PropertyCardProps) 
 
           <div className="mt-4 pt-4 border-t border-neutral-100 flex items-center justify-between">
             <div>
+              <span className="text-xs text-green-600 font-medium block">Sold for</span>
               <span className="text-lg font-semibold text-neutral-900">
-                ${property.pricing.listPrice.toLocaleString()}
+                ${(property.salePrice || property.pricing.listPrice).toLocaleString()}
               </span>
             </div>
             <span className="text-sm text-primary-600 font-medium">
-              View Details →
+              View Case Study →
             </span>
           </div>
         </div>

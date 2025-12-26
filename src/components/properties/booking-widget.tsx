@@ -12,11 +12,21 @@ interface BookingWidgetProps {
 export function BookingWidget({ property }: BookingWidgetProps) {
   return (
     <div className="bg-white rounded-2xl shadow-lg border border-neutral-200 sticky top-24">
-      {/* Pricing Header */}
-      <div className="p-6 border-b border-neutral-100">
+      {/* SOLD Header */}
+      <div className="p-6 border-b border-neutral-100 bg-green-50">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="px-3 py-1 bg-green-600 text-white text-sm font-semibold rounded">
+            SOLD
+          </span>
+          {property.saleDate && (
+            <span className="text-sm text-neutral-500">
+              {new Date(property.saleDate).toLocaleDateString("en-US", { month: "short", year: "numeric" })}
+            </span>
+          )}
+        </div>
         <div className="flex items-baseline gap-2">
           <span className="text-3xl font-display font-bold text-neutral-900">
-            ${property.pricing.listPrice.toLocaleString()}
+            ${(property.salePrice || property.pricing.listPrice).toLocaleString()}
           </span>
         </div>
         <p className="text-sm text-neutral-500 mt-1">
@@ -50,10 +60,12 @@ export function BookingWidget({ property }: BookingWidgetProps) {
           <span className="text-neutral-500">Lot Size</span>
           <span className="font-medium text-neutral-900">{property.specs.lotSize}</span>
         </div>
-        <div className="flex justify-between">
-          <span className="text-neutral-500">Days on Market</span>
-          <span className="font-medium text-neutral-900">{property.pricing.daysOnMarket}</span>
-        </div>
+        {property.daysToSell && (
+          <div className="flex justify-between">
+            <span className="text-neutral-500">Days to Sell</span>
+            <span className="font-medium text-green-600">{property.daysToSell} days</span>
+          </div>
+        )}
         {property.details.hoa && (
           <div className="flex justify-between">
             <span className="text-neutral-500">HOA</span>
@@ -62,10 +74,14 @@ export function BookingWidget({ property }: BookingWidgetProps) {
         )}
       </div>
 
-      {/* Lead Form */}
-      <div className="p-6">
+      {/* Consultation CTA */}
+      <div className="p-6 bg-primary-50">
+        <h4 className="font-semibold text-neutral-900 mb-2">Looking for something similar?</h4>
+        <p className="text-sm text-neutral-600 mb-4">
+          We can help you find comparable properties in {property.location.neighborhood} and beyond.
+        </p>
         <LeadForm
-          source="property_inquiry_widget"
+          source="portfolio_consultation"
           propertySlug={property.slug}
           propertyName={property.name}
           variant="compact"
@@ -79,7 +95,7 @@ export function BookingWidget({ property }: BookingWidgetProps) {
           <TrackedLink
             href={`tel:${siteConfig.contact.phone.replace(/[^\d+]/g, "")}`}
             event="PHONE_CLICKED"
-            eventProperties={{ source: "inquiry_widget", property: property.slug }}
+            eventProperties={{ source: "portfolio_widget", property: property.slug }}
           >
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
@@ -115,7 +131,7 @@ export function BookingWidget({ property }: BookingWidgetProps) {
                 clipRule="evenodd"
               />
             </svg>
-            No obligation
+            Off-market access
           </div>
         </div>
       </div>

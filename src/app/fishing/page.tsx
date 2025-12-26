@@ -238,8 +238,8 @@ export default function FishingPage() {
       <Container>
         <CTABanner
           title="Live the Fishing Lifestyle"
-          description="Properties with boat access, fishing piers, and proximity to the best fishing grounds. Find your angler's paradise in Port Aransas."
-          primaryCTA={{ text: "Waterfront Properties", href: "/properties" }}
+          description="Let us help you find properties with boat access, fishing piers, and proximity to the best fishing grounds."
+          primaryCTA={{ text: "Schedule Consultation", href: "/contact" }}
         />
       </Container>
     </>

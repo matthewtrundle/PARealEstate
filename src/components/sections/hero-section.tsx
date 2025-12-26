@@ -126,7 +126,7 @@ export function HeroSection() {
                     className="px-8 py-4 text-base bg-accent-500 hover:bg-accent-400 text-primary-950 border-0 rounded-md transition-colors duration-300"
                     asChild
                   >
-                    <Link href="/properties">View Properties</Link>
+                    <Link href="/contact">Schedule Consultation</Link>
                   </Button>
                 </PremiumButtonWrapper>
 
@@ -141,7 +141,7 @@ export function HeroSection() {
                     className="px-8 py-4 text-base border-2 border-white/70 text-white hover:bg-white/10 hover:border-white rounded-md transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)]"
                     asChild
                   >
-                    <a href="#contact-form">Request Consultation</a>
+                    <Link href="/portfolio">View Our Portfolio</Link>
                   </Button>
                 </motion.div>
               </motion.div>

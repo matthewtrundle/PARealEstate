@@ -184,7 +184,7 @@ export default function FAQPage() {
           title="Have More Questions?"
           description="Our local experts are happy to answer any questions about Port Aransas real estate. Reach out anytime."
           primaryCTA={{ text: "Contact Us", href: "#contact-form" }}
-          secondaryCTA={{ text: "View Properties", href: "/properties" }}
+          secondaryCTA={{ text: "View Portfolio", href: "/portfolio" }}
         />
       </Container>
     </>

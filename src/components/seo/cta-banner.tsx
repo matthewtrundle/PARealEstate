@@ -22,7 +22,7 @@ interface CTABannerProps {
 
 export function CTABanner({
   title = "Ready to Find Your Port Aransas Home?",
-  description = "Browse our curated selection of coastal properties or speak with our local experts to start your search.",
+  description = "Speak with our local experts to start your search. We have access to off-market opportunities and exclusive listings.",
   primaryCTA,
   buttonText,
   buttonHref,
@@ -32,15 +32,15 @@ export function CTABanner({
 }: CTABannerProps) {
   // Support both primaryCTA object and convenience props
   const cta = primaryCTA || {
-    text: buttonText || "View Properties",
-    href: buttonHref || "/properties",
+    text: buttonText || "Schedule Consultation",
+    href: buttonHref || "/contact",
   }
   const isDark = variant === "dark"
 
-  // Default secondary CTA only if primary is View Properties
-  const showSecondaryCTA = secondaryCTA || (cta.text === "View Properties" ? {
-    text: "Contact Us",
-    href: "/contact",
+  // Default secondary CTA only if primary is Schedule Consultation
+  const showSecondaryCTA = secondaryCTA || (cta.text === "Schedule Consultation" ? {
+    text: "View Portfolio",
+    href: "/portfolio",
   } : null)
 
   return (
