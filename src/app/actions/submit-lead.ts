@@ -4,6 +4,7 @@ import { z } from "zod"
 import { Resend } from "resend"
 import { render } from "@react-email/components"
 import { InquiryConfirmation } from "@/emails/inquiry-confirmation"
+import { LeadNotification } from "@/emails/lead-notification"
 
 // Initialize Resend with API key from environment
 const resend = new Resend(process.env.RESEND_API_KEY)
@@ -90,34 +91,41 @@ export async function submitLead(
 
     // Send emails if API key is configured
     if (process.env.RESEND_API_KEY) {
-      // 1. Send notification to owner
+      const submittedAt = new Date().toLocaleString("en-US", {
+        timeZone: "America/Chicago",
+        weekday: "short",
+        month: "short",
+        day: "numeric",
+        year: "numeric",
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true,
+      })
+
+      // 1. Send notification to owner (professional template)
+      const notificationEmailHtml = await render(
+        LeadNotification({
+          name: validated.data.name,
+          email: validated.data.email,
+          phone: validated.data.phone,
+          preferredContact: validated.data.preferredContact,
+          propertyInterest: validated.data.propertyInterest,
+          propertyType: validated.data.propertyType,
+          priceRange: validated.data.priceRange,
+          message: validated.data.message,
+          checkIn: validated.data.checkIn,
+          checkOut: validated.data.checkOut,
+          guests: validated.data.guests,
+          source: validated.data.source,
+          submittedAt,
+        })
+      )
+
       await resend.emails.send({
         from: "Port Aransas Estates <onboarding@resend.dev>",
         to: NOTIFICATION_EMAIL,
-        subject: `New Lead: ${validated.data.name} - ${validated.data.propertyInterest || validated.data.propertyType || "General Inquiry"}`,
-        html: `
-          <h2>New Lead from Port Aransas Estates Website</h2>
-          <p><strong>Submitted:</strong> ${new Date().toLocaleString("en-US", { timeZone: "America/Chicago" })}</p>
-          <hr />
-          <h3>Contact Information</h3>
-          <p><strong>Name:</strong> ${validated.data.name}</p>
-          <p><strong>Email:</strong> <a href="mailto:${validated.data.email}">${validated.data.email}</a></p>
-          <p><strong>Phone:</strong> ${validated.data.phone || "Not provided"}</p>
-          <p><strong>Preferred Contact:</strong> ${validated.data.preferredContact}</p>
-          <hr />
-          <h3>Inquiry Details</h3>
-          <p><strong>Property Interest:</strong> ${validated.data.propertyInterest || "General inquiry"}</p>
-          <p><strong>Property Type:</strong> ${validated.data.propertyType || "Not specified"}</p>
-          <p><strong>Price Range:</strong> ${validated.data.priceRange || "Not specified"}</p>
-          <p><strong>Check-in:</strong> ${validated.data.checkIn || "Flexible"}</p>
-          <p><strong>Check-out:</strong> ${validated.data.checkOut || "Flexible"}</p>
-          <p><strong>Guests:</strong> ${validated.data.guests || "Not specified"}</p>
-          <hr />
-          <h3>Message</h3>
-          <p>${validated.data.message || "No message provided"}</p>
-          <hr />
-          <p style="color: #666; font-size: 12px;">Source: ${validated.data.source}</p>
-        `,
+        subject: `New Lead: ${validated.data.name} - ${validated.data.propertyType || validated.data.propertyInterest || "General Inquiry"}`,
+        html: notificationEmailHtml,
       })
 
       // 2. Send confirmation email to user

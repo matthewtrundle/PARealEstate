@@ -41,18 +41,11 @@ export function BaseLayout({ previewText, children }: BaseLayoutProps) {
             </Text>
             <Text style={footerLinks}>
               <Link href="https://portaransasestates.com" style={footerLink}>
-                Website
+                Visit Our Website
               </Link>
               {" | "}
-              <Link href="tel:+13615550123" style={footerLink}>
-                (361) 555-0123
-              </Link>
-              {" | "}
-              <Link
-                href="mailto:info@portaransasestates.com"
-                style={footerLink}
-              >
-                Email Us
+              <Link href="https://portaransasestates.com/contact" style={footerLink}>
+                Contact Us
               </Link>
             </Text>
             <Text style={copyright}>

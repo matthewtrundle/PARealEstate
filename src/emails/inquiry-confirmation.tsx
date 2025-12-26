@@ -159,24 +159,6 @@ export function InquiryConfirmation({
         </Button>
       </Section>
 
-      <Hr style={divider} />
-
-      {/* Contact Info */}
-      <Section style={contactSection}>
-        <Text style={contactHeading}>Need to reach us sooner?</Text>
-        <Text style={contactText}>
-          <strong>Call:</strong>{" "}
-          <Link href="tel:+13615550123" style={contactLink}>
-            (361) 555-0123
-          </Link>
-          <br />
-          <strong>Email:</strong>{" "}
-          <Link href="mailto:info@portaransasestates.com" style={contactLink}>
-            info@portaransasestates.com
-          </Link>
-        </Text>
-      </Section>
-
       {/* Signature */}
       <Section style={signatureSection}>
         <Text style={signatureText}>
@@ -340,32 +322,6 @@ const secondaryButton = {
   textDecoration: "none",
   textAlign: "center" as const,
   marginBottom: "12px",
-}
-
-const contactSection = {
-  backgroundColor: "#fef3c7",
-  borderRadius: "8px",
-  padding: "20px",
-  textAlign: "center" as const,
-}
-
-const contactHeading = {
-  color: "#92400e",
-  fontSize: "16px",
-  fontWeight: "600",
-  margin: "0 0 12px 0",
-}
-
-const contactText = {
-  color: "#78350f",
-  fontSize: "15px",
-  lineHeight: "24px",
-  margin: "0",
-}
-
-const contactLink = {
-  color: "#b45309",
-  textDecoration: "underline",
 }
 
 const signatureSection = {
