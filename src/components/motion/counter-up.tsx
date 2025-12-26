@@ -29,22 +29,23 @@ export function CounterUp({
   const prefersReducedMotion = useReducedMotion()
   // Start with the end value - ensures SSR and no-JS users see the real value
   const [displayValue, setDisplayValue] = useState(end)
-  const [hasAnimated, setHasAnimated] = useState(false)
+  // Use ref instead of state to avoid re-triggering effect
+  const hasAnimatedRef = useRef(false)
 
   // Use external trigger if provided, otherwise use internal viewport detection
   const shouldAnimate = startAnimation !== undefined ? startAnimation : isInViewInternal
 
   useEffect(() => {
-    if (!shouldAnimate || hasAnimated) return
+    if (!shouldAnimate || hasAnimatedRef.current) return
+
+    // Mark as animated immediately to prevent re-runs
+    hasAnimatedRef.current = true
 
     // Skip animation if user prefers reduced motion - just show final value
     if (prefersReducedMotion) {
       setDisplayValue(end)
-      setHasAnimated(true)
       return
     }
-
-    setHasAnimated(true)
 
     // Animate from 0 to end
     const controls = animate(0, end, {
@@ -68,7 +69,7 @@ export function CounterUp({
       controls.stop()
       clearTimeout(fallbackTimer)
     }
-  }, [shouldAnimate, end, duration, prefersReducedMotion, hasAnimated])
+  }, [shouldAnimate, end, duration, prefersReducedMotion])
 
   const formattedValue = displayValue.toFixed(decimals)
 
