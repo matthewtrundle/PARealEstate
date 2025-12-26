@@ -15,20 +15,32 @@ export function SEOContent({ children, className }: SEOContentProps) {
       className={cn(
         // Base prose styles
         "prose prose-lg max-w-none",
-        // Headings - editorial serif
-        "prose-headings:font-display prose-headings:font-normal prose-headings:tracking-tight",
-        "prose-h2:text-3xl prose-h2:md:text-4xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:text-primary-900",
-        "prose-h3:text-2xl prose-h3:md:text-3xl prose-h3:mt-8 prose-h3:mb-4 prose-h3:text-primary-800",
-        "prose-h4:text-xl prose-h4:mt-6 prose-h4:mb-3 prose-h4:text-primary-700",
-        // Paragraphs
-        "prose-p:text-neutral-700 prose-p:leading-relaxed prose-p:mb-6",
+        // Headings - editorial serif with better spacing
+        "prose-headings:font-display prose-headings:font-semibold prose-headings:tracking-tight",
+        // H2 - Major section headers with divider
+        "prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-16 prose-h2:mb-6 prose-h2:text-primary-900",
+        "prose-h2:pt-8 prose-h2:border-t prose-h2:border-neutral-200",
+        "first:prose-h2:mt-0 first:prose-h2:pt-0 first:prose-h2:border-t-0",
+        // H3 - Subsection headers
+        "prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-10 prose-h3:mb-4 prose-h3:text-primary-800",
+        // H4 - Minor headers
+        "prose-h4:text-lg prose-h4:mt-8 prose-h4:mb-3 prose-h4:text-primary-700",
+        // Paragraphs - better line height and spacing
+        "prose-p:text-neutral-700 prose-p:leading-[1.8] prose-p:mb-5 prose-p:text-base",
         // Links
         "prose-a:text-primary-600 prose-a:no-underline hover:prose-a:text-primary-800 hover:prose-a:underline",
-        // Lists
-        "prose-li:text-neutral-700 prose-li:my-2",
-        "prose-ul:my-6 prose-ol:my-6",
+        // Lists - improved spacing and readability
+        "prose-li:text-neutral-700 prose-li:my-3 prose-li:leading-relaxed",
+        "prose-ul:my-6 prose-ul:space-y-1 prose-ol:my-6 prose-ol:space-y-1",
+        "prose-ul:pl-0 prose-ol:pl-0",
+        "[&_ul]:list-none [&_ol]:list-decimal [&_ol]:pl-6",
+        // Custom bullet styling for ul
+        "[&_ul>li]:relative [&_ul>li]:pl-6",
+        "[&_ul>li]:before:content-[''] [&_ul>li]:before:absolute [&_ul>li]:before:left-0 [&_ul>li]:before:top-[0.6em]",
+        "[&_ul>li]:before:w-2 [&_ul>li]:before:h-2 [&_ul>li]:before:bg-accent-500 [&_ul>li]:before:rounded-full",
         // Blockquotes
         "prose-blockquote:border-l-4 prose-blockquote:border-accent-500 prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-neutral-600",
+        "prose-blockquote:bg-neutral-50 prose-blockquote:py-4 prose-blockquote:pr-6 prose-blockquote:rounded-r-lg",
         // Strong/bold
         "prose-strong:text-primary-900 prose-strong:font-semibold",
         // Images
@@ -53,7 +65,7 @@ interface ContentSectionProps {
 
 export function ContentSection({ children, className, id }: ContentSectionProps) {
   return (
-    <section id={id} className={cn("scroll-mt-24", className)}>
+    <section id={id} className={cn("scroll-mt-24 mb-12", className)}>
       {children}
     </section>
   )
@@ -69,21 +81,53 @@ interface HighlightBoxProps {
   className?: string
 }
 
+const highlightIcons = {
+  info: (
+    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  ),
+  tip: (
+    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+    </svg>
+  ),
+  warning: (
+    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+    </svg>
+  ),
+}
+
 export function HighlightBox({ children, title, variant = "info", className }: HighlightBoxProps) {
   return (
     <div
       className={cn(
-        "my-8 p-6 rounded-lg border-l-4",
+        "my-10 p-6 rounded-xl border-l-4 shadow-sm not-prose",
         {
           "bg-primary-50 border-primary-500": variant === "info",
-          "bg-accent-50 border-accent-500": variant === "tip",
+          "bg-amber-50 border-accent-500": variant === "tip",
           "bg-orange-50 border-orange-500": variant === "warning",
         },
         className
       )}
     >
-      {title && <h3 className="text-lg font-semibold text-neutral-900 mb-4">{title}</h3>}
-      {children}
+      <div className="flex items-start gap-4">
+        <div className={cn(
+          "flex-shrink-0 mt-0.5",
+          {
+            "text-primary-600": variant === "info",
+            "text-accent-600": variant === "tip",
+            "text-orange-600": variant === "warning",
+          }
+        )}>
+          {highlightIcons[variant]}
+        </div>
+        <div>
+          {title && <h4 className="text-lg font-display font-semibold text-neutral-900 mb-2">{title}</h4>}
+          <div className="text-neutral-700 text-base leading-relaxed [&_p]:mb-0">{children}</div>
+        </div>
+      </div>
     </div>
   )
 }
@@ -103,13 +147,13 @@ interface StatsGridProps {
 
 export function StatsGrid({ stats, className }: StatsGridProps) {
   return (
-    <div className={cn("grid grid-cols-2 md:grid-cols-4 gap-6 my-10", className)}>
+    <div className={cn("grid grid-cols-2 md:grid-cols-4 gap-4 my-12 not-prose", className)}>
       {stats.map((stat, index) => (
-        <div key={index} className="text-center p-4 bg-neutral-50 rounded-lg">
-          <div className="text-3xl md:text-4xl font-display text-primary-900 mb-2">
+        <div key={index} className="text-center p-6 bg-white rounded-xl shadow-sm border border-neutral-100">
+          <div className="text-3xl md:text-4xl font-display font-semibold text-primary-900 mb-1">
             {stat.value}
           </div>
-          <div className="text-sm text-neutral-600">{stat.label}</div>
+          <div className="text-sm text-neutral-500 font-medium uppercase tracking-wide">{stat.label}</div>
         </div>
       ))}
     </div>
