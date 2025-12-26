@@ -16,13 +16,14 @@ export function SEOContent({ children, className }: SEOContentProps) {
         // Base prose styles
         "prose prose-lg max-w-none",
         // Headings - editorial serif with better spacing
-        "prose-headings:font-display prose-headings:font-semibold prose-headings:tracking-tight",
+        "prose-headings:font-display prose-headings:font-semibold prose-headings:tracking-tight prose-headings:no-underline",
         // H2 - Major section headers with divider
         "prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-16 prose-h2:mb-6 prose-h2:text-primary-900",
         "prose-h2:pt-8 prose-h2:border-t prose-h2:border-neutral-200",
         "first:prose-h2:mt-0 first:prose-h2:pt-0 first:prose-h2:border-t-0",
-        // H3 - Subsection headers
+        // H3 - Subsection headers (ensure no strikethrough)
         "prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-10 prose-h3:mb-4 prose-h3:text-primary-800",
+        "[&_h3]:!no-underline [&_h3]:![text-decoration:none]",
         // H4 - Minor headers
         "prose-h4:text-lg prose-h4:mt-8 prose-h4:mb-3 prose-h4:text-primary-700",
         // Paragraphs - better line height and spacing
