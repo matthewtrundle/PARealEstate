@@ -121,12 +121,13 @@ export async function submitLead(
         })
       )
 
-      await resend.emails.send({
+      const ownerEmailResult = await resend.emails.send({
         from: "Port Aransas Estates <onboarding@resend.dev>",
         to: NOTIFICATION_EMAIL,
         subject: `New Lead: ${validated.data.name} - ${validated.data.propertyType || validated.data.propertyInterest || "General Inquiry"}`,
         html: notificationEmailHtml,
       })
+      console.log("Owner notification sent:", ownerEmailResult)
 
       // 2. Send confirmation email to user
       const confirmationEmailHtml = await render(
@@ -139,12 +140,16 @@ export async function submitLead(
         })
       )
 
-      await resend.emails.send({
+      // Note: If using onboarding@resend.dev (free tier), this will only work
+      // for verified email addresses. To send to any email, verify your domain
+      // at https://resend.com/domains
+      const userEmailResult = await resend.emails.send({
         from: "Port Aransas Estates <onboarding@resend.dev>",
         to: validated.data.email,
         subject: "Thanks for reaching out! - Port Aransas Estates",
         html: confirmationEmailHtml,
       })
+      console.log("User confirmation sent:", userEmailResult)
     }
 
     return {
