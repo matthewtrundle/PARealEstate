@@ -16,28 +16,28 @@ export function SEOContent({ children, className }: SEOContentProps) {
         // Base prose styles
         "prose prose-lg max-w-none",
         // Headings - editorial serif with better spacing
-        "prose-headings:font-display prose-headings:font-semibold prose-headings:tracking-tight prose-headings:no-underline",
+        "prose-headings:font-display prose-headings:font-semibold prose-headings:tracking-tight",
+        "[&_h2]:![text-decoration:none] [&_h3]:![text-decoration:none] [&_h4]:![text-decoration:none]",
         // H2 - Major section headers with divider
-        "prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-16 prose-h2:mb-6 prose-h2:text-primary-900",
+        "prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-16 prose-h2:mb-8 prose-h2:text-primary-900",
         "prose-h2:pt-8 prose-h2:border-t prose-h2:border-neutral-200",
         "first:prose-h2:mt-0 first:prose-h2:pt-0 first:prose-h2:border-t-0",
-        // H3 - Subsection headers (ensure no strikethrough)
-        "prose-h3:text-xl prose-h3:md:text-2xl prose-h3:mt-10 prose-h3:mb-4 prose-h3:text-primary-800",
-        "[&_h3]:!no-underline [&_h3]:![text-decoration:none]",
+        // H3 - Subsection headers with background highlight
+        "[&_h3]:text-lg [&_h3]:md:text-xl [&_h3]:mt-12 [&_h3]:mb-4 [&_h3]:text-primary-800",
+        "[&_h3]:bg-primary-50 [&_h3]:px-4 [&_h3]:py-3 [&_h3]:rounded-lg [&_h3]:border-l-4 [&_h3]:border-primary-500",
         // H4 - Minor headers
-        "prose-h4:text-lg prose-h4:mt-8 prose-h4:mb-3 prose-h4:text-primary-700",
+        "prose-h4:text-base prose-h4:mt-8 prose-h4:mb-3 prose-h4:text-primary-700 prose-h4:font-semibold",
         // Paragraphs - better line height and spacing
-        "prose-p:text-neutral-700 prose-p:leading-[1.8] prose-p:mb-5 prose-p:text-base",
+        "prose-p:text-neutral-700 prose-p:leading-[1.8] prose-p:mb-6 prose-p:text-base",
         // Links
         "prose-a:text-primary-600 prose-a:no-underline hover:prose-a:text-primary-800 hover:prose-a:underline",
         // Lists - improved spacing and readability
-        "prose-li:text-neutral-700 prose-li:my-3 prose-li:leading-relaxed",
-        "prose-ul:my-6 prose-ul:space-y-1 prose-ol:my-6 prose-ol:space-y-1",
-        "prose-ul:pl-0 prose-ol:pl-0",
+        "prose-li:text-neutral-700 prose-li:my-2 prose-li:leading-relaxed",
+        "[&_ul]:my-6 [&_ul]:mb-8 [&_ol]:my-6 [&_ol]:mb-8",
         "[&_ul]:list-none [&_ol]:list-decimal [&_ol]:pl-6",
         // Custom bullet styling for ul
-        "[&_ul>li]:relative [&_ul>li]:pl-6",
-        "[&_ul>li]:before:content-[''] [&_ul>li]:before:absolute [&_ul>li]:before:left-0 [&_ul>li]:before:top-[0.6em]",
+        "[&_ul>li]:relative [&_ul>li]:pl-7 [&_ul>li]:py-1",
+        "[&_ul>li]:before:content-[''] [&_ul>li]:before:absolute [&_ul>li]:before:left-0 [&_ul>li]:before:top-[0.75em]",
         "[&_ul>li]:before:w-2 [&_ul>li]:before:h-2 [&_ul>li]:before:bg-accent-500 [&_ul>li]:before:rounded-full",
         // Blockquotes
         "prose-blockquote:border-l-4 prose-blockquote:border-accent-500 prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-neutral-600",
