@@ -9,17 +9,9 @@ export const SITE_CONFIG = {
   description:
     "We help buyers and investors discover exceptional beach homes, condos, and investment properties in Port Aransas, Texas.",
   url: "https://portaransasestates.com",
-  phone: "(361) 555-0123",
-  email: "info@portaransasestates.com",
   address: {
-    street: "456 Mustang Island Drive",
     city: "Port Aransas",
     state: "TX",
-    zip: "78373",
-  },
-  social: {
-    instagram: "https://instagram.com/portaransasestates",
-    facebook: "https://facebook.com/portaransasestates",
   },
   hours: "9am - 6pm CST, Mon-Sat",
   responseTime: "within 24 hours",

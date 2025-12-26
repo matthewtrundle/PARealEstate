@@ -5,7 +5,6 @@ import { Container, Section } from "@/components/layout"
 import { SEOPageHero, CTABanner } from "@/components/seo"
 import { Button } from "@/components/ui"
 import { SITE_CONFIG } from "@/lib/constants"
-import { SunIcon, UserIcon } from "@/components/icons"
 
 export const metadata: Metadata = {
   title: "About Us | Port Aransas Real Estate Experts",
@@ -118,10 +117,13 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-100 to-accent-100 flex items-center justify-center">
-                <SunIcon size={80} className="text-primary-600" />
-              </div>
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src="/images/about/team-hero.jpg"
+                alt="Port Aransas Estates team on the beach"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </Container>
@@ -173,8 +175,13 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {teamMembers.map((member) => (
               <div key={member.name} className="text-center">
-                <div className="relative w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden bg-gradient-to-br from-primary-100 to-accent-100 flex items-center justify-center">
-                  <UserIcon size={64} className="text-primary-600" />
+                <div className="relative w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden shadow-lg">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <h3 className="font-display font-semibold text-neutral-900 text-lg mb-1">
                   {member.name}
@@ -187,63 +194,20 @@ export default function AboutPage() {
         </Container>
       </Section>
 
-      {/* Contact Info */}
+      {/* Contact CTA */}
       <Section className="bg-primary-900 text-white">
         <Container>
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-fluid-3xl font-display font-semibold tracking-tight mb-6">
-                Ready to Start Your Search?
-              </h2>
-              <p className="text-lg text-primary-200 mb-8">
-                Get in touch with our team today. We're here to answer your questions,
-                schedule showings, and help you find your perfect Port Aransas property.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-sm text-primary-300">Call us</p>
-                    <a href={`tel:${SITE_CONFIG.phone}`} className="font-medium hover:text-accent-400 transition-colors">
-                      {SITE_CONFIG.phone}
-                    </a>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-sm text-primary-300">Email us</p>
-                    <a href={`mailto:${SITE_CONFIG.email}`} className="font-medium hover:text-accent-400 transition-colors">
-                      {SITE_CONFIG.email}
-                    </a>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-sm text-primary-300">Office Hours</p>
-                    <p className="font-medium">{SITE_CONFIG.hours}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center lg:justify-end">
-              <Button variant="cta" size="lg" asChild>
-                <Link href="/contact">Contact Us Today</Link>
-              </Button>
-            </div>
+          <div className="text-center max-w-2xl mx-auto">
+            <h2 className="text-fluid-3xl font-display font-semibold tracking-tight mb-6">
+              Ready to Start Your Search?
+            </h2>
+            <p className="text-lg text-primary-200 mb-8">
+              Get in touch with our team today. We&apos;re here to answer your questions,
+              schedule showings, and help you find your perfect Port Aransas property.
+            </p>
+            <Button variant="cta" size="lg" asChild>
+              <Link href="/contact">Contact Us Today</Link>
+            </Button>
           </div>
         </Container>
       </Section>

@@ -12,14 +12,10 @@ export function LocalBusinessSchema() {
     name: SITE_CONFIG.name,
     description: SITE_CONFIG.description,
     url: SITE_CONFIG.url,
-    telephone: SITE_CONFIG.phone,
-    email: SITE_CONFIG.email,
     address: {
       "@type": "PostalAddress",
-      streetAddress: SITE_CONFIG.address.street,
       addressLocality: SITE_CONFIG.address.city,
       addressRegion: SITE_CONFIG.address.state,
-      postalCode: SITE_CONFIG.address.zip,
       addressCountry: "US",
     },
     geo: {
@@ -52,7 +48,6 @@ export function LocalBusinessSchema() {
       opens: "09:00",
       closes: "18:00",
     },
-    sameAs: [SITE_CONFIG.social.facebook, SITE_CONFIG.social.instagram],
     image: `${SITE_CONFIG.url}/images/og-default.jpg`,
     logo: `${SITE_CONFIG.url}/port_aransas_estates_logo_transparent.png`,
   }
@@ -82,12 +77,11 @@ export function OrganizationSchema() {
     },
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: SITE_CONFIG.phone,
       contactType: "sales",
+      url: `${SITE_CONFIG.url}/contact`,
       areaServed: "US",
       availableLanguage: "English",
     },
-    sameAs: [SITE_CONFIG.social.facebook, SITE_CONFIG.social.instagram],
   }
 
   return (

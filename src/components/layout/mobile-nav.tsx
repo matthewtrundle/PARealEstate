@@ -114,25 +114,12 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
               </nav>
 
               {/* Footer Actions */}
-              <div className="p-4 border-t border-neutral-100 space-y-4">
-                <Button variant="cta" size="lg" className="w-full">
-                  Request Info
+              <div className="p-4 border-t border-neutral-100">
+                <Button variant="cta" size="lg" className="w-full" asChild>
+                  <Link href="/contact" onClick={onClose}>
+                    Contact Us
+                  </Link>
                 </Button>
-
-                <div className="flex flex-col gap-2 text-center">
-                  <a
-                    href={`tel:${SITE_CONFIG.phone.replace(/[^\d+]/g, "")}`}
-                    className="text-primary-600 font-medium"
-                  >
-                    {SITE_CONFIG.phone}
-                  </a>
-                  <a
-                    href={`mailto:${SITE_CONFIG.email}`}
-                    className="text-neutral-500 text-sm"
-                  >
-                    {SITE_CONFIG.email}
-                  </a>
-                </div>
               </div>
             </div>
           </motion.div>

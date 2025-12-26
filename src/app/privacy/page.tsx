@@ -121,13 +121,11 @@ export default function PrivacyPage() {
 
             <h2>Contact Us</h2>
             <p>
-              If you have questions about this Privacy Policy or our data practices, please contact us:
+              If you have questions about this Privacy Policy or our data practices, please <a href="/contact">contact us through our website</a>.
             </p>
-            <ul>
-              <li>Email: <a href={`mailto:${SITE_CONFIG.email}`}>{SITE_CONFIG.email}</a></li>
-              <li>Phone: <a href={`tel:${SITE_CONFIG.phone}`}>{SITE_CONFIG.phone}</a></li>
-              <li>Address: {SITE_CONFIG.address.city}, {SITE_CONFIG.address.state} {SITE_CONFIG.address.zip}</li>
-            </ul>
+            <p>
+              Location: {SITE_CONFIG.address.city}, {SITE_CONFIG.address.state}
+            </p>
           </div>
         </Container>
       </Section>
