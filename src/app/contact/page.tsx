@@ -1,77 +1,19 @@
-"use client"
-
-import { useState } from "react"
+import { Metadata } from "next"
 import { Container, Section } from "@/components/layout"
 import { SEOPageHero } from "@/components/seo"
-import { Button, Input, Textarea } from "@/components/ui"
+import { LeadForm } from "@/components/forms/lead-form"
 import { SITE_CONFIG } from "@/lib/constants"
 
-const inquiryTypes = [
-  { value: "buying", label: "I want to buy a property" },
-  { value: "selling", label: "I want to sell my property" },
-  { value: "rental", label: "Vacation rental inquiry" },
-  { value: "investment", label: "Investment property questions" },
-  { value: "general", label: "General inquiry" },
-]
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description: "Get in touch with Port Aransas Estates. Our team is ready to help you find your perfect beach home or investment property.",
+}
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    inquiryType: "",
-    message: "",
-  })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [isSubmitted, setIsSubmitted] = useState(false)
-
   const breadcrumbs = [
     { label: "Home", href: "/" },
     { label: "Contact" },
   ]
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-  }
-
-  if (isSubmitted) {
-    return (
-      <>
-        <SEOPageHero
-          title="Contact Us"
-          subtitle="We'd love to hear from you"
-          breadcrumbs={breadcrumbs}
-          size="compact"
-        />
-        <Section className="bg-neutral-50">
-          <Container>
-            <div className="max-w-xl mx-auto text-center py-12">
-              <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                </svg>
-              </div>
-              <h2 className="text-2xl font-display font-semibold text-neutral-900 mb-4">
-                Message Sent!
-              </h2>
-              <p className="text-neutral-600 mb-8">
-                Thank you for reaching out. We typically respond within 24 hours.
-                In the meantime, feel free to browse our portfolio of recent transactions.
-              </p>
-              <Button variant="primary" asChild>
-                <a href="/portfolio">View Portfolio</a>
-              </Button>
-            </div>
-          </Container>
-        </Section>
-      </>
-    )
-  }
 
   return (
     <>
@@ -90,99 +32,7 @@ export default function ContactPage() {
               <h2 className="text-xl font-display font-semibold text-neutral-900 mb-6">
                 Send Us a Message
               </h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-neutral-700 mb-2">
-                      Your Name *
-                    </label>
-                    <Input
-                      type="text"
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      required
-                      placeholder="John Smith"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-neutral-700 mb-2">
-                      Email Address *
-                    </label>
-                    <Input
-                      type="email"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      required
-                      placeholder="john@example.com"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-neutral-700 mb-2">
-                      Phone Number
-                    </label>
-                    <Input
-                      type="tel"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="(555) 123-4567"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-neutral-700 mb-2">
-                      What can we help with? *
-                    </label>
-                    <select
-                      value={formData.inquiryType}
-                      onChange={(e) => setFormData({ ...formData, inquiryType: e.target.value })}
-                      required
-                      className="w-full px-4 py-3 border border-neutral-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                    >
-                      <option value="">Select an option</option>
-                      {inquiryTypes.map((type) => (
-                        <option key={type.value} value={type.value}>
-                          {type.label}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-neutral-700 mb-2">
-                    Your Message *
-                  </label>
-                  <Textarea
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    required
-                    rows={5}
-                    placeholder="Tell us about what you're looking for..."
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  variant="cta"
-                  size="lg"
-                  className="w-full md:w-auto"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? (
-                    <>
-                      <svg className="w-4 h-4 animate-spin mr-2" fill="none" viewBox="0 0 24 24">
-                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-                      </svg>
-                      Sending...
-                    </>
-                  ) : (
-                    "Send Message"
-                  )}
-                </Button>
-              </form>
+              <LeadForm source="contact-page" />
             </div>
 
             {/* Contact Info Sidebar */}

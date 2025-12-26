@@ -1,16 +1,17 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useActionState, useRef, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { cn } from "@/lib/utils"
 import { HomeIcon, CondoIcon, TownhomeIcon, TrendingUpIcon } from "@/components/icons"
+import { submitLead, type LeadFormState } from "@/app/actions/submit-lead"
 
 const priceRanges = [
-  { label: "Under $500K", min: 0, max: 500000 },
-  { label: "$500K - $750K", min: 500000, max: 750000 },
-  { label: "$750K - $1M", min: 750000, max: 1000000 },
-  { label: "$1M - $1.5M", min: 1000000, max: 1500000 },
-  { label: "$1.5M+", min: 1500000, max: null },
+  { label: "Under $500K", value: "under-500k" },
+  { label: "$500K - $750K", value: "500k-750k" },
+  { label: "$750K - $1M", value: "750k-1m" },
+  { label: "$1M - $1.5M", value: "1m-1.5m" },
+  { label: "$1.5M+", value: "1.5m-plus" },
 ]
 
 const propertyTypes = [
@@ -29,6 +30,11 @@ const neighborhoods = [
   "Port Royal",
 ]
 
+const initialState: LeadFormState = {
+  success: false,
+  message: "",
+}
+
 interface PropertyAlertsFormProps {
   className?: string
   variant?: "inline" | "card"
@@ -36,12 +42,13 @@ interface PropertyAlertsFormProps {
 
 export function PropertyAlertsForm({ className, variant = "card" }: PropertyAlertsFormProps) {
   const [step, setStep] = useState(1)
+  const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [selectedPriceRange, setSelectedPriceRange] = useState<number | null>(null)
   const [selectedTypes, setSelectedTypes] = useState<string[]>([])
   const [selectedNeighborhoods, setSelectedNeighborhoods] = useState<string[]>([])
-  const [isSubmitted, setIsSubmitted] = useState(false)
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const formRef = useRef<HTMLFormElement>(null)
+  const [state, formAction, isPending] = useActionState(submitLead, initialState)
 
   const toggleType = (id: string) => {
     setSelectedTypes((prev) =>
@@ -55,15 +62,13 @@ export function PropertyAlertsForm({ className, variant = "card" }: PropertyAler
     )
   }
 
-  const handleSubmit = async () => {
-    setIsSubmitting(true)
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+  const handleSubmit = () => {
+    if (formRef.current) {
+      formRef.current.requestSubmit()
+    }
   }
 
-  if (isSubmitted) {
+  if (state.success) {
     return (
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
@@ -82,7 +87,7 @@ export function PropertyAlertsForm({ className, variant = "card" }: PropertyAler
           You&apos;re All Set!
         </h3>
         <p className="text-neutral-600">
-          We&apos;ll send you new listings matching your criteria as soon as they hit the market.
+          {state.message || "We'll be in touch with properties matching your criteria."}
         </p>
       </motion.div>
     )
@@ -227,7 +232,7 @@ export function PropertyAlertsForm({ className, variant = "card" }: PropertyAler
           </motion.div>
         )}
 
-        {/* Step 3: Email */}
+        {/* Step 3: Contact Info */}
         {step === 3 && (
           <motion.div
             key="step3"
@@ -235,52 +240,84 @@ export function PropertyAlertsForm({ className, variant = "card" }: PropertyAler
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
           >
-            <label className="block text-sm font-medium text-neutral-700 mb-3">
-              Where should we send alerts?
-            </label>
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="your@email.com"
-              className="w-full px-4 py-3 border border-neutral-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent mb-6"
-            />
+            <form ref={formRef} action={formAction}>
+              {/* Hidden fields for form data */}
+              <input type="hidden" name="source" value="property-alerts" />
+              <input type="hidden" name="priceRange" value={selectedPriceRange !== null ? priceRanges[selectedPriceRange].value : ""} />
+              <input type="hidden" name="propertyType" value={selectedTypes.join(", ")} />
+              <input
+                type="hidden"
+                name="message"
+                value={`Property Alert Preferences:\n- Price Range: ${selectedPriceRange !== null ? priceRanges[selectedPriceRange].label : "Any"}\n- Property Types: ${selectedTypes.length > 0 ? selectedTypes.join(", ") : "Any"}\n- Neighborhoods: ${selectedNeighborhoods.length > 0 ? selectedNeighborhoods.join(", ") : "Any"}`}
+              />
 
-            {/* Summary */}
-            <div className="bg-neutral-50 rounded-lg p-4 mb-6">
-              <h4 className="text-sm font-medium text-neutral-900 mb-2">Your Alert Preferences</h4>
-              <ul className="text-sm text-neutral-600 space-y-1">
-                <li>• Price: {selectedPriceRange !== null ? priceRanges[selectedPriceRange].label : "Any"}</li>
-                <li>• Types: {selectedTypes.length > 0 ? selectedTypes.join(", ") : "Any"}</li>
-                <li>• Areas: {selectedNeighborhoods.length > 0 ? selectedNeighborhoods.join(", ") : "Any"}</li>
-              </ul>
-            </div>
+              <label className="block text-sm font-medium text-neutral-700 mb-3">
+                Your name
+              </label>
+              <input
+                type="text"
+                name="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="John Smith"
+                required
+                className="w-full px-4 py-3 border border-neutral-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent mb-4"
+              />
 
-            <div className="flex gap-3">
-              <button
-                onClick={() => setStep(2)}
-                className="flex-1 py-3 border border-neutral-200 text-neutral-700 rounded-lg font-medium hover:bg-neutral-50 transition-colors"
-              >
-                Back
-              </button>
-              <button
-                onClick={handleSubmit}
-                disabled={!email || isSubmitting}
-                className="flex-1 py-3 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-              >
-                {isSubmitting ? (
-                  <>
-                    <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
-                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-                    </svg>
-                    Setting up...
-                  </>
-                ) : (
-                  "Create Alert"
-                )}
-              </button>
-            </div>
+              <label className="block text-sm font-medium text-neutral-700 mb-3">
+                Your email
+              </label>
+              <input
+                type="email"
+                name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="your@email.com"
+                required
+                className="w-full px-4 py-3 border border-neutral-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent mb-6"
+              />
+
+              {/* Summary */}
+              <div className="bg-neutral-50 rounded-lg p-4 mb-6">
+                <h4 className="text-sm font-medium text-neutral-900 mb-2">Your Alert Preferences</h4>
+                <ul className="text-sm text-neutral-600 space-y-1">
+                  <li>• Price: {selectedPriceRange !== null ? priceRanges[selectedPriceRange].label : "Any"}</li>
+                  <li>• Types: {selectedTypes.length > 0 ? selectedTypes.join(", ") : "Any"}</li>
+                  <li>• Areas: {selectedNeighborhoods.length > 0 ? selectedNeighborhoods.join(", ") : "Any"}</li>
+                </ul>
+              </div>
+
+              {state.message && !state.success && (
+                <p className="text-sm text-red-500 mb-4">{state.message}</p>
+              )}
+
+              <div className="flex gap-3">
+                <button
+                  type="button"
+                  onClick={() => setStep(2)}
+                  className="flex-1 py-3 border border-neutral-200 text-neutral-700 rounded-lg font-medium hover:bg-neutral-50 transition-colors"
+                >
+                  Back
+                </button>
+                <button
+                  type="submit"
+                  disabled={!email || !name || isPending}
+                  className="flex-1 py-3 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                >
+                  {isPending ? (
+                    <>
+                      <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                      </svg>
+                      Setting up...
+                    </>
+                  ) : (
+                    "Create Alert"
+                  )}
+                </button>
+              </div>
+            </form>
           </motion.div>
         )}
       </AnimatePresence>
