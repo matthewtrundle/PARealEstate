@@ -1,0 +1,13 @@
+# Port Aransas Estates - robots.txt
+# https://portaransasestates.com
+
+User-agent: *
+Allow: /
+
+# Disallow admin and API routes
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://portaransasestates.com/sitemap.xml

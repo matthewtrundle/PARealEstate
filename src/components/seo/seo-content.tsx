@@ -64,11 +64,12 @@ export function ContentSection({ children, className, id }: ContentSectionProps)
  */
 interface HighlightBoxProps {
   children: React.ReactNode
+  title?: string
   variant?: "info" | "tip" | "warning"
   className?: string
 }
 
-export function HighlightBox({ children, variant = "info", className }: HighlightBoxProps) {
+export function HighlightBox({ children, title, variant = "info", className }: HighlightBoxProps) {
   return (
     <div
       className={cn(
@@ -81,6 +82,7 @@ export function HighlightBox({ children, variant = "info", className }: Highligh
         className
       )}
     >
+      {title && <h3 className="text-lg font-semibold text-neutral-900 mb-4">{title}</h3>}
       {children}
     </div>
   )

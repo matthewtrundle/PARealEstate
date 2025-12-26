@@ -5,6 +5,7 @@ import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { AnalyticsProvider } from "@/components/providers/analytics-provider"
 import { LenisProvider } from "@/components/providers/lenis-provider"
+import { GlobalSchemas } from "@/components/seo"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -79,6 +80,7 @@ export default function RootLayout({
 
       </head>
       <body className="font-body antialiased">
+        <GlobalSchemas />
         <LenisProvider>
           <AnalyticsProvider>
             <Header />

@@ -1,201 +1,154 @@
-#!/usr/bin/env node
-
 const fs = require('fs');
 const path = require('path');
-const https = require('https');
+require('dotenv').config();
 
-const API_KEY = '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';
-const MODEL = 'bytedance-seed/seedream-4.5';
-const API_URL = 'https://openrouter.ai/api/v1/chat/completions';
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 
-async function generateImage(prompt, outputPath) {
-  console.log(`\n📸 Generating: ${path.basename(outputPath)}`);
-  console.log(`   Prompt: ${prompt.substring(0, 80)}...`);
+const images = [
+  {
+    name: 'beachfront-homes.jpg',
+    prompt: 'Luxury beachfront homes on the Texas Gulf Coast, Port Aransas, aerial view showing white sand beach, turquoise water, upscale beach houses with pools, sunny day, professional real estate photography style, 4k quality'
+  },
+  {
+    name: 'condos.jpg',
+    prompt: 'Modern oceanfront condominium building on Mustang Island Texas, Gulf of Mexico views, resort-style pool area, palm trees, blue sky, professional real estate photography, luxury coastal living'
+  },
+  {
+    name: 'investment.jpg',
+    prompt: 'Vacation rental property in Port Aransas Texas, charming beach cottage with rental income potential, guests enjoying outdoor deck, coastal landscaping, investment property, professional real estate photography'
+  },
+  {
+    name: 'waterfront.jpg',
+    prompt: 'Canal-front home with private boat dock in Port Aransas Texas, waterway views, fishing boat tied to dock, palm trees, Texas coastal architecture, golden hour lighting, real estate photography'
+  },
+  {
+    name: 'new-construction.jpg',
+    prompt: 'New construction modern beach house in Texas Gulf Coast, contemporary coastal architecture, large windows, elevated design, construction complete, landscaped yard, professional real estate photography'
+  },
+  {
+    name: 'luxury.jpg',
+    prompt: 'Ultra-luxury beachfront estate in Port Aransas Texas, infinity pool overlooking Gulf of Mexico, modern architecture, floor-to-ceiling windows, palm trees, sunset, premium real estate photography'
+  },
+  {
+    name: 'gulf-coast.jpg',
+    prompt: 'Panoramic view of Texas Gulf Coast real estate, Port Aransas and Mustang Island from above, beach communities, blue ocean, white sand beaches, coastal development, aerial drone photography'
+  },
+  {
+    name: 'blog-bg.jpg',
+    prompt: 'Port Aransas Texas beach scene, morning light on the Gulf of Mexico, gentle waves, sea oats in foreground, peaceful coastal atmosphere, soft focus background suitable for text overlay'
+  },
+  {
+    name: 'testimonials-bg.jpg',
+    prompt: 'Happy family enjoying Port Aransas beach, Texas Gulf Coast vacation, children playing in sand, parents relaxing, beach house in background, warm summer day, lifestyle photography'
+  },
+  {
+    name: 'og-default.jpg',
+    prompt: 'Port Aransas Estates real estate hero image, luxury beach homes on Texas Gulf Coast, aerial view of Mustang Island, turquoise water, white sand beach, premium coastal properties, professional marketing photography, 1200x630 aspect ratio'
+  }
+];
 
-  const requestBody = JSON.stringify({
-    model: MODEL,
-    messages: [
-      {
-        role: 'user',
-        content: prompt
-      }
-    ],
-    modalities: ['image', 'text']
-  });
+async function generateImage(imageConfig) {
+  console.log(`Generating: ${imageConfig.name}...`);
 
-  return new Promise((resolve, reject) => {
-    const url = new URL(API_URL);
-    const options = {
-      hostname: url.hostname,
-      path: url.pathname,
+  try {
+    const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${API_KEY}`,
+        'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
         'Content-Type': 'application/json',
-        'Content-Length': Buffer.byteLength(requestBody)
-      }
-    };
-
-    const req = https.request(options, (res) => {
-      let data = '';
-      res.on('data', (chunk) => data += chunk);
-      res.on('end', () => {
-        try {
-          const response = JSON.parse(data);
-
-          if (response.error) {
-            console.error(`   ❌ API Error: ${response.error.message || JSON.stringify(response.error)}`);
-            reject(new Error(response.error.message));
-            return;
+        'HTTP-Referer': 'https://portaransasestates.com',
+        'X-Title': 'Port Aransas Estates'
+      },
+      body: JSON.stringify({
+        model: 'bytedance-seed/seedream-4.5',
+        messages: [
+          {
+            role: 'user',
+            content: imageConfig.prompt
           }
+        ],
+        modalities: ['image', 'text']
+      })
+    });
 
-          // Extract base64 image from response
-          // Format: response.choices[0].message.images[0].image_url.url
-          let imageData = null;
+    if (!response.ok) {
+      const error = await response.text();
+      throw new Error(`API error: ${response.status} - ${error}`);
+    }
 
-          if (response.choices?.[0]?.message?.images?.[0]?.image_url?.url) {
-            const dataUrl = response.choices[0].message.images[0].image_url.url;
-            // Extract base64 part from data URL
-            const match = dataUrl.match(/base64,(.+)/);
-            if (match) {
-              imageData = match[1];
-            }
-          }
+    const data = await response.json();
 
-          if (!imageData) {
-            console.log('   ⚠️  Could not extract image from response');
-            reject(new Error('No image data found in response'));
-            return;
-          }
-
-          // Ensure directory exists
-          const dir = path.dirname(outputPath);
-          if (!fs.existsSync(dir)) {
-            fs.mkdirSync(dir, { recursive: true });
-          }
-
-          // Save image (as jpg since API returns jpeg)
-          const buffer = Buffer.from(imageData, 'base64');
-          // Change extension to .jpg since API returns jpeg
-          const jpgPath = outputPath.replace('.webp', '.jpg');
-          fs.writeFileSync(jpgPath, buffer);
-          console.log(`   ✅ Saved: ${jpgPath}`);
-          resolve(jpgPath);
-        } catch (err) {
-          console.error(`   ❌ Parse error: ${err.message}`);
-          reject(err);
+    // Check for image in the images array (new format)
+    const images = data.choices[0]?.message?.images;
+    if (images && images.length > 0 && images[0].image_url?.url) {
+      const imageUrl = images[0].image_url.url;
+      if (imageUrl.includes('data:image')) {
+        const matches = imageUrl.match(/data:image\/[^;]+;base64,(.+)/);
+        if (matches && matches[1]) {
+          const base64Data = matches[1];
+          const buffer = Buffer.from(base64Data, 'base64');
+          const outputPath = path.join(__dirname, '../public/images/hero', imageConfig.name);
+          fs.writeFileSync(outputPath, buffer);
+          console.log(`  Saved: ${imageConfig.name}`);
+          return true;
         }
-      });
-    });
+      }
+    }
 
-    req.on('error', (err) => {
-      console.error(`   ❌ Request error: ${err.message}`);
-      reject(err);
-    });
+    // Fallback: check content for base64 image
+    const content = data.choices[0]?.message?.content;
+    if (content && content.includes('data:image')) {
+      const matches = content.match(/data:image\/[^;]+;base64,([^"]+)/);
+      if (matches && matches[1]) {
+        const base64Data = matches[1];
+        const buffer = Buffer.from(base64Data, 'base64');
+        const outputPath = path.join(__dirname, '../public/images/hero', imageConfig.name);
+        fs.writeFileSync(outputPath, buffer);
+        console.log(`  Saved: ${imageConfig.name}`);
+        return true;
+      }
+    }
 
-    req.write(requestBody);
-    req.end();
-  });
-}
-
-async function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+    console.log(`No image found for ${imageConfig.name}`);
+    return false;
+  } catch (error) {
+    console.error(`  Error generating ${imageConfig.name}:`, error.message);
+    return false;
+  }
 }
 
 async function main() {
-  const baseDir = path.join(__dirname, '..', 'public', 'images');
+  console.log('\nGenerating hero images with Seedream 4.5...\n');
 
-  // Image generation tasks
-  const tasks = [
-    // Hero image
-    {
-      prompt: 'Stunning aerial photograph of Port Aransas Texas beach coastline at golden hour, crystal clear turquoise Gulf of Mexico waters, white sand beach, luxury beachfront homes visible, palm trees, warm sunset lighting, professional real estate photography, ultra high resolution, no text or watermarks',
-      output: path.join(baseDir, 'hero', 'beach-aerial.webp')
-    },
-
-    // Azure Shores Estate
-    {
-      prompt: 'Luxurious modern beachfront estate exterior, 3-story coastal contemporary architecture, infinity pool overlooking Gulf of Mexico, white stucco and glass, tropical landscaping, Port Aransas Texas style, golden hour lighting, professional architectural photography, no text',
-      output: path.join(baseDir, 'properties', 'azure-shores', 'hero.webp')
-    },
-    {
-      prompt: 'Stunning open concept living room in luxury beach house, floor-to-ceiling windows with ocean views, white coastal modern interior design, comfortable seating, high ceilings with wood beams, natural light flooding in, professional interior photography, no text',
-      output: path.join(baseDir, 'properties', 'azure-shores', 'living.webp')
-    },
-    {
-      prompt: 'Private infinity pool at luxury beach home overlooking the Gulf of Mexico, sunset view, modern pool deck with lounge chairs, tropical plants, warm evening lighting, professional real estate photography, no text',
-      output: path.join(baseDir, 'properties', 'azure-shores', 'pool.webp')
-    },
-    {
-      prompt: 'Elegant master bedroom suite in coastal luxury home, king bed with ocean views through large windows, neutral coastal decor, high-end finishes, sitting area, morning light, professional interior photography, no text',
-      output: path.join(baseDir, 'properties', 'azure-shores', 'master.webp')
-    },
-    {
-      prompt: 'Gourmet chef kitchen in luxury beach house, white shaker cabinets, marble countertops, large island with seating, stainless steel appliances, ocean view through window, coastal modern style, professional interior photography, no text',
-      output: path.join(baseDir, 'properties', 'azure-shores', 'kitchen.webp')
-    },
-
-    // Sunset Cove Villa
-    {
-      prompt: 'Beautiful Mediterranean-style beach villa exterior, terracotta roof, arched windows, palm trees, private courtyard, coastal Texas architecture, warm sunset lighting, professional architectural photography, no text',
-      output: path.join(baseDir, 'properties', 'sunset-cove', 'hero.webp')
-    },
-    {
-      prompt: 'Spacious living room in Mediterranean beach villa, arched doorways, comfortable coastal furnishings, natural wood floors, warm lighting, ocean views through windows, professional interior photography, no text',
-      output: path.join(baseDir, 'properties', 'sunset-cove', 'living.webp')
-    },
-
-    // Pearl Beach House
-    {
-      prompt: 'Charming coastal cottage beach house, elevated on stilts, wraparound porch, light blue exterior with white trim, tropical landscaping, Port Aransas beach setting, clear blue sky, professional real estate photography, no text',
-      output: path.join(baseDir, 'properties', 'pearl-beach', 'hero.webp')
-    },
-    {
-      prompt: 'Cozy beach cottage living room, whitewashed shiplap walls, comfortable coastal furniture, ocean views, natural textures, relaxed beach house style, bright and airy, professional interior photography, no text',
-      output: path.join(baseDir, 'properties', 'pearl-beach', 'living.webp')
-    },
-
-    // Oceanview Condo
-    {
-      prompt: 'Modern high-rise beachfront condominium building exterior, balconies with ocean views, contemporary architecture, Port Aransas Texas beach setting, palm trees, clear blue sky, professional architectural photography, no text',
-      output: path.join(baseDir, 'properties', 'oceanview-condo', 'hero.webp')
-    },
-
-    // Dunes Retreat
-    {
-      prompt: 'Contemporary beach home nestled in sand dunes, modern coastal architecture, large windows, natural wood and white exterior, native grasses, Gulf of Mexico in background, professional real estate photography, no text',
-      output: path.join(baseDir, 'properties', 'dunes-retreat', 'hero.webp')
-    },
-
-    // Pelican Point
-    {
-      prompt: 'Elegant waterfront home on canal with private dock, coastal contemporary style, two-story with balcony, boat dock visible, palm trees, clear water, Port Aransas setting, professional real estate photography, no text',
-      output: path.join(baseDir, 'properties', 'pelican-point', 'hero.webp')
-    }
-  ];
-
-  console.log('🏖️  Port Aransas Real Estate Image Generator');
-  console.log('============================================');
-  console.log(`Generating ${tasks.length} images using Seedream 4.5...\n`);
-
-  let completed = 0;
-  let failed = 0;
-
-  for (const task of tasks) {
-    try {
-      await generateImage(task.prompt, task.output);
-      completed++;
-      // Rate limiting - wait 2 seconds between requests
-      await sleep(2000);
-    } catch (err) {
-      failed++;
-      console.error(`   Failed: ${err.message}`);
-    }
+  const heroDir = path.join(__dirname, '../public/images/hero');
+  if (!fs.existsSync(heroDir)) {
+    fs.mkdirSync(heroDir, { recursive: true });
   }
 
-  console.log('\n============================================');
-  console.log(`✅ Completed: ${completed}/${tasks.length}`);
-  if (failed > 0) console.log(`❌ Failed: ${failed}`);
+  const imagesDir = path.join(__dirname, '../public/images');
+
+  let success = 0;
+  let failed = 0;
+
+  for (const img of images) {
+    const result = await generateImage(img);
+    if (result) {
+      success++;
+      if (img.name === 'og-default.jpg') {
+        const srcPath = path.join(heroDir, img.name);
+        const destPath = path.join(imagesDir, img.name);
+        fs.copyFileSync(srcPath, destPath);
+        console.log(`  Copied og-default.jpg to images root`);
+      }
+    } else {
+      failed++;
+    }
+    // Wait 2 seconds between requests to avoid rate limiting
+    await new Promise(resolve => setTimeout(resolve, 2000));
+  }
+
+  console.log(`\nResults: ${success} successful, ${failed} failed`);
+  console.log(`Estimated cost: $${(success * 0.04).toFixed(2)}`);
 }
 
 main().catch(console.error);

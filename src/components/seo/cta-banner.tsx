@@ -13,6 +13,9 @@ interface CTABannerProps {
     text: string
     href: string
   }
+  // Convenience props (alternative to primaryCTA object)
+  buttonText?: string
+  buttonHref?: string
   variant?: "default" | "compact" | "dark"
   className?: string
 }
@@ -20,18 +23,22 @@ interface CTABannerProps {
 export function CTABanner({
   title = "Ready to Find Your Port Aransas Home?",
   description = "Browse our curated selection of coastal properties or speak with our local experts to start your search.",
-  primaryCTA = {
-    text: "View Properties",
-    href: "/properties",
-  },
+  primaryCTA,
+  buttonText,
+  buttonHref,
   secondaryCTA,
   variant = "default",
   className,
 }: CTABannerProps) {
+  // Support both primaryCTA object and convenience props
+  const cta = primaryCTA || {
+    text: buttonText || "View Properties",
+    href: buttonHref || "/properties",
+  }
   const isDark = variant === "dark"
 
   // Default secondary CTA only if primary is View Properties
-  const showSecondaryCTA = secondaryCTA || (primaryCTA.text === "View Properties" ? {
+  const showSecondaryCTA = secondaryCTA || (cta.text === "View Properties" ? {
     text: "Contact Us",
     href: "/contact",
   } : null)
@@ -73,7 +80,7 @@ export function CTABanner({
             className="px-8"
             asChild
           >
-            <Link href={primaryCTA.href}>{primaryCTA.text}</Link>
+            <Link href={cta.href}>{cta.text}</Link>
           </Button>
 
           {showSecondaryCTA && (
