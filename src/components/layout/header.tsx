@@ -60,7 +60,9 @@ export function Header() {
                 height={200}
                 className={cn(
                   "w-auto transition-all duration-500",
-                  pathname === "/" && !isScrolled ? "h-96 mt-24" : "h-40"
+                  pathname === "/" && !isScrolled
+                    ? "h-20 md:h-96 mt-0 md:mt-24" // Small on mobile, large on desktop
+                    : "h-12 md:h-40" // Smaller when scrolled
                 )}
                 style={{
                   filter: pathname === "/" && !isScrolled ? "brightness(0) invert(1)" : "none",
